@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF20D2BC24830AF500BC1384 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF20D2BB24830AF500BC1384 /* AppDelegate.m */; };
+		AF20D2BF24830AF500BC1384 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF20D2BE24830AF500BC1384 /* ViewController.m */; };
+		AF20D2C124830AF900BC1384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF20D2C024830AF900BC1384 /* Assets.xcassets */; };
+		AF20D2C424830AF900BC1384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF20D2C224830AF900BC1384 /* Main.storyboard */; };
+		AF20D2C724830AF900BC1384 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF20D2C624830AF900BC1384 /* main.m */; };
+		AF20D2D224830AF900BC1384 /* ModLoaderInstallerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF20D2D124830AF900BC1384 /* ModLoaderInstallerTests.m */; };
+		AF20D2DD24830AF900BC1384 /* ModLoaderInstallerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF20D2DC24830AF900BC1384 /* ModLoaderInstallerUITests.m */; };
+		AF20D2F82483325F00BC1384 /* InstallTab.m in Sources */ = {isa = PBXBuildFile; fileRef = AF20D2F72483325F00BC1384 /* InstallTab.m */; };
+		AF20D30224841DAE00BC1384 /* d.dylib in Resources */ = {isa = PBXBuildFile; fileRef = AF20D2FF24841DA000BC1384 /* d.dylib */; };
+		AF20D30324841DAE00BC1384 /* libfmod.dylib in Resources */ = {isa = PBXBuildFile; fileRef = AF20D2FE24841DA000BC1384 /* libfmod.dylib */; };
+		AF20D30624844A8300BC1384 /* BasedController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF20D30524844A8300BC1384 /* BasedController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF20D2CE24830AF900BC1384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF20D2AF24830AF500BC1384 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF20D2B624830AF500BC1384;
+			remoteInfo = ModLoaderInstaller;
+		};
+		AF20D2D924830AF900BC1384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF20D2AF24830AF500BC1384 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF20D2B624830AF500BC1384;
+			remoteInfo = ModLoaderInstaller;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF20D2B724830AF500BC1384 /* ModLoaderInstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModLoaderInstaller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF20D2BA24830AF500BC1384 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF20D2BB24830AF500BC1384 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF20D2BD24830AF500BC1384 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AF20D2BE24830AF500BC1384 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AF20D2C024830AF900BC1384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF20D2C324830AF900BC1384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF20D2C524830AF900BC1384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF20D2C624830AF900BC1384 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF20D2C824830AF900BC1384 /* ModLoaderInstaller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ModLoaderInstaller.entitlements; sourceTree = "<group>"; };
+		AF20D2CD24830AF900BC1384 /* ModLoaderInstallerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModLoaderInstallerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF20D2D124830AF900BC1384 /* ModLoaderInstallerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModLoaderInstallerTests.m; sourceTree = "<group>"; };
+		AF20D2D324830AF900BC1384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF20D2D824830AF900BC1384 /* ModLoaderInstallerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModLoaderInstallerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF20D2DC24830AF900BC1384 /* ModLoaderInstallerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModLoaderInstallerUITests.m; sourceTree = "<group>"; };
+		AF20D2DE24830AF900BC1384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF20D2F62483325F00BC1384 /* InstallTab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstallTab.h; sourceTree = "<group>"; };
+		AF20D2F72483325F00BC1384 /* InstallTab.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstallTab.m; sourceTree = "<group>"; };
+		AF20D2FE24841DA000BC1384 /* libfmod.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmod.dylib; sourceTree = "<group>"; };
+		AF20D2FF24841DA000BC1384 /* d.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = d.dylib; sourceTree = "<group>"; };
+		AF20D30424844A8300BC1384 /* BasedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasedController.h; sourceTree = "<group>"; };
+		AF20D30524844A8300BC1384 /* BasedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasedController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF20D2B424830AF500BC1384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF20D2CA24830AF900BC1384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF20D2D524830AF900BC1384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF20D2AE24830AF500BC1384 = {
+			isa = PBXGroup;
+			children = (
+				AF20D2B924830AF500BC1384 /* ModLoaderInstaller */,
+				AF20D2D024830AF900BC1384 /* ModLoaderInstallerTests */,
+				AF20D2DB24830AF900BC1384 /* ModLoaderInstallerUITests */,
+				AF20D2B824830AF500BC1384 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF20D2B824830AF500BC1384 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF20D2B724830AF500BC1384 /* ModLoaderInstaller.app */,
+				AF20D2CD24830AF900BC1384 /* ModLoaderInstallerTests.xctest */,
+				AF20D2D824830AF900BC1384 /* ModLoaderInstallerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF20D2B924830AF500BC1384 /* ModLoaderInstaller */ = {
+			isa = PBXGroup;
+			children = (
+				AF20D2FD24841D7A00BC1384 /* Resources */,
+				AF20D2F9248337E500BC1384 /* View Controllers */,
+				AF20D2BA24830AF500BC1384 /* AppDelegate.h */,
+				AF20D2BB24830AF500BC1384 /* AppDelegate.m */,
+				AF20D2BD24830AF500BC1384 /* ViewController.h */,
+				AF20D2BE24830AF500BC1384 /* ViewController.m */,
+				AF20D2C024830AF900BC1384 /* Assets.xcassets */,
+				AF20D2C224830AF900BC1384 /* Main.storyboard */,
+				AF20D2C524830AF900BC1384 /* Info.plist */,
+				AF20D2C624830AF900BC1384 /* main.m */,
+				AF20D2C824830AF900BC1384 /* ModLoaderInstaller.entitlements */,
+			);
+			path = ModLoaderInstaller;
+			sourceTree = "<group>";
+		};
+		AF20D2D024830AF900BC1384 /* ModLoaderInstallerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF20D2D124830AF900BC1384 /* ModLoaderInstallerTests.m */,
+				AF20D2D324830AF900BC1384 /* Info.plist */,
+			);
+			path = ModLoaderInstallerTests;
+			sourceTree = "<group>";
+		};
+		AF20D2DB24830AF900BC1384 /* ModLoaderInstallerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF20D2DC24830AF900BC1384 /* ModLoaderInstallerUITests.m */,
+				AF20D2DE24830AF900BC1384 /* Info.plist */,
+			);
+			path = ModLoaderInstallerUITests;
+			sourceTree = "<group>";
+		};
+		AF20D2F9248337E500BC1384 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF20D2F72483325F00BC1384 /* InstallTab.m */,
+				AF20D2F62483325F00BC1384 /* InstallTab.h */,
+				AF20D30424844A8300BC1384 /* BasedController.h */,
+				AF20D30524844A8300BC1384 /* BasedController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AF20D2FD24841D7A00BC1384 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF20D2FF24841DA000BC1384 /* d.dylib */,
+				AF20D2FE24841DA000BC1384 /* libfmod.dylib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF20D2B624830AF500BC1384 /* ModLoaderInstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF20D2E124830AF900BC1384 /* Build configuration list for PBXNativeTarget "ModLoaderInstaller" */;
+			buildPhases = (
+				AF20D2B324830AF500BC1384 /* Sources */,
+				AF20D2B424830AF500BC1384 /* Frameworks */,
+				AF20D2B524830AF500BC1384 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModLoaderInstaller;
+			productName = ModLoaderInstaller;
+			productReference = AF20D2B724830AF500BC1384 /* ModLoaderInstaller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF20D2CC24830AF900BC1384 /* ModLoaderInstallerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF20D2E424830AF900BC1384 /* Build configuration list for PBXNativeTarget "ModLoaderInstallerTests" */;
+			buildPhases = (
+				AF20D2C924830AF900BC1384 /* Sources */,
+				AF20D2CA24830AF900BC1384 /* Frameworks */,
+				AF20D2CB24830AF900BC1384 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF20D2CF24830AF900BC1384 /* PBXTargetDependency */,
+			);
+			name = ModLoaderInstallerTests;
+			productName = ModLoaderInstallerTests;
+			productReference = AF20D2CD24830AF900BC1384 /* ModLoaderInstallerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF20D2D724830AF900BC1384 /* ModLoaderInstallerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF20D2E724830AF900BC1384 /* Build configuration list for PBXNativeTarget "ModLoaderInstallerUITests" */;
+			buildPhases = (
+				AF20D2D424830AF900BC1384 /* Sources */,
+				AF20D2D524830AF900BC1384 /* Frameworks */,
+				AF20D2D624830AF900BC1384 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF20D2DA24830AF900BC1384 /* PBXTargetDependency */,
+			);
+			name = ModLoaderInstallerUITests;
+			productName = ModLoaderInstallerUITests;
+			productReference = AF20D2D824830AF900BC1384 /* ModLoaderInstallerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF20D2AF24830AF500BC1384 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Camden314;
+				TargetAttributes = {
+					AF20D2B624830AF500BC1384 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					AF20D2CC24830AF900BC1384 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = AF20D2B624830AF500BC1384;
+					};
+					AF20D2D724830AF900BC1384 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = AF20D2B624830AF500BC1384;
+					};
+				};
+			};
+			buildConfigurationList = AF20D2B224830AF500BC1384 /* Build configuration list for PBXProject "ModLoaderInstaller" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF20D2AE24830AF500BC1384;
+			productRefGroup = AF20D2B824830AF500BC1384 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF20D2B624830AF500BC1384 /* ModLoaderInstaller */,
+				AF20D2CC24830AF900BC1384 /* ModLoaderInstallerTests */,
+				AF20D2D724830AF900BC1384 /* ModLoaderInstallerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF20D2B524830AF500BC1384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF20D30224841DAE00BC1384 /* d.dylib in Resources */,
+				AF20D30324841DAE00BC1384 /* libfmod.dylib in Resources */,
+				AF20D2C124830AF900BC1384 /* Assets.xcassets in Resources */,
+				AF20D2C424830AF900BC1384 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF20D2CB24830AF900BC1384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF20D2D624830AF900BC1384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF20D2B324830AF500BC1384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF20D2BF24830AF500BC1384 /* ViewController.m in Sources */,
+				AF20D2F82483325F00BC1384 /* InstallTab.m in Sources */,
+				AF20D2C724830AF900BC1384 /* main.m in Sources */,
+				AF20D2BC24830AF500BC1384 /* AppDelegate.m in Sources */,
+				AF20D30624844A8300BC1384 /* BasedController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF20D2C924830AF900BC1384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF20D2D224830AF900BC1384 /* ModLoaderInstallerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF20D2D424830AF900BC1384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF20D2DD24830AF900BC1384 /* ModLoaderInstallerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF20D2CF24830AF900BC1384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF20D2B624830AF500BC1384 /* ModLoaderInstaller */;
+			targetProxy = AF20D2CE24830AF900BC1384 /* PBXContainerItemProxy */;
+		};
+		AF20D2DA24830AF900BC1384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF20D2B624830AF500BC1384 /* ModLoaderInstaller */;
+			targetProxy = AF20D2D924830AF900BC1384 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF20D2C224830AF900BC1384 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF20D2C324830AF900BC1384 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF20D2DF24830AF900BC1384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AF20D2E024830AF900BC1384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AF20D2E224830AF900BC1384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ModLoaderInstaller/ModLoaderInstaller.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ModLoaderInstaller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ModLoaderInstaller/Resources",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = gd.camden314.ModLoaderInstaller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF20D2E324830AF900BC1384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ModLoaderInstaller/ModLoaderInstaller.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ModLoaderInstaller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ModLoaderInstaller/Resources",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = gd.camden314.ModLoaderInstaller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AF20D2E524830AF900BC1384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4L776RNKG8;
+				INFOPLIST_FILE = ModLoaderInstallerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = gd.camden314.ModLoaderInstallerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModLoaderInstaller.app/Contents/MacOS/ModLoaderInstaller";
+			};
+			name = Debug;
+		};
+		AF20D2E624830AF900BC1384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4L776RNKG8;
+				INFOPLIST_FILE = ModLoaderInstallerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = gd.camden314.ModLoaderInstallerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModLoaderInstaller.app/Contents/MacOS/ModLoaderInstaller";
+			};
+			name = Release;
+		};
+		AF20D2E824830AF900BC1384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4L776RNKG8;
+				INFOPLIST_FILE = ModLoaderInstallerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gd.camden314.ModLoaderInstallerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ModLoaderInstaller;
+			};
+			name = Debug;
+		};
+		AF20D2E924830AF900BC1384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4L776RNKG8;
+				INFOPLIST_FILE = ModLoaderInstallerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gd.camden314.ModLoaderInstallerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ModLoaderInstaller;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF20D2B224830AF500BC1384 /* Build configuration list for PBXProject "ModLoaderInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF20D2DF24830AF900BC1384 /* Debug */,
+				AF20D2E024830AF900BC1384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF20D2E124830AF900BC1384 /* Build configuration list for PBXNativeTarget "ModLoaderInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF20D2E224830AF900BC1384 /* Debug */,
+				AF20D2E324830AF900BC1384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF20D2E424830AF900BC1384 /* Build configuration list for PBXNativeTarget "ModLoaderInstallerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF20D2E524830AF900BC1384 /* Debug */,
+				AF20D2E624830AF900BC1384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF20D2E724830AF900BC1384 /* Build configuration list for PBXNativeTarget "ModLoaderInstallerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF20D2E824830AF900BC1384 /* Debug */,
+				AF20D2E924830AF900BC1384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF20D2AF24830AF500BC1384 /* Project object */;
+}
