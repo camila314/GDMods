@@ -52,22 +52,16 @@ extern void addObject(void);
 
 
 void onetime() {
-	CCSize win = CCDirector::sharedDirector()->getWinSize();
+	auto toolbox = ObjectToolbox::sharedState();
 
-	auto layer = MyOptionsLayer::create();
+	CCDictionary* keyInt = static_cast<CCDictionary*>(toolbox->valOffset(0x128));
+	CCDictionary* keyStr = static_cast<CCDictionary*>(toolbox->valOffset(0x120));
 
-	/*CCLayer* tlayer = static_cast<CCLayer*>(layer->valOffset(0x220));
+	auto strid = CCString::createWithFormat("%i", 69420);
+	auto strname = CCString::createWithFormat("%s", "poggersTrigger.png");
 
-	auto obj = CCLabelBMFont::create("ok", "bigFont.fnt");
-	CCPoint labelstuff((win.width/2)+114, (win.height/2));
-
-	obj->setPosition(labelstuff);
-	obj->setScale(0.6);
-
-	tlayer->addChild(obj, 3141);*/
-
-
-	layer->show();
+	keyStr->setObject(strid, std::string("poggersTrigger.png"));
+	keyInt->setObject(strname, 69420);
 
 }
 
