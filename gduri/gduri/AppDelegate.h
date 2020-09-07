@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <CoreFoundation/CoreFoundation.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 

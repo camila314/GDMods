@@ -16,8 +16,12 @@
 
 - (void)windowDidLoad {
     [super windowDidLoad];
-    
+    NSLog(@"%i",self.windowLoaded);
+    [[self window] miniaturize:nil];
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 
+- (void)loadWindow {
+    return;
+}
 @end

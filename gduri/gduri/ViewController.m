@@ -12,7 +12,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    [[[self view] window] performClose:nil];
+    NSLog(@"bro");
     // Do any additional setup after loading the view.
 }
 

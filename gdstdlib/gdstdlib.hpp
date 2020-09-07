@@ -102,3 +102,13 @@ public:
 	bool init();
 
 };
+
+class GJSearchObject : public GDObj {
+public:
+	static GJSearchObject* create(int, std::string, std::string, std::string, int, bool, bool, bool, int, bool, bool, bool, bool, bool, bool, bool, bool, int, int);
+};
+
+class LevelBrowserLayer : public GDObj {
+public:
+	static cocos2d::CCScene* scene(GJSearchObject* search);
+};
