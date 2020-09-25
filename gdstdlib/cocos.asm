@@ -49,6 +49,16 @@ __ZN5GDObj9valOffsetEl:
 	mov rax, [rdi+rsi]
 	ret
 
+global __ZN5GDObj12setValOffsetElPv
+__ZN5GDObj12setValOffsetElPv:
+	mov [rdi+rsi], rdx
+	ret
+
+global __ZN11GameManager7manFileEv
+__ZN11GameManager7manFileEv:
+	lea rax, [rdi+0x120]
+	ret
+
 
 global __ZN7cocos2d2ui6MarginC1Ev
 __ZN7cocos2d2ui6MarginC1Ev:
@@ -313,3 +323,19 @@ defit __ZN14GJSearchObject6createEiSsSsSsibbbibbbbbbbbii, 0x2dee30
 defit __ZN17LevelBrowserLayer5sceneEP14GJSearchObject, 0x2511d0
 defit __ZN7cocos2d16CCTransitionFade6createEfPNS_7CCSceneE, 0x8ea30
 defit __ZN7cocos2d10CCDirector9pushSceneEPNS_7CCSceneE, 0x24a620
+
+defit __ZN11GameManager14reloadAllStep5Ev, 0x1d0b00
+defit __ZN11GameManager11doQuickSaveEv, 0x1d0200
+defit __ZN11GameManager9reloadAllEbbb, 0x1d08a0
+defit __ZN11GameManagerD0Ev, 0x1d0ff0
+defit __ZN11GameManagerD1Ev, 0x1d0fe0
+
+defit __ZN16GameSoundManager13sharedManagerEv, 0x3610f0
+defit __ZN16GameSoundManagerD1Ev, 0x362cc0
+defit __ZN16GameSoundManagerD0Ev, 0x362cd0
+
+defit __ZN16GameSoundManager19stopBackgroundMusicEv, 0x362130
+
+defit __ZN11GameManager20accountStatusChangedEv, 0x1cdad0
+
+defit __ZN11GameManager4loadEv, 0x26ee20
