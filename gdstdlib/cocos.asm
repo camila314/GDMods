@@ -67,6 +67,17 @@ __ZN7cocos2d2ui6MarginC1Ev:
 	pop rbp
 	ret
 
+global __ZN11GameManager17setSecondColorIdxEi
+__ZN11GameManager17setSecondColorIdxEi:
+	mov [rdi+0x260], esi
+	mov dword [rdi+0x264], 0
+	ret
+global __ZN11GameManager16setFirstColorIdxEi
+__ZN11GameManager16setFirstColorIdxEi:
+	mov [rdi+0x254], esi
+	mov dword [rdi+0x258], 0
+	ret
+
 defit __ZN21MoreVideoOptionsLayer6createEv, 0x443c10
 defit __ZN21MoreVideoOptionsLayer4initEv, 0x444150
 
@@ -339,3 +350,5 @@ defit __ZN16GameSoundManager19stopBackgroundMusicEv, 0x362130
 defit __ZN11GameManager20accountStatusChangedEv, 0x1cdad0
 
 defit __ZN11GameManager4loadEv, 0x26ee20
+
+defit __ZN11GameManager11colorForIdxEi, 0x1cbc80

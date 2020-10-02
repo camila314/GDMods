@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF784CB42514602600F5D3B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF784CB32514602600F5D3B8 /* AppDelegate.m */; };
+		AF784CB72514602600F5D3B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF784CB62514602600F5D3B8 /* ViewController.m */; };
+		AF784CB92514602800F5D3B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF784CB82514602800F5D3B8 /* Assets.xcassets */; };
+		AF784CBC2514602800F5D3B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF784CBA2514602800F5D3B8 /* Main.storyboard */; };
+		AF784CBF2514602800F5D3B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF784CBE2514602800F5D3B8 /* main.m */; };
+		AF784CCC251464F700F5D3B8 /* StupidPusabTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF784CC6251464F600F5D3B8 /* StupidPusabTextCell.m */; };
+		AF784CCD251464F700F5D3B8 /* ThonburiTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF784CC7251464F600F5D3B8 /* ThonburiTextCell.m */; };
+		AF784CCE251464F700F5D3B8 /* PUSAB___.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF784CC9251464F600F5D3B8 /* PUSAB___.otf */; };
+		AF784CD12516B46100F5D3B8 /* NSString+MDHash.m in Sources */ = {isa = PBXBuildFile; fileRef = AF784CD02516B46100F5D3B8 /* NSString+MDHash.m */; };
+		AF784CE32518044300F5D3B8 /* ProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF784CE22518044300F5D3B8 /* ProfileView.m */; };
+		AF784CE52518045100F5D3B8 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF784CE42518045100F5D3B8 /* ProfileView.xib */; };
+		AF784CE9251809C100F5D3B8 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF784CE7251809C100F5D3B8 /* ProfileViewController.m */; };
+		AF784CEA251809C100F5D3B8 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF784CE8251809C100F5D3B8 /* ProfileViewController.xib */; };
+		AF784CEC251938F900F5D3B8 /* CCGameManager.dat in Resources */ = {isa = PBXBuildFile; fileRef = AF784CEB251938F900F5D3B8 /* CCGameManager.dat */; };
+		AF784CF5251951D200F5D3B8 /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF784CF4251951D200F5D3B8 /* PopupViewController.m */; };
+		AF784CF8251B204200F5D3B8 /* DeletePopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF784CF7251B204200F5D3B8 /* DeletePopupController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF784CAF2514602600F5D3B8 /* MultiProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF784CB22514602600F5D3B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF784CB32514602600F5D3B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF784CB52514602600F5D3B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AF784CB62514602600F5D3B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AF784CB82514602800F5D3B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF784CBB2514602800F5D3B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF784CBD2514602800F5D3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF784CBE2514602800F5D3B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF784CC02514602800F5D3B8 /* MultiProfile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MultiProfile.entitlements; sourceTree = "<group>"; };
+		AF784CC6251464F600F5D3B8 /* StupidPusabTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StupidPusabTextCell.m; sourceTree = "<group>"; };
+		AF784CC7251464F600F5D3B8 /* ThonburiTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThonburiTextCell.m; sourceTree = "<group>"; };
+		AF784CC8251464F600F5D3B8 /* ThonburiTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThonburiTextCell.h; sourceTree = "<group>"; };
+		AF784CC9251464F600F5D3B8 /* PUSAB___.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PUSAB___.otf"; sourceTree = "<group>"; };
+		AF784CCA251464F600F5D3B8 /* struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = struct.h; sourceTree = "<group>"; };
+		AF784CCB251464F600F5D3B8 /* StupidPusabTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StupidPusabTextCell.h; sourceTree = "<group>"; };
+		AF784CCF2516B46100F5D3B8 /* NSString+MDHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MDHash.h"; sourceTree = "<group>"; };
+		AF784CD02516B46100F5D3B8 /* NSString+MDHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MDHash.m"; sourceTree = "<group>"; };
+		AF784CE12518044300F5D3B8 /* ProfileView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileView.h; sourceTree = "<group>"; };
+		AF784CE22518044300F5D3B8 /* ProfileView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileView.m; sourceTree = "<group>"; };
+		AF784CE42518045100F5D3B8 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		AF784CE6251809C100F5D3B8 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		AF784CE7251809C100F5D3B8 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		AF784CE8251809C100F5D3B8 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		AF784CEB251938F900F5D3B8 /* CCGameManager.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = CCGameManager.dat; sourceTree = "<group>"; };
+		AF784CF3251951D200F5D3B8 /* PopupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopupViewController.h; sourceTree = "<group>"; };
+		AF784CF4251951D200F5D3B8 /* PopupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupViewController.m; sourceTree = "<group>"; };
+		AF784CF6251B204200F5D3B8 /* DeletePopupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeletePopupController.h; sourceTree = "<group>"; };
+		AF784CF7251B204200F5D3B8 /* DeletePopupController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeletePopupController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF784CAC2514602600F5D3B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF784CA62514602600F5D3B8 = {
+			isa = PBXGroup;
+			children = (
+				AF784CB12514602600F5D3B8 /* MultiProfile */,
+				AF784CB02514602600F5D3B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF784CB02514602600F5D3B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF784CAF2514602600F5D3B8 /* MultiProfile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF784CB12514602600F5D3B8 /* MultiProfile */ = {
+			isa = PBXGroup;
+			children = (
+				AF784CEB251938F900F5D3B8 /* CCGameManager.dat */,
+				AF784CC9251464F600F5D3B8 /* PUSAB___.otf */,
+				AF784CCA251464F600F5D3B8 /* struct.h */,
+				AF784CCB251464F600F5D3B8 /* StupidPusabTextCell.h */,
+				AF784CC6251464F600F5D3B8 /* StupidPusabTextCell.m */,
+				AF784CC8251464F600F5D3B8 /* ThonburiTextCell.h */,
+				AF784CC7251464F600F5D3B8 /* ThonburiTextCell.m */,
+				AF784CB22514602600F5D3B8 /* AppDelegate.h */,
+				AF784CB32514602600F5D3B8 /* AppDelegate.m */,
+				AF784CB52514602600F5D3B8 /* ViewController.h */,
+				AF784CB62514602600F5D3B8 /* ViewController.m */,
+				AF784CB82514602800F5D3B8 /* Assets.xcassets */,
+				AF784CBA2514602800F5D3B8 /* Main.storyboard */,
+				AF784CF6251B204200F5D3B8 /* DeletePopupController.h */,
+				AF784CF7251B204200F5D3B8 /* DeletePopupController.m */,
+				AF784CF3251951D200F5D3B8 /* PopupViewController.h */,
+				AF784CF4251951D200F5D3B8 /* PopupViewController.m */,
+				AF784CBD2514602800F5D3B8 /* Info.plist */,
+				AF784CBE2514602800F5D3B8 /* main.m */,
+				AF784CC02514602800F5D3B8 /* MultiProfile.entitlements */,
+				AF784CCF2516B46100F5D3B8 /* NSString+MDHash.h */,
+				AF784CD02516B46100F5D3B8 /* NSString+MDHash.m */,
+				AF784CE12518044300F5D3B8 /* ProfileView.h */,
+				AF784CE22518044300F5D3B8 /* ProfileView.m */,
+				AF784CE42518045100F5D3B8 /* ProfileView.xib */,
+				AF784CE6251809C100F5D3B8 /* ProfileViewController.h */,
+				AF784CE7251809C100F5D3B8 /* ProfileViewController.m */,
+				AF784CE8251809C100F5D3B8 /* ProfileViewController.xib */,
+			);
+			path = MultiProfile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF784CAE2514602600F5D3B8 /* MultiProfile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF784CC32514602800F5D3B8 /* Build configuration list for PBXNativeTarget "MultiProfile" */;
+			buildPhases = (
+				AF784CAB2514602600F5D3B8 /* Sources */,
+				AF784CAC2514602600F5D3B8 /* Frameworks */,
+				AF784CAD2514602600F5D3B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiProfile;
+			productName = MultiProfile;
+			productReference = AF784CAF2514602600F5D3B8 /* MultiProfile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF784CA72514602600F5D3B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = camden314;
+				TargetAttributes = {
+					AF784CAE2514602600F5D3B8 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = AF784CAA2514602600F5D3B8 /* Build configuration list for PBXProject "MultiProfile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF784CA62514602600F5D3B8;
+			productRefGroup = AF784CB02514602600F5D3B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF784CAE2514602600F5D3B8 /* MultiProfile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF784CAD2514602600F5D3B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF784CE52518045100F5D3B8 /* ProfileView.xib in Resources */,
+				AF784CB92514602800F5D3B8 /* Assets.xcassets in Resources */,
+				AF784CBC2514602800F5D3B8 /* Main.storyboard in Resources */,
+				AF784CEA251809C100F5D3B8 /* ProfileViewController.xib in Resources */,
+				AF784CCE251464F700F5D3B8 /* PUSAB___.otf in Resources */,
+				AF784CEC251938F900F5D3B8 /* CCGameManager.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF784CAB2514602600F5D3B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF784CCD251464F700F5D3B8 /* ThonburiTextCell.m in Sources */,
+				AF784CE32518044300F5D3B8 /* ProfileView.m in Sources */,
+				AF784CE9251809C100F5D3B8 /* ProfileViewController.m in Sources */,
+				AF784CF8251B204200F5D3B8 /* DeletePopupController.m in Sources */,
+				AF784CB72514602600F5D3B8 /* ViewController.m in Sources */,
+				AF784CF5251951D200F5D3B8 /* PopupViewController.m in Sources */,
+				AF784CD12516B46100F5D3B8 /* NSString+MDHash.m in Sources */,
+				AF784CCC251464F700F5D3B8 /* StupidPusabTextCell.m in Sources */,
+				AF784CBF2514602800F5D3B8 /* main.m in Sources */,
+				AF784CB42514602600F5D3B8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF784CBA2514602800F5D3B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF784CBB2514602800F5D3B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF784CC12514602800F5D3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AF784CC22514602800F5D3B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AF784CC42514602800F5D3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MultiProfile/MultiProfile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MultiProfile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gd.camden314.MultiProfile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF784CC52514602800F5D3B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MultiProfile/MultiProfile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MultiProfile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gd.camden314.MultiProfile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF784CAA2514602600F5D3B8 /* Build configuration list for PBXProject "MultiProfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF784CC12514602800F5D3B8 /* Debug */,
+				AF784CC22514602800F5D3B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF784CC32514602800F5D3B8 /* Build configuration list for PBXNativeTarget "MultiProfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF784CC42514602800F5D3B8 /* Debug */,
+				AF784CC52514602800F5D3B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF784CA72514602600F5D3B8 /* Project object */;
+}

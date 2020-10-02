@@ -22,7 +22,7 @@ private:
 public:
 	ModContainer* container;
 	static EventLoop* shared;
-	std::vector<std::pair<queuefunc, std::string>> thequeue;
+	std::vector<std::pair<queuefunc, std::string> > thequeue;
 
 	static EventLoop* sharedState() {
 		if(!EventLoop::shared)
@@ -111,6 +111,10 @@ public:
 	void reloadAll(bool a, bool b, bool c);
 	void accountStatusChanged();
 	void load();
+
+	void setSecondColorIdx(int idx);
+	void setFirstColorIdx(int idx);
+	cocos2d::_ccColor3B const& colorForIdx(int idx);
 	std::string& manFile();
 	virtual ~GameManager();
 };
