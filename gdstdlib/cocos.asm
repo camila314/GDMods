@@ -352,3 +352,6 @@ defit __ZN11GameManager20accountStatusChangedEv, 0x1cdad0
 defit __ZN11GameManager4loadEv, 0x26ee20
 
 defit __ZN11GameManager11colorForIdxEi, 0x1cbc80
+
+defit __ZN12PlayerObject14setSecondColorERKN7cocos2d10_ccColor3BE, 0x219610
+defit __ZN12PlayerObject8setColorERKN7cocos2d10_ccColor3BE, 0x22cdf0

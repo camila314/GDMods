@@ -12,6 +12,10 @@ private:
 	static void runLoop(void* instance) {
 		auto event = EventLoop::sharedState();
 
+		if(event->usesEveryFrame) {
+			event->everyFrame(" ");
+		}
+
 		if(event->thequeue.size()) {
 			event->thequeue[0].first(event->thequeue[0].second);
 
@@ -20,6 +24,9 @@ private:
 		return FCAST(EventLoop::runLoop, event->container->getOriginal(getBase()+0x249690))(instance);
 	}
 public:
+	queuefunc everyFrame;
+	bool usesEveryFrame;
+
 	ModContainer* container;
 	static EventLoop* shared;
 	std::vector<std::pair<queuefunc, std::string> > thequeue;
@@ -36,6 +43,8 @@ public:
 		container->enable();
 	}
 	EventLoop() {
+		everyFrame = NULL;
+
 		container = new ModContainer("MainEventLoop", "global");
 		container->registerHook(getBase()+0x249690,(func_t)EventLoop::runLoop);
 	}
@@ -131,6 +140,8 @@ class PlayerObject : public GameObject {
 public:
 	static PlayerObject* create(int icn, int icon, cocos2d::CCLayer*);
 	void addAllParticles();
+	void setColor(cocos2d::_ccColor3B const&);
+	void setSecondColor(cocos2d::_ccColor3B const&);
 };
 
 class ObjectToolbox : public GDObj {

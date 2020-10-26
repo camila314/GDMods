@@ -19,7 +19,8 @@
     self.palettes = [[NSMutableDictionary alloc] init];
     
     //test
-    self.palettes[@"Test"] = @[@0.5, @0.8, @0.3];
+
+    [self loadPalettes];
 }
 
 
@@ -31,15 +32,40 @@
     return YES;
 }
 
-- (void)savePalette {
+- (void)savePalettes {
+    NSFileManager* fileManager = [NSFileManager defaultManager];
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self.palettes
                                             options:(NSJSONWritingOptions)(0)
                                             error:nil];
 
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
-    NSString *applicationSupportDirectory = [paths firstObject];
+    NSString *directory = [[paths firstObject] stringByAppendingPathComponent:@"RGD"];
     
+    [fileManager createDirectoryAtPath:directory withIntermediateDirectories:YES attributes:nil error:NULL];
     
+    NSString* jsFile = [directory stringByAppendingPathComponent:@"palettes.json"];
+    [jsonData writeToFile:jsFile atomically:YES];
 }
 
+- (void)loadPalettes {
+    NSFileManager* fileManager = [NSFileManager defaultManager];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
+    NSString *directory = [[paths firstObject] stringByAppendingPathComponent:@"RGD"];
+    
+    [fileManager createDirectoryAtPath:directory withIntermediateDirectories:YES attributes:nil error:NULL];
+    
+    NSString* jsFile = [directory stringByAppendingPathComponent:@"palettes.json"];
+    
+    if([fileManager fileExistsAtPath:jsFile]) {
+        NSData* jsonData = [NSData dataWithContentsOfFile:jsFile];
+        [self.palettes removeAllObjects];
+        NSDictionary* toCopy =  [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:kNilOptions
+                                                          error:nil];
+        [self.palettes addEntriesFromDictionary:toCopy];
+    } else {
+        [self savePalettes];
+    }
+    
+}
 @end

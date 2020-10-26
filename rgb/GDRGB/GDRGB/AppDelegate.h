@@ -11,6 +11,8 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property NSMutableDictionary* palettes;
+
+- (void)savePalettes;
 @end
 
 #define NSAppDelegate ((AppDelegate*)NSApp.delegate)

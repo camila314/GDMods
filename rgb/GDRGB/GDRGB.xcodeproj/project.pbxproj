@@ -12,6 +12,7 @@
 		AF3074E1252652D500B76C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3074E0252652D500B76C0B /* Assets.xcassets */; };
 		AF3074E4252652D500B76C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3074E2252652D500B76C0B /* Main.storyboard */; };
 		AF3074E7252652D500B76C0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3074E6252652D500B76C0B /* main.m */; };
+		AF3074F0252B8D9E00B76C0B /* NSString+NSString_strip.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3074EF252B8D9E00B76C0B /* NSString+NSString_strip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		AF3074E5252652D500B76C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF3074E6252652D500B76C0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF3074E8252652D500B76C0B /* GDRGB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GDRGB.entitlements; sourceTree = "<group>"; };
+		AF3074EE252B8D9E00B76C0B /* NSString+NSString_strip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+NSString_strip.h"; sourceTree = "<group>"; };
+		AF3074EF252B8D9E00B76C0B /* NSString+NSString_strip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSString_strip.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				AF3074E5252652D500B76C0B /* Info.plist */,
 				AF3074E6252652D500B76C0B /* main.m */,
 				AF3074E8252652D500B76C0B /* GDRGB.entitlements */,
+				AF3074EE252B8D9E00B76C0B /* NSString+NSString_strip.h */,
+				AF3074EF252B8D9E00B76C0B /* NSString+NSString_strip.m */,
 			);
 			path = GDRGB;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF3074F0252B8D9E00B76C0B /* NSString+NSString_strip.m in Sources */,
 				AF3074DF252652D000B76C0B /* ViewController.m in Sources */,
 				AF3074E7252652D500B76C0B /* main.m in Sources */,
 				AF3074DC252652D000B76C0B /* AppDelegate.m in Sources */,
@@ -209,7 +215,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -261,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;

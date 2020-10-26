@@ -29,15 +29,29 @@
 
 -(NSString*)stringByEncodingHex {
 
-    NSString * hexString = [NSString stringWithFormat:@"%@",
-                           [NSData dataWithBytes:[self cStringUsingEncoding:NSUTF8StringEncoding]
-                                          length:strlen([self cStringUsingEncoding:NSUTF8StringEncoding])]];
+    NSData* data = [NSData dataWithBytes:[self cStringUsingEncoding:NSUTF8StringEncoding]
+                                          length:strlen([self cStringUsingEncoding:NSUTF8StringEncoding])];
 
-    for(NSString * toRemove in [NSArray arrayWithObjects:@"<", @">", @" ", nil]) {
-        hexString = [hexString stringByReplacingOccurrencesOfString:toRemove withString:@""];
+    // we first need to get the length of our hexstring
+    // data.lenght returns the lenght in bytes, so we *2 to get as hexstring
+    NSUInteger capacity = data.length * 2;
+    // Create a new NSMutableString with the correct lenght
+    NSMutableString *mutableString = [NSMutableString stringWithCapacity:capacity];
+    // get the bytes of data to be able to loop through it
+    const unsigned char *buf = (const unsigned char*) [data bytes];
+
+    NSInteger t;
+    for (t=0; t<data.length; ++t) {
+      NSLog(@"GLYPH at t : %c", buf[t]);
+      NSLog(@"DECIMAL at t  : %lu", (NSUInteger)buf[t]);
+      // "%02X" will append a 0 if the value is less than 2 digits (i.e. 4 becomes 04)
+      [mutableString appendFormat:@"%02X", (unsigned int)buf[t]];
     }
+    NSLog(@"Hexstring: %@", mutableString);
+    // save as NSString
+    NSString * hexstring =mutableString;
 
-    return hexString;
+    return hexstring;
 }
 
 -(NSString*)stringByDecodingHex {
