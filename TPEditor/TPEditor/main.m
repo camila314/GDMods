@@ -11,7 +11,7 @@ int main(int argc, const char * argv[]) {
         
         setenv("PYTHONPATH", [[pythonPathArray componentsJoinedByString:@":"] UTF8String], 1);
         
-        NSArray *possibleMainExtensions = [NSArray arrayWithObjects: @"py", @"pyc", @"pyo", nil];
+        NSArray *possibleMainExtensions = [NSArray arrayWithObjects: @"py", @"pyc", @"pyo", @"zip", nil];
         NSString *mainFilePath = nil;
         
         for (NSString *possibleMainExtension in possibleMainExtensions) {

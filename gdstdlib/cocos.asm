@@ -355,3 +355,7 @@ defit __ZN11GameManager11colorForIdxEi, 0x1cbc80
 
 defit __ZN12PlayerObject14setSecondColorERKN7cocos2d10_ccColor3BE, 0x219610
 defit __ZN12PlayerObject8setColorERKN7cocos2d10_ccColor3BE, 0x22cdf0
+
+defit __ZN16EditorPauseLayer6createEP16LevelEditorLayer, 0x13c680
+defit __ZN16EditorPauseLayerD1Ev, 0x13c570
+defit __ZN16EditorPauseLayer9saveLevelEv, 0x13ebd0

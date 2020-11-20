@@ -8,6 +8,8 @@
 #
 
 from Foundation import *
+from AppKit import *
 
-class PusabFieldCell(NSObject):
-    pass
+class PusabFieldCell(NSTextFieldCell):
+    def focusRingType(self):
+        return NSFocusRingTypeNone

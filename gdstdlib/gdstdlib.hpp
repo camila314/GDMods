@@ -43,6 +43,7 @@ public:
 		container->enable();
 	}
 	EventLoop() {
+		usesEveryFrame = false;
 		everyFrame = NULL;
 
 		container = new ModContainer("MainEventLoop", "global");
@@ -183,6 +184,12 @@ public:
 	static cocos2d::CCScene* scene(GJSearchObject* search);
 };
 
+class EditorPauseLayer : public GDObj {
+public:
+	static EditorPauseLayer* create(LevelEditorLayer* editor);
+	void saveLevel();
+	virtual ~EditorPauseLayer();
+};
 /*class GDHttpRequest : public cocos2d::extension::CCHttpRequest, public GDObj { 
 public:
 	CLASS_PARAM(char const**, url, 0x28);

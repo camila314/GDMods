@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF404482254617F000158C7A /* PyObjCTools in Resources */ = {isa = PBXBuildFile; fileRef = AF40447B254617D100158C7A /* PyObjCTools */; };
+		AF404483254617F000158C7A /* PIL in Resources */ = {isa = PBXBuildFile; fileRef = AF40447C254617E600158C7A /* PIL */; };
+		AF404484254617F000158C7A /* objc in Resources */ = {isa = PBXBuildFile; fileRef = AF40447D254617EB00158C7A /* objc */; };
+		AF404485254617F000158C7A /* AppKit in Resources */ = {isa = PBXBuildFile; fileRef = AF40447E254617ED00158C7A /* AppKit */; };
+		AF404486254617F000158C7A /* CoreFoundation in Resources */ = {isa = PBXBuildFile; fileRef = AF40447F254617EE00158C7A /* CoreFoundation */; };
+		AF404487254617F000158C7A /* Foundation in Resources */ = {isa = PBXBuildFile; fileRef = AF404480254617EF00158C7A /* Foundation */; };
+		AF404488254617F000158C7A /* Cocoa in Resources */ = {isa = PBXBuildFile; fileRef = AF404481254617F000158C7A /* Cocoa */; };
+		AF71CBC825460AB40081DBC2 /* fuzzywuzzy in Resources */ = {isa = PBXBuildFile; fileRef = AF71CBC725460AB40081DBC2 /* fuzzywuzzy */; };
 		AFE059262537E515004680C0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE059252537E515004680C0 /* Cocoa.framework */; };
 		AFE0592F2537E515004680C0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AFE0592D2537E515004680C0 /* Credits.rtf */; };
 		AFE059322537E515004680C0 /* libpython2.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE059312537E515004680C0 /* libpython2.7.dylib */; };
@@ -15,9 +23,22 @@
 		AFE059392537E515004680C0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFE059372537E515004680C0 /* MainMenu.xib */; };
 		AFE0593B2537E519004680C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE0593A2537E519004680C0 /* Assets.xcassets */; };
 		AFE0593E2537E519004680C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE0593D2537E519004680C0 /* main.m */; };
+		AFE059452537E56B004680C0 /* ViewController.py in Resources */ = {isa = PBXBuildFile; fileRef = AFE059442537E56B004680C0 /* ViewController.py */; };
+		AFE1D17A2541FF6D00A6EA95 /* TextureItem.py in Resources */ = {isa = PBXBuildFile; fileRef = AFE1D1792541FF6D00A6EA95 /* TextureItem.py */; };
+		AFE1D17E2542033600A6EA95 /* TextureItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFE1D17D2542033600A6EA95 /* TextureItem.xib */; };
+		AFE1D1802543926600A6EA95 /* PusabFieldCell.py in Resources */ = {isa = PBXBuildFile; fileRef = AFE1D17F2543926600A6EA95 /* PusabFieldCell.py */; };
+		AFE1D1822543C28900A6EA95 /* InvisibleTextField.py in Resources */ = {isa = PBXBuildFile; fileRef = AFE1D1812543C28900A6EA95 /* InvisibleTextField.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF40447B254617D100158C7A /* PyObjCTools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PyObjCTools; sourceTree = "<group>"; };
+		AF40447C254617E600158C7A /* PIL */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PIL; sourceTree = "<group>"; };
+		AF40447D254617EB00158C7A /* objc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = objc; sourceTree = "<group>"; };
+		AF40447E254617ED00158C7A /* AppKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppKit; sourceTree = "<group>"; };
+		AF40447F254617EE00158C7A /* CoreFoundation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreFoundation; sourceTree = "<group>"; };
+		AF404480254617EF00158C7A /* Foundation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Foundation; sourceTree = "<group>"; };
+		AF404481254617F000158C7A /* Cocoa */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Cocoa; sourceTree = "<group>"; };
+		AF71CBC725460AB40081DBC2 /* fuzzywuzzy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fuzzywuzzy; sourceTree = "<group>"; };
 		AFE059222537E515004680C0 /* TPEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE059252537E515004680C0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AFE059282537E515004680C0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -31,6 +52,11 @@
 		AFE0593A2537E519004680C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFE0593C2537E519004680C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE0593D2537E519004680C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFE059442537E56B004680C0 /* ViewController.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ViewController.py; sourceTree = "<group>"; };
+		AFE1D1792541FF6D00A6EA95 /* TextureItem.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = TextureItem.py; sourceTree = "<group>"; };
+		AFE1D17D2542033600A6EA95 /* TextureItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextureItem.xib; sourceTree = "<group>"; };
+		AFE1D17F2543926600A6EA95 /* PusabFieldCell.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = PusabFieldCell.py; sourceTree = "<group>"; };
+		AFE1D1812543C28900A6EA95 /* InvisibleTextField.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = InvisibleTextField.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +111,16 @@
 		AFE0592B2537E515004680C0 /* TPEditor */ = {
 			isa = PBXGroup;
 			children = (
+				AF40447E254617ED00158C7A /* AppKit */,
+				AF404481254617F000158C7A /* Cocoa */,
+				AF40447F254617EE00158C7A /* CoreFoundation */,
+				AF404480254617EF00158C7A /* Foundation */,
+				AF40447D254617EB00158C7A /* objc */,
+				AF40447C254617E600158C7A /* PIL */,
+				AF40447B254617D100158C7A /* PyObjCTools */,
+				AF71CBC725460AB40081DBC2 /* fuzzywuzzy */,
 				AFE059332537E515004680C0 /* main.py */,
+				AFE059442537E56B004680C0 /* ViewController.py */,
 				AFE059352537E515004680C0 /* AppDelegate.py */,
 				AFE059372537E515004680C0 /* MainMenu.xib */,
 				AFE0593A2537E519004680C0 /* Assets.xcassets */,
@@ -93,6 +128,10 @@
 				AFE0593D2537E519004680C0 /* main.m */,
 				AFE059302537E515004680C0 /* SharedLibraries */,
 				AFE0592C2537E515004680C0 /* Supporting Files */,
+				AFE1D1792541FF6D00A6EA95 /* TextureItem.py */,
+				AFE1D17D2542033600A6EA95 /* TextureItem.xib */,
+				AFE1D17F2543926600A6EA95 /* PusabFieldCell.py */,
+				AFE1D1812543C28900A6EA95 /* InvisibleTextField.py */,
 			);
 			path = TPEditor;
 			sourceTree = "<group>";
@@ -170,11 +209,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF404485254617F000158C7A /* AppKit in Resources */,
+				AFE1D17E2542033600A6EA95 /* TextureItem.xib in Resources */,
+				AF71CBC825460AB40081DBC2 /* fuzzywuzzy in Resources */,
+				AFE1D1802543926600A6EA95 /* PusabFieldCell.py in Resources */,
 				AFE0592F2537E515004680C0 /* Credits.rtf in Resources */,
+				AF404484254617F000158C7A /* objc in Resources */,
 				AFE059362537E515004680C0 /* AppDelegate.py in Resources */,
+				AF404483254617F000158C7A /* PIL in Resources */,
 				AFE059342537E515004680C0 /* main.py in Resources */,
 				AFE059392537E515004680C0 /* MainMenu.xib in Resources */,
+				AF404482254617F000158C7A /* PyObjCTools in Resources */,
 				AFE0593B2537E519004680C0 /* Assets.xcassets in Resources */,
+				AF404488254617F000158C7A /* Cocoa in Resources */,
+				AFE059452537E56B004680C0 /* ViewController.py in Resources */,
+				AFE1D1822543C28900A6EA95 /* InvisibleTextField.py in Resources */,
+				AF404486254617F000158C7A /* CoreFoundation in Resources */,
+				AF404487254617F000158C7A /* Foundation in Resources */,
+				AFE1D17A2541FF6D00A6EA95 /* TextureItem.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +321,7 @@
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -329,7 +381,7 @@
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -340,14 +392,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TPEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gd.camden314.TPEditor;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.camden314.TPEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -356,14 +411,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TPEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gd.camden314.TPEditor;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.camden314.TPEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

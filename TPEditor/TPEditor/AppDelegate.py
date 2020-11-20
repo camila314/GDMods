@@ -7,6 +7,7 @@
 #  Copyright (c) 2020 camden314. All rights reserved.
 #
 
+from objc import IBAction, YES, NO
 from Foundation import *
 from AppKit import *
 

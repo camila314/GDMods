@@ -9,6 +9,8 @@ FLAlertLayer:
 CCLayer:
 	[rdi+0x408] = setKeypadEnabled(bool)
 
+; variables
+
 GameManager:
 	[rdi+0x180] = PlayLayer instance
 	[rdi+0x188] = LevelEditorLayer
@@ -21,6 +23,7 @@ GJBaseGameLayer: 0x170
 	[rdi+0x180] = GJEffectManager instance
 	[rdi+0x380] = PlayerObject 1
 	[rdi+0x388] = PlayerObject 2
+	[rdi+0x390] = LevelSettingsObject instance
 	[rdi+0x3a0] = CCArray of GameObject instances
 
 
@@ -41,17 +44,23 @@ PlayLayer (GJBaseGameLayer): 0x4d0
 
 PlayerObject (GameObject):
 	[rdi+0x5f8] = CCMotionStreak instance
+	[rdi+0x608] = player speed
 	[rdi+0x6b0] = CCAnimatedSprite instance
 	[rdi+0x6d0] = CCParticleSystem instance
+
 	[rdi+0x700] = also CCParticleSystem instance
 
 	[rdi+0x758] = robot can jump
+	[rdi+0x76f] = is cube
 	[rdi+0x770] = is ship
 	[rdi+0x771] = is ufo
 	[rdi+0x772] = is ball
 	[rdi+0x773] = is wave
 	[rdi+0x774] = is robot
 	[rdi+0x775] = is spider
+
+	[rdi+0x776] = is upside down
+	[rdi+0x777] = is dead
 
 	[rdi+0x778] = is on ground (only effects cube)
 	[rdi+0x77c] = vehicle size (1.0 for normal 0.6 for small)
@@ -66,6 +75,7 @@ CheckpointObject (CCNode):
 
 EditorUI:
 	[rdi+0x3e0] = some sort of boolean
+	[rdi+0x260] = array of objects
 
 GameStatsManager:
 	[rdi+0x218] = CCDictionary of unlocked items
@@ -73,3 +83,12 @@ GameStatsManager:
 LevelSettingsObject:
 	[rdi+0x149] = whether upside down
 	[rdi+0x131] = whether dual
+	[rdi+0x150] = GJGameLevel instance
+
+GJGameLevel:
+	[rdi+0x138] = std string of level name
+    [rdi+0xf8] = levelid
+    [rdi+0x144] = level author name
+
+LevelEditorLayer (GJGameBaseLayer):
+	
