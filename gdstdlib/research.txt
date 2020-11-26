@@ -8,12 +8,15 @@ FLAlertLayer:
 	[rdi+0x4e0] = show()
 CCLayer:
 	[rdi+0x408] = setKeypadEnabled(bool)
-
+CCScale9Sprite:
+	[rdi+0x130] = setContentSize(CCSize)
 ; variables
 
 GameManager:
 	[rdi+0x180] = PlayLayer instance
 	[rdi+0x188] = LevelEditorLayer
+	[rdi+0x1c0] = username
+	[rdi+0x1f4] = scene number
 GameObject:
 	[rdi+0x3c4] = Object ID
 	[rdi+0x458] = pointer to an array of Group IDS
@@ -88,7 +91,10 @@ LevelSettingsObject:
 GJGameLevel:
 	[rdi+0x138] = std string of level name
     [rdi+0xf8] = levelid
-    [rdi+0x144] = level author name
+    [rdi+0x150] = std string of level author name
+    [rdi+0x1b0] = difficulty
 
-LevelEditorLayer (GJGameBaseLayer):
+AccountManager:
+	[rdi+0x128] = password
+	[rdi+0x130] = username
 	

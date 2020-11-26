@@ -6,6 +6,21 @@
 
 typedef void(*queuefunc)(std::string);
 
+typedef struct GameModes {
+    bool cube;
+    bool ship;
+    bool ufo;
+    bool ball;
+    bool wave;
+    bool robot;
+    bool spider;
+} GameModes;
+
+typedef struct LevelDifficulty {
+	int32_t denominator;
+	int32_t numerator;	
+} LevelDifficulty;
+
 class EventLoop {
 private:
 
@@ -71,7 +86,18 @@ static __TYPE__* create() \
 }
 
 #define CLASS_PARAM(__TYPE__,__GETTER__, __OFFSET__) \
-	inline __TYPE__ __GETTER__() {return static_cast<__TYPE__>(this->valOffset(__OFFSET__));}
+	inline __TYPE__ _##__GETTER__() { \
+		if (this) {\
+			return *(__TYPE__*)((long)this+__OFFSET__); \
+		} else { \
+			return NULL; \
+		}; \
+	}
+
+#define STRUCT_PARAM(__TYPE__,__GETTER__, __OFFSET__) \
+	inline __TYPE__ _##__GETTER__() { \
+		return *(__TYPE__*)((long)this+__OFFSET__); \
+	}
 class GDObj { 
 public:
 	void* valOffset(long offset);
@@ -85,12 +111,19 @@ public:
 	void redoLastAction();
 };
 
-class LevelEditorLayer : public GDObj {
+class GJGameLevel : public GDObj {
 public:
-	void createObjectsFromString(std::string st, bool idk);
-	void removeAllObjects();
-	void undoLastAction();
-	void redoLastAction();
+	CLASS_PARAM(std::string, name, 0x138);
+	CLASS_PARAM(int, levelId, 0x130);
+	CLASS_PARAM(int, bestNormal, 0x214);
+	CLASS_PARAM(int, bestPractice, 0x238);
+	CLASS_PARAM(std::string, author, 0x150);
+	STRUCT_PARAM(LevelDifficulty, difficulty, 0x1b0);
+};
+
+class LevelSettingsObject : public GDObj {
+public:
+	CLASS_PARAM(GJGameLevel*, level, 0x150);
 };
 
 class AppDelegate : public GDObj {
@@ -99,42 +132,21 @@ public:
 	static AppDelegate* get();
 };
 
-class PlayLayer : public GDObj {
-public:
-	static PlayLayer* create();
-};
-
 class GameSoundManager : public GDObj {
 public:
 	static GameSoundManager* sharedManager();
 	void stopBackgroundMusic();
 	virtual ~GameSoundManager();
 };
-class GameManager : public GDObj {
-public:
-	static GameManager* sharedState();
-	bool getGameVariable(char const* var);
-	void setGameVariable(char const* var, bool val);
-	void fadeInMusic(char const* ye);
-	void reloadAllStep5();
-	void doQuickSave();
-	void reloadAll(bool a, bool b, bool c);
-	void accountStatusChanged();
-	void load();
 
-	void setSecondColorIdx(int idx);
-	void setFirstColorIdx(int idx);
-	cocos2d::_ccColor3B const& colorForIdx(int idx);
-	std::string& manFile();
-	virtual ~GameManager();
-};
-
-class GameObject : public GDObj {
+class GameObject : public cocos2d::CCNode, public GDObj{
 public:
 	GameObject();
 	void init(char const* frame);
 	void setPosition(cocos2d::CCPoint const& pt);
 	void destroyObject();
+
+	CLASS_PARAM(float, positionX, 0x38);
 };
 
 class PlayerObject : public GameObject { 
@@ -143,6 +155,32 @@ public:
 	void addAllParticles();
 	void setColor(cocos2d::_ccColor3B const&);
 	void setSecondColor(cocos2d::_ccColor3B const&);
+
+};
+
+class GJGameBaseLayer : public GDObj {
+public:
+	CLASS_PARAM(cocos2d::CCArray*, objects, 0x3a0);
+	CLASS_PARAM(PlayerObject*, player1, 0x380);
+	CLASS_PARAM(PlayerObject*, player2, 0x388);
+	CLASS_PARAM(LevelSettingsObject*, levelSettings, 0x390);
+};
+
+class LevelEditorLayer : public GJGameBaseLayer {
+public:
+	void createObjectsFromString(std::string st, bool idk);
+	void removeAllObjects();
+	void undoLastAction();
+	void redoLastAction();
+};
+
+class PlayLayer : public GJGameBaseLayer {
+public:
+	static PlayLayer* create();
+	CLASS_PARAM(float, length, 0x5f8);
+	CLASS_PARAM(int, attempt, 0x754);
+	CLASS_PARAM(bool, practiceMode, 0x739);
+	STRUCT_PARAM(GameModes, gameModes, 0x76f);
 };
 
 class ObjectToolbox : public GDObj {
@@ -190,7 +228,34 @@ public:
 	void saveLevel();
 	virtual ~EditorPauseLayer();
 };
-/*class GDHttpRequest : public cocos2d::extension::CCHttpRequest, public GDObj { 
+
+class GJAccountManager : public GDObj {
 public:
-	CLASS_PARAM(char const**, url, 0x28);
-};*/
+	static GJAccountManager* sharedState();
+
+	CLASS_PARAM(char const*, password, 0x128);
+	CLASS_PARAM(char const*, username, 0x130);
+};
+
+class GameManager : public GDObj {
+public:
+	static GameManager* sharedState();
+	bool getGameVariable(char const* var);
+	void setGameVariable(char const* var, bool val);
+	void fadeInMusic(char const* ye);
+	void reloadAllStep5();
+	void doQuickSave();
+	void reloadAll(bool a, bool b, bool c);
+	void accountStatusChanged();
+	void load();
+
+	void setSecondColorIdx(int idx);
+	void setFirstColorIdx(int idx);
+	cocos2d::_ccColor3B const& colorForIdx(int idx);
+	std::string& manFile();
+	virtual ~GameManager();
+
+	CLASS_PARAM(PlayLayer*, playLayer, 0x180);
+	CLASS_PARAM(LevelEditorLayer*, editorLayer, 0x188);
+	CLASS_PARAM(int, scene, 0x1f4);
+};
