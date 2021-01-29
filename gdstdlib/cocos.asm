@@ -83,6 +83,7 @@ defit __ZN10GameObject11setPositionERKN7cocos2d7CCPointE, 0x335850
 defit __ZN10GameObject13destroyObjectEv, 0x336a00
 defit __ZN10GameObject4initEPKc, 0x2f5520
 defit __ZN10GameObjectC1Ev, 0xdc4c0
+defit __ZN10GameObject10getGroupIDEi, 0x33ae10
 
 defit __ZN11AppDelegate3getEv, 0x3aab10
 
@@ -156,7 +157,11 @@ defit __ZN21MoreVideoOptionsLayer4initEv, 0x444150
 defit __ZN21MoreVideoOptionsLayer6createEv, 0x443c10
 
 defit __ZN7cocos2d10CCDirector10getWinSizeEv, 0x24a0f0
+defit __ZN7cocos2d10CCDirector12getScreenTopEv, 0x24b200
+defit __ZN7cocos2d10CCDirector13getScreenLeftEv, 0x24b220
+defit __ZN7cocos2d10CCDirector14getScreenRightEv, 0x24b230
 defit __ZN7cocos2d10CCDirector14sharedDirectorEv, 0x248cb0
+defit __ZN7cocos2d10CCDirector15getScreenBottomEv, 0x24b210
 defit __ZN7cocos2d10CCDirector18getTouchDispatcherEPv, 0x24afa0
 defit __ZN7cocos2d10CCDirector9pushSceneEPNS_7CCSceneE, 0x24a620
 
@@ -306,6 +311,8 @@ defit __ZN7cocos2d6CCRectC2Ev, 0x1375a0
 defit __ZN7cocos2d6CCSizeC1Eff, 0x137010
 
 defit __ZN7cocos2d7CCArray13objectAtIndexEj, 0x41a340
+defit __ZN7cocos2d7CCArray6createEv, 0x419cb0
+defit __ZN7cocos2d7CCArray9addObjectEPNS_8CCObjectE, 0x419f90
 
 defit __ZN7cocos2d7CCImage17initWithImageDataEPviNS0_12EImageFormatEiii, 0x24fcb0
 defit __ZN7cocos2d7CCImageC1Ev, 0x24fa00
@@ -343,7 +350,8 @@ defit __ZN7cocos2d7CCPointC1Eff, 0x137000
 defit __ZN7cocos2d7CCPointC1Ev, 0x137060
 defit __ZN7cocos2d7CCPointC2ERKS0_, 0x137090
 defit __ZN7cocos2d7CCPointmiERKS0_, 0x137120
-defit __ZN7cocos2d7CCPointplERKS0_, 0x1370f0
+defit __ZNK7cocos2d7CCPointplERKS0_, 0x1370f0
+
 
 defit __ZN7cocos2d8CCObject13acceptVisitorERNS_13CCDataVisitorE, 0x250f30
 defit __ZN7cocos2d8CCObject15encodeWithCoderEP13DS_Dictionary, 0x250f70
@@ -370,6 +378,8 @@ defit __ZN7cocos2d9extension14CCScale9Sprite6createEPKcNS_6CCRectE, 0x212ef0
 defit __ZN8EditorUI12pasteObjectsESs, 0x232d0
 defit __ZN8EditorUI14redoLastActionEv, 0xb8e0
 defit __ZN8EditorUI14undoLastActionEv, 0xb830
+defit __ZN8EditorUI18getSelectedObjectsEv, 0x23f30
+defit __ZN8EditorUI13selectObjectsEPN7cocos2d7CCArrayEb, 0x23940
 
 defit __ZN9InfoLayer17onRefreshCommentsEPN7cocos2d8CCObjectE, 0x459b60
 defit __ZN9InfoLayer8loadPageEib, 0x458fb0
