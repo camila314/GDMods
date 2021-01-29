@@ -83,7 +83,7 @@ static NSString* p_th;
             self.tabControl.selectedTabViewItemIndex = T_SUCCESS;
         }
     } else {
-        NSLog(@"the fuck m8: %@",fmod_dest);
+        NSLog(@"this should not happen: %@",fmod_dest);
         self.tabControl.selectedTabViewItemIndex = T_ERROR;
     }
 }

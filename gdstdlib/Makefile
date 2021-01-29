@@ -1,7 +1,6 @@
 main:
-	nasm -fmacho64 -i/users/jakrillis/asminclude cocos.asm
-	ar -rc libgdstdlib.a cocos.o
+	nasm -fmacho64 cocos.asm
+	ar -rc libCacao.a cocos.o
 	rm cocos.o
 release:
-	cp libgdstdlib.a /usr/local/lib/libgdstdlib.a
-	cp gdstdlib.hpp /usr/local/include/gdstdlib.hpp
+	cp libCacao.a /Users/jakrillis/projects/gdmods/gui/Cacao/static/libCacao.a

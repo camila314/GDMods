@@ -12,6 +12,9 @@ CCScale9Sprite:
 	[rdi+0x130] = setContentSize(CCSize)
 ; variables
 
+CCNode:
+	[rdi+0x24] = rotation
+	[rdi+0x28] = rotation but its visual
 GameManager:
 	[rdi+0x180] = PlayLayer instance
 	[rdi+0x188] = LevelEditorLayer
@@ -54,6 +57,7 @@ PlayerObject (GameObject):
 	[rdi+0x700] = also CCParticleSystem instance
 
 	[rdi+0x758] = robot can jump
+	[rdi+0x760] = y acceleration
 	[rdi+0x76f] = is cube
 	[rdi+0x770] = is ship
 	[rdi+0x771] = is ufo
