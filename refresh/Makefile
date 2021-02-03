@@ -8,7 +8,7 @@ LDFLAGS=-static-libstdc++
 INCL=Cacao/include Cacao/include/cocos2dx Cacao/include/cocos2dx/include Cacao/include/cocos2dx/kazmath/include Cacao/include/cocos2dx/platform/mac Cacao/include/cocos2dx/platform/third_party/mac Cacao/include/cocos2dx/platform/third_party/mac/OGLES Cacao/include/cocos2dext Cacao/include/cocos2dx/custom/Sprites/CCMenuItemSpriteExtra
 CXX_INCL=$(INCL:%=-I%)
 
-CXX_FLAGS=-std=c++11 -DCC_TARGET_OS_MAC -lGDML -lCacao -LCacao/static -dynamiclib -o dist/$(OUTPUT) -lSystem -lstdc++ -static -g
+CXX_FLAGS=-std=c++11 -DCC_TARGET_OS_MAC -lGDML -lCacao -LCacao/static -dynamiclib -o dist/$(OUTPUT) -lSystem -L/usr/lib/ -lstdc++ -static -g
 
 
 main: dist

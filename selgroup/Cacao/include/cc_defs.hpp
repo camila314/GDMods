@@ -41,6 +41,15 @@ typedef struct LevelDifficulty {
         return *(__TYPE__*)((long)this+__OFFSET__); \
     }
 
+
+// gd typeinfo cringe!
+extern "C" {
+    long _ZTIN7cocos2d6CCNodeE;
+    void setupTypeinfos(int a) {
+        _ZTIN7cocos2d6CCNodeE = getBase()+0x624f70;
+    }
+}
+
 class GDObj { 
 public:
     void* valOffset(long offset);
