@@ -42,14 +42,6 @@ typedef struct LevelDifficulty {
     }
 
 
-// gd typeinfo cringe!
-extern "C" {
-    long _ZTIN7cocos2d6CCNodeE;
-    void setupTypeinfos(int a) {
-        _ZTIN7cocos2d6CCNodeE = getBase()+0x624f70;
-    }
-}
-
 class GDObj { 
 public:
     void* valOffset(long offset);
@@ -136,6 +128,7 @@ public:
     cocos2d::CCArray* getSelectedObjects();
     void selectObjects(cocos2d::CCArray* objs, bool keep);
     CLASS_PARAM(LevelEditorLayer*, editorLayer, 0x408);
+    CLASS_PARAM(int, selectedMenuObject, 0x3e0);
 };
 
 class PlayLayer : public GJGameBaseLayer {

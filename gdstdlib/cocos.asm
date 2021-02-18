@@ -493,6 +493,11 @@ defit __ZThn392_N7cocos2d12CCLayerColor12getBlendFuncEv, 0x274490
 
 defit __ZN8TextArea6createESsPKcffN7cocos2d7CCPointEfb, 0x19eb40
 
+defit __ZN7cocos2d15CCRenderTexture6createEiiNS_22CCTexture2DPixelFormatE, 0x35c720
+defit __ZN7cocos2d15CCRenderTexture5beginEv, 0x35ce10
+defit __ZN7cocos2d15CCRenderTexture3endEv, 0x35d2c0
+defit __ZN7cocos2d15CCRenderTexture10newCCImageEb, 0x35d7d0
+
 defit _sexyRender, 0x274b50
 
 global __ZTIN7cocos2d6CCNodeE

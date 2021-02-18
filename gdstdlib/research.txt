@@ -51,15 +51,25 @@ PlayLayer (GJBaseGameLayer): 0x4d0
 	[rdi+0x760] = time
 
 PlayerObject (GameObject):
+	[rdi+0x5f8] = time since last hit slope (MAYBE)
 	[rdi+0x5f8] = CCMotionStreak instance
 	[rdi+0x608] = player speed
-	[rdi+0x6b0] = CCAnimatedSprite instance
+	[rdi+0x610] = jump power
+	[rdi+0x618] = gravity (0.958199)
+	[rdi+0x640] = time since last jump (MAYBE)
+	[rdi+0x674] = (MAYBE) deceleration rate
+	[rdi+0x6a8] = CCAnimatedSprite instance
+	[rdi+0x6b0] = another CCAnimatedSprite instance
 	[rdi+0x6d0] = CCParticleSystem instance
 
 	[rdi+0x700] = also CCParticleSystem instance
-
+	[rdi+0x745] = hold flag
+	[rdi+0x746] = has hold in queue flag
 	[rdi+0x758] = robot can jump
 	[rdi+0x760] = y acceleration
+	[rdi+0x768] = is on slope (MAYBE)
+	[rdi+0x769] = is on slope v2 (MAYBE)
+	[rdi+0x76c] = slope rotation (double)
 	[rdi+0x76f] = is cube
 	[rdi+0x770] = is ship
 	[rdi+0x771] = is ufo
@@ -71,13 +81,18 @@ PlayerObject (GameObject):
 	[rdi+0x776] = is upside down
 	[rdi+0x777] = is dead
 
-	[rdi+0x778] = is on ground (only effects cube)
+	[rdi+0x778] = is on ground
+	[rdi+0x779] = is dashing
 	[rdi+0x77c] = vehicle size (1.0 for normal 0.6 for small)
+	[rdi+0x7a0] = player is sliding
+	[rdi+0x7a1] = player is rising
 	[rdi+0x7b0] = CCArray of touched rings
 
 	[rdi+0x7c8] = CCPoint of player
 		[rdi+0x7c8] = x position
 		[rdi+0x7cc] = y position
+
+	[rdi+0x7d8] = time (frame/fps)
 
 CheckpointObject (CCNode):
 	[rdi+0x128] = PlayerCheckpoint instance

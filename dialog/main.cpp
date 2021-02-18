@@ -23,9 +23,6 @@ void onClick(CCObject*) {
 }
 
 void inject() {
-	char s[100];
-	//scanf("%s", &s);
-	setupTypeinfos();
 	m = new ModContainer("Template code");
 
 	m->registerHook(getBase()+0x1d2b40, onClick);

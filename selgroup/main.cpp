@@ -3,6 +3,7 @@
 #include <Cacao.hpp>
 #include <algorithm>
 #include <vector>
+#include <sstream>
 
 class MEditorUI;
 constexpr float btn_increment = 38;
@@ -12,6 +13,7 @@ using namespace cocos2d;
 ModContainer* m;
 
 void (*setupOrig)(MEditorUI*);
+CCLabelBMFont* font;
 class MEditorUI : EditorUI {
  public:
     static std::vector<int> getGroups(GameObject* ob) {
@@ -73,11 +75,24 @@ class MEditorUI : EditorUI {
 
         CCPoint offset = {.x=btn_increment*-3, .y=0};
         menu->setPosition(base + offset);
+
+        font = CCLabelBMFont::create("Object ID: 0", "chatFont.fnt");
+        font->setPosition(Cacao::relativePosition(25,70));
+        self->addChild(font);
+    }
+
+    static void btnClickHook(MEditorUI* self, CCObject* o) {
+        FCAST(btnClickHook, m->getOriginal(getBase()+0x1fd70))(self, o);
+        std::stringstream st;
+        st << "Object ID: " << self->_selectedMenuObject();
+        font->setString(st.str().c_str());
     }
 };
 
 void inject() {
     m = new ModContainer("Select All Groups");
     setupOrig = m->registerHook(getBase()+0xcb50, MEditorUI::setupHook);
+    m->registerHook(getBase()+0x1fd70, MEditorUI::btnClickHook);
+
     m->enable();
 }
