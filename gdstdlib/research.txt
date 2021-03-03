@@ -8,6 +8,12 @@ CCNode:
 FLAlertLayer:
 	[rdi+0x3c0] = registerWithTouchDispatcher(int)
 	[rdi+0x4e0] = show()
+GameObject:
+	[rdi+0x4e0] = triggerObject()
+	[rdi+0x4f8] = getObjectRect()
+	[rdi+0x580] = triggerActivated()
+	[rdi+0x5e8] = getType()
+	[rdi+0x5a8] = getOrientedBox()
 CCLayer:
 	[rdi+0x408] = setKeypadEnabled(bool)
 CCScale9Sprite:
@@ -23,6 +29,11 @@ GameManager:
 	[rdi+0x1c0] = username
 	[rdi+0x1f4] = scene number
 GameObject:
+	[rdi+0x35c] = hitbox
+	[rdi+0x36c] = unique identifier
+	[rdi+0x370] = object type
+	[rdi+0x378] = touch triggered
+	[rdi+0x379] = spawn triggered
 	[rdi+0x3c4] = Object ID
 	[rdi+0x458] = pointer to an array of Group IDS
 	[rdi+0x460] = How Many Group IDS
@@ -33,9 +44,12 @@ GJBaseGameLayer: 0x170
 	[rdi+0x388] = PlayerObject 2
 	[rdi+0x390] = LevelSettingsObject instance
 	[rdi+0x3a0] = CCArray of GameObject instances
+	[rdi+0x3a8] = CCArray of sections (?)
 
 
 PlayLayer (GJBaseGameLayer): 0x4d0
+	[rdi+0x4fc] = ground restriction height
+	[rdi+0x500] = ceiling restriction height
 	[rdi+0x538] = some sort of CCArray. Unknown
 	[rdi+0x598] = CCParticleSystem instance
 	[rdi+0x5b8] = AudioEffectsLayer instance
@@ -45,6 +59,7 @@ PlayLayer (GJBaseGameLayer): 0x4d0
 	[rdi+0x71c] = Level flip
 	[rdi+0x720] = UILayer instance
 	[rdi+0x728] = GJGameLevel instance
+	[rdi+0x734] = camera y (float)
 	[rdi+0x738] = testmode boolean
 	[rdi+0x739] = practice mode boolean
 	[rdi+0x754] = attempt number
@@ -56,13 +71,18 @@ PlayerObject (GameObject):
 	[rdi+0x608] = player speed
 	[rdi+0x610] = jump power
 	[rdi+0x618] = gravity (0.958199)
+	[rdi+0x62b] = no clue but could be "has jumped"
+	[rdi+0x62c] = is in play layer
+	[rdi+0x62f] = sliding particles go on the bottom
+	[rdi+0x630] = is about to set checkpoint
 	[rdi+0x640] = time since last jump (MAYBE)
-	[rdi+0x674] = (MAYBE) deceleration rate
+	[rdi+0x674] = deceleration rate
 	[rdi+0x6a8] = CCAnimatedSprite instance
 	[rdi+0x6b0] = another CCAnimatedSprite instance
 	[rdi+0x6d0] = CCParticleSystem instance
 
 	[rdi+0x700] = also CCParticleSystem instance
+	[rdi+0x732] = has hit portal
 	[rdi+0x745] = hold flag
 	[rdi+0x746] = has hold in queue flag
 	[rdi+0x758] = robot can jump
@@ -83,22 +103,29 @@ PlayerObject (GameObject):
 
 	[rdi+0x778] = is on ground
 	[rdi+0x779] = is dashing
+	[rdi+0x780] = multiplier player speed
 	[rdi+0x77c] = vehicle size (1.0 for normal 0.6 for small)
 	[rdi+0x7a0] = player is sliding
 	[rdi+0x7a1] = player is rising
 	[rdi+0x7b0] = CCArray of touched rings
+
+	[rdi+0x7b8] = portal circle object
 
 	[rdi+0x7c8] = CCPoint of player
 		[rdi+0x7c8] = x position
 		[rdi+0x7cc] = y position
 
 	[rdi+0x7d8] = time (frame/fps)
+	[rdi+0x7e8] = ground height (MAYBE)
 
 CheckpointObject (CCNode):
 	[rdi+0x128] = PlayerCheckpoint instance
 
+EditButtonBar:
+	[rdi+0x130] = array of CCMenuItemSpriteExtra instances, object buttons
 EditorUI:
 	[rdi+0x3e0] = some sort of boolean
+	[rdi+0x358] = array of EditButtonBar objects
 	[rdi+0x260] = array of objects
 
 GameStatsManager:

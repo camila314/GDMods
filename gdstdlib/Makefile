@@ -3,4 +3,4 @@ main:
 	ar -rc libCacao.a cocos.o
 	rm cocos.o
 release:
-	cp libCacao.a /Users/jakrillis/projects/gdmods/img/Cacao/static/libCacao.a
+	cp libCacao.a /Users/jakrillis/projects/gdmods/customtrigger/Cacao/static/libCacao.a

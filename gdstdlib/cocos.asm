@@ -95,6 +95,10 @@ defit __ZN10GameObject11setPositionERKN7cocos2d7CCPointE, 0x335850
 defit __ZN10GameObject13destroyObjectEv, 0x336a00
 defit __ZN10GameObject4initEPKc, 0x2f5520
 defit __ZN10GameObjectC1Ev, 0xdc4c0
+defit __ZN10GameObject12selectObjectEN7cocos2d10_ccColor3BE, 0x341f90
+defit __ZN10GameObject15playShineEffectEv, 0x2fa9d0
+
+defit __ZN15LabelGameObject6createEPKc, 0xc9790
 
 defit __ZN11AppDelegate3getEv, 0x3aab10
 
@@ -137,6 +141,7 @@ defit __ZN12PlayerObject14setSecondColorERKN7cocos2d10_ccColor3BE, 0x219610
 defit __ZN12PlayerObject15addAllParticlesEv, 0x2189b0
 defit __ZN12PlayerObject6createEiiPN7cocos2d7CCLayerE, 0x217260
 defit __ZN12PlayerObject8setColorERKN7cocos2d10_ccColor3BE, 0x22cdf0
+defit __ZN12PlayerObject11flipGravityEbb, 0x21c090
 
 defit __ZN13ObjectToolbox11sharedStateEv, 0x3b2bc0
 
@@ -442,6 +447,9 @@ defit __ZN8EditorUI13selectObjectsEPN7cocos2d7CCArrayEb, 0x23940
 defit __ZN8EditorUI14redoLastActionEv, 0xb8e0
 defit __ZN8EditorUI14undoLastActionEv, 0xb830
 defit __ZN8EditorUI18getSelectedObjectsEv, 0x23f30
+defit __ZN8EditorUI12getCreateBtnEii, 0x1f6c0
+
+defit __ZN13EditButtonBar13loadFromItemsEPN7cocos2d7CCArrayEiib, 0x351010
 
 defit __ZN9InfoLayer17onRefreshCommentsEPN7cocos2d8CCObjectE, 0x459b60
 defit __ZN9InfoLayer8loadPageEib, 0x458fb0
