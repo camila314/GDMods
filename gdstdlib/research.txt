@@ -29,15 +29,50 @@ GameManager:
 	[rdi+0x1c0] = username
 	[rdi+0x1f4] = scene number
 GameObject:
+	[rdi+0x279] = in editor mode
+	[rdi+0x2b8] = uses oriented box (MAYBE)
 	[rdi+0x35c] = hitbox
 	[rdi+0x36c] = unique identifier
 	[rdi+0x370] = object type
 	[rdi+0x378] = touch triggered
 	[rdi+0x379] = spawn triggered
+	[rdi+0x391] = object is unloaded (MAYBE)
+	[rdi+0x3bc] = unknown for now
+	[rdi+0x3bc] = color id
 	[rdi+0x3c4] = Object ID
 	[rdi+0x458] = pointer to an array of Group IDS
 	[rdi+0x460] = How Many Group IDS
 
+EffectGameObject:
+	[rdi+0x4ed] = color
+	[rdi+0x4f0] = duration
+	[rdi+0x4f4] = opacity
+	[rdi+0x4f8] = targeted group id
+	[rdi+0x4fc] = second group id
+	[rdi+0x508] = tint ground
+	[rdi+0x50b] = blending enabled
+	[rdi+0x514] = easing type
+	[rdi+0x518] = easing amount
+	[rdi+0x524] = rotate trigger degrees
+	[rdi+0x52c] = lock object rotation
+	[rdi+0x528] = rotate trigger times 360
+	[rdi+0x53c] = follow player y speed
+	[rdi+0x540] = follow player y delay
+	[rdi+0x544] = follow player y offset
+	[rdi+0x548] = follow player y max speed
+	[rdi+0x560] = hsv data (3 floats)
+	[rdi+0x570] = copy channel id
+	[rdi+0x574] = copy opacity
+	[rdi+0x578] = flag for toggle on
+	[rdi+0x598] = target count
+	[rdi+0x5a0] = compare type
+	[rdi+0x5a5] = collision trigger on exit
+	[rdi+0x5a8] = block b id
+	[rdi+0x5b0] = item id
+	[rdi+0x5b4] = collectible mode (1 = pickup, 2 = toggle)
+TeleportPortalObject:
+	[rdi+0x4f8] = teleport portal destination object
+	[rdi+0x504] = teleport portal Y
 GJBaseGameLayer: 0x170
 	[rdi+0x180] = GJEffectManager instance
 	[rdi+0x380] = PlayerObject 1
@@ -45,17 +80,26 @@ GJBaseGameLayer: 0x170
 	[rdi+0x390] = LevelSettingsObject instance
 	[rdi+0x3a0] = CCArray of GameObject instances
 	[rdi+0x3a8] = CCArray of sections (?)
+	[rdi+0x489] = dual mode
+	[rdi+0x48c] = enter/exit effect type
 
 
 PlayLayer (GJBaseGameLayer): 0x4d0
+	[rdi+0x4dd] = camera should be smooth
+	[rdi+0x4e0] = camera smoothness (MAYBE)
 	[rdi+0x4fc] = ground restriction height
 	[rdi+0x500] = ceiling restriction height
 	[rdi+0x538] = some sort of CCArray. Unknown
+	[rdi+0x550] = array of queued surfaces
+	[rdi+0x568] = array of queued hazards
 	[rdi+0x598] = CCParticleSystem instance
 	[rdi+0x5b8] = AudioEffectsLayer instance
 	[rdi+0x5c8] = GJGroundLayer instance
 	[rdi+0x5d0] = another GJGroundLayer instance
 	[rdi+0x660] = CCNode instance
+	[rdi+0x700] = collisions disabled
+	[rdi+0x708] = latest vehicle object
+	[rdi+0x710] = dual mode object
 	[rdi+0x71c] = Level flip
 	[rdi+0x720] = UILayer instance
 	[rdi+0x728] = GJGameLevel instance
@@ -104,6 +148,7 @@ PlayerObject (GameObject):
 	[rdi+0x778] = is on ground
 	[rdi+0x779] = is dashing
 	[rdi+0x780] = multiplier player speed
+	[rdi+0x78c] = portal circle location
 	[rdi+0x77c] = vehicle size (1.0 for normal 0.6 for small)
 	[rdi+0x7a0] = player is sliding
 	[rdi+0x7a1] = player is rising
@@ -111,11 +156,13 @@ PlayerObject (GameObject):
 
 	[rdi+0x7b8] = portal circle object
 
+	[rdi+0x7c2] = player glow color
 	[rdi+0x7c8] = CCPoint of player
 		[rdi+0x7c8] = x position
 		[rdi+0x7cc] = y position
 
 	[rdi+0x7d8] = time (frame/fps)
+	[rdi+0x7e0] = has respawned
 	[rdi+0x7e8] = ground height (MAYBE)
 
 CheckpointObject (CCNode):
