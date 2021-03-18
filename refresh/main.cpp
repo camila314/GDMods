@@ -36,7 +36,7 @@ class HInfoLayer : InfoLayer {
 
         initOrig(self, lvl, score);
 
-        auto tog = Cacao::createToggler(self, menu_selector(HInfoLayer::onTog));
+        /*auto tog = Cacao::createToggler(self, menu_selector(HInfoLayer::onTog));
 
         tog->setScale(0.8);
 
@@ -47,7 +47,18 @@ class HInfoLayer : InfoLayer {
 
         tog->setPosition(nspace);
 
-        self->_rightMenu()->addChild(tog);
+        self->_rightMenu()->addChild(tog);*/
+
+        auto wSize = CCDirector::sharedDirector()->getWinSize();
+        float hwidth = wSize.width/2;
+        float hheight = wSize.height/2;
+        typedef void (CCObject::*menusel)(CCObject*);
+        auto mainLayer = self->_rightMenu();
+
+    auto idARS_b1_PIU_l = CCLabelBMFont::create("swag lord", "chatFont.fnt");
+    //idARS_b1_PIU_l->setScale(14.0);
+    CCPoint idARS_b1_PIU_pos(-150.5 + hwidth, 96.0 + hheight);
+    idARS_b1_PIU_l->setPosition(mainLayer->convertToNodeSpace(idARS_b1_PIU_pos));
     }
 };
 

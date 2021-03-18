@@ -118,6 +118,7 @@ defit __ZN11GameManagerD1Ev, 0x1d0fe0
 defit __ZN11GameToolbox18createToggleButtonESsMN7cocos2d8CCObjectEFvPS1_EbPNS0_6CCMenuENS0_7CCPointEPNS0_6CCNodeES9_fffS7_PKcbiPNS0_7CCArrayE, 0x28bdd0
 
 defit __ZN12ButtonSprite6createEPKciifb, 0x4fa40
+defit __ZN12ButtonSprite6createEPKc, 0x4fa10
 
 defit __ZN12CCSpritePart25createWithSpriteFrameNameEPKc, 0x132dc0
 
@@ -126,7 +127,7 @@ defit __ZN12FLAlertLayer12ccTouchEndedEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x2735
 defit __ZN12FLAlertLayer12ccTouchMovedEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x273550
 defit __ZN12FLAlertLayer14keyBackClickedEv, 0x273160
 defit __ZN12FLAlertLayer16ccTouchCancelledEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x273650
-defit __ZN12FLAlertLayer27registerWithTouchDispatcherEi, 0x272b40
+defit __ZN12FLAlertLayer27registerWithTouchDispatcherEv, 0x272b40
 defit __ZN12FLAlertLayer4showEv, 0x25f120
 defit __ZN12FLAlertLayer6createEPvPKcRKSsS2_S2_f, 0x25e0e0
 defit __ZN12FLAlertLayer7keyDownEN7cocos2d12enumKeyCodesE, 0x273280
@@ -142,8 +143,10 @@ defit __ZN12PlayerObject15addAllParticlesEv, 0x2189b0
 defit __ZN12PlayerObject6createEiiPN7cocos2d7CCLayerE, 0x217260
 defit __ZN12PlayerObject8setColorERKN7cocos2d10_ccColor3BE, 0x22cdf0
 defit __ZN12PlayerObject11flipGravityEbb, 0x21c090
+defit __ZN12PlayerObject10pushButtonEi, 0x22aa00
 
 defit __ZN13ObjectToolbox11sharedStateEv, 0x3b2bc0
+defit __ZN13ObjectToolbox13intKeyToFrameEi, 0x4173b0
 
 defit __ZN14GJSearchObject6createEiSsSsSsibbbibbbbbbbbii, 0x2dee30
 
@@ -152,10 +155,16 @@ defit __ZN16EditorPauseLayer9saveLevelEv, 0x13ebd0
 defit __ZN16EditorPauseLayerD1Ev, 0x13c570
 
 defit __ZN16GameLevelManager11sharedStateEv, 0x2a8340
+defit __ZN16GameLevelManager14createNewLevelEv, 0x2b8180
+
+defit __ZN15SetupSpawnPopup18createToggleButtonESsMN7cocos2d8CCObjectEFvPS1_EbPNS0_6CCMenuENS0_7CCPointEPNS0_7CCArrayE, 0x13b0e0
+
 defit __ZN16GameSoundManager13sharedManagerEv, 0x3610f0
 defit __ZN16GameSoundManager19stopBackgroundMusicEv, 0x362130
 defit __ZN16GameSoundManagerD0Ev, 0x362cd0
 defit __ZN16GameSoundManagerD1Ev, 0x362cc0
+
+defit __ZN15GJBaseGameLayer10spawnGroupEi, 0xb7050
 
 defit __ZN16GJAccountManager11sharedStateEv, 0x85070
 
@@ -185,6 +194,8 @@ defit __ZN7cocos2d10CCDirector15getScreenBottomEv, 0x24b210
 defit __ZN7cocos2d10CCDirector18getTouchDispatcherEPv, 0x24afa0
 defit __ZN7cocos2d10CCDirector9pushSceneEPNS_7CCSceneE, 0x24a620
 
+defit __ZN7cocos2d7CCScene6createEv, 0x13c140
+
 defit __ZN7cocos2d11CCLayerRGBA10getOpacityEv, 0x273be0
 defit __ZN7cocos2d11CCLayerRGBA17getDisplayedColorEv, 0x273d80
 defit __ZN7cocos2d11CCLayerRGBA18isOpacityModifyRGBEv, 0x006190
@@ -210,6 +221,7 @@ defit __ZN15CCTextInputNode6createEffPKcS1_iS1_, 0x5cfb0
 defit __ZN15CCTextInputNode15setAllowedCharsESs, 0x5d360
 defit __ZN15CCTextInputNode16setMaxLabelScaleEf, 0x5da30
 defit __ZN15CCTextInputNode16setMaxLabelWidthEf, 0x5da50
+
 defit __ZN15CCTextInputNode9getStringEv, 0x5d6f0
 
 ; my own modification
@@ -227,6 +239,7 @@ defit __ZN7cocos2d12CCDictionary11valueForKeyEl, 0x190cf0
 defit __ZN7cocos2d12CCDictionary12objectForKeyERKSs, 0x190870
 defit __ZN7cocos2d12CCDictionary9setObjectEPNS_8CCObjectEl, 0x0191790
 defit __ZN7cocos2d12CCDictionary9setObjectEPNS_8CCObjectERKSs, 0x190dc0
+defit __ZN7cocos2d12CCDictionary7allKeysEv, 0x190450
 
 defit __ZN7cocos2d12CCLayerColor11updateColorEv, 0x274ae0
 defit __ZN7cocos2d12CCLayerColor12getBlendFuncEv, 0x274480
@@ -372,6 +385,7 @@ defit __ZN7cocos2d6CCSizeC1Eff, 0x137010
 defit __ZN7cocos2d7CCArray13objectAtIndexEj, 0x41a340
 defit __ZN7cocos2d7CCArray6createEv, 0x419cb0
 defit __ZN7cocos2d7CCArray9addObjectEPNS_8CCObjectE, 0x419f90
+defit __ZN7cocos2d7CCArray19removeObjectAtIndexEjb, 0x41a4b0
 
 defit __ZN7cocos2d7CCImage17initWithImageDataEPviNS0_12EImageFormatEiii, 0x24fcb0
 defit __ZN7cocos2d7CCImageC1Ev, 0x24fa00
@@ -404,7 +418,6 @@ defit __ZN7cocos2d7CCLayer23setAccelerometerEnabledEb, 0x272e30
 defit __ZN7cocos2d7CCLayer24setAccelerometerIntervalEd, 0x272e70
 defit __ZN7cocos2d7CCLayer26onEnterTransitionDidFinishEv, 0x273490
 defit __ZN7cocos2d7CCLayer26registerScriptTouchHandlerEibib, 0x272bd0
-defit __ZN7cocos2d7CCLayer27registerWithTouchDispatcherEv, 0x272b40
 defit __ZN7cocos2d7CCLayer28unregisterScriptTouchHandlerEv, 0x272c30
 defit __ZN7cocos2d7CCLayer6createEv, 0x272a00
 defit __ZN7cocos2d7CCLayer6onExitEv, 0x2733c0
@@ -435,12 +448,13 @@ defit __ZN7cocos2d8CCSpriteC1Ev, 0x124ac0
 defit __ZN7cocos2d8CCString11doubleValueEv, 0x44c7f0
 defit __ZN7cocos2d8CCString16createWithFormatEPKcz, 0x44cab0
 defit __ZN7cocos2d8CCString8intValueEv, 0x44c780
-defit __ZN7cocos2d8CCString9boolValueEPv, 0x44c810
+defit __ZN7cocos2d8CCString9boolValueEv, 0x44c810
 
 defit __ZN7cocos2d9CCCopying12copyWithZoneEPNS_6CCZoneE, 0x250c90
 
 defit __ZN7cocos2d9extension14CCScale9Sprite14setContentSizeERKNS_6CCSizeE, 0x2127c0
 defit __ZN7cocos2d9extension14CCScale9Sprite6createEPKcNS_6CCRectE, 0x212ef0
+defit __ZN7cocos2d9extension14CCScale9Sprite6createEPKc, 0x2130d0
 
 defit __ZN8EditorUI12pasteObjectsESs, 0x232d0
 defit __ZN8EditorUI13selectObjectsEPN7cocos2d7CCArrayEb, 0x23940
@@ -465,6 +479,13 @@ defit __ZNK7cocos2d7CCPointplERKS0_, 0x1370f0
 defit __ZNK7cocos2d7CCPointmiERKS0_, 0x137120
 defit __ZNK7cocos2d8CCObject6getTagEv, 0x250f50
 defit __ZNK7cocos2d8CCString10getCStringEv, 0x44c470
+
+defit __ZN9PlayLayer6createEP11GJGameLevel, 0x6b590 
+defit __ZN9PlayLayer13switchToSceneEP11GJGameLevel, 0xe5d50
+defit __ZN9PlayLayer6updateEf, 0x77900
+defit __ZN9PlayLayer10resetLevelEv, 0x71c50
+
+defit __ZN11GJGameLevel6createEv, 0x2b83e0
 
 defit __ZThn288_N12FLAlertLayer12ccTouchBeganEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x273510
 defit __ZThn288_N12FLAlertLayer12ccTouchMovedEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x273590
@@ -514,14 +535,13 @@ global __Z14setupTypeinfosv
 __Z14setupTypeinfosv:
 	push rbp
 	mov rbp, rsp
-	call __Z7getBasev
-	add rax, 0x624f70
-	mov [rel __ZTIN7cocos2d6CCNodeE], rax
-	typeinfo __ZTI12FLAlertLayer, 0x65d870, 40
+	;call __Z7getBasev
+	;add rax, 0x624f70
+	;mov [rel __ZTIN7cocos2d6CCNodeE], rax
+	;typeinfo __ZTI12FLAlertLayer, 0x65d870, 40
 	pop rbp
 	ret
 
 section .bss
-global __ZTIN7cocos2d6CCNodeE
 __ZTIN7cocos2d6CCNodeE: resq 1
 __ZTI12FLAlertLayer: resq 5

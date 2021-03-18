@@ -1,10 +1,16 @@
+;Sizes
+CCLayerColor = 0x1f0
+
 ;Virtuals
 CCDirector:
 	[rdi+0xa0] = getTouchDispatcher()
 CCNode:
+	[rdi+0x130] = setContentSize(const CCSize&)
 	[rdi+0x1c0] = addChild(cocos2d::CCNode*, int)
 	[rdi+0xb8] = setPosition(cocos2d::CCPoint)
+	[rdi+0xc0] = getPosition()
 	[rdi+0xa0] = setScale(float)
+
 FLAlertLayer:
 	[rdi+0x3c0] = registerWithTouchDispatcher(int)
 	[rdi+0x4e0] = show()
@@ -16,8 +22,13 @@ GameObject:
 	[rdi+0x5a8] = getOrientedBox()
 CCLayer:
 	[rdi+0x408] = setKeypadEnabled(bool)
+	[rdi+0x3c0] = setTouchEnabled(bool)
+CCLayerColor:
+	[rdi+0x458] = setOpacity(unsigned char)
 CCScale9Sprite:
 	[rdi+0x130] = setContentSize(CCSize)
+	[rdi+0x368] = setOpacity
+	[rdi+0x398] = setColor
 ; variables
 
 CCNode:
@@ -28,7 +39,14 @@ GameManager:
 	[rdi+0x188] = LevelEditorLayer
 	[rdi+0x1c0] = username
 	[rdi+0x1f4] = scene number
-GameObject:
+
+FLAlertLayer: 0x250
+
+	[rdi+0x220] = main layer
+
+CCMenuItemSpriteExtra:
+	[rdi+0x178] = button is selectable
+GameObject(ButtonSprite): 0x4f0
 	[rdi+0x279] = in editor mode
 	[rdi+0x2b8] = uses oriented box (MAYBE)
 	[rdi+0x35c] = hitbox
@@ -43,12 +61,24 @@ GameObject:
 	[rdi+0x458] = pointer to an array of Group IDS
 	[rdi+0x460] = How Many Group IDS
 
+GJEffectManager:
+	[rdi+0x120] = game base layer
+	[rdi+0x1c18] = list of spawn actions
+
+SpawnTriggerAction:
+	[rdi+0x120] = timer ended
+	[rdi+0x124] = spawn delay
+	[rdi+0x128] = spawn timer
+	[rdi+0x12c] = group id
+	[rdi+0x130] = uuid
 EffectGameObject:
 	[rdi+0x4ed] = color
 	[rdi+0x4f0] = duration
 	[rdi+0x4f4] = opacity
 	[rdi+0x4f8] = targeted group id
 	[rdi+0x4fc] = second group id
+	[rdi+0x500] = shake strength
+	[rdi+0x504] = shake interval
 	[rdi+0x508] = tint ground
 	[rdi+0x50b] = blending enabled
 	[rdi+0x514] = easing type
@@ -56,16 +86,32 @@ EffectGameObject:
 	[rdi+0x524] = rotate trigger degrees
 	[rdi+0x52c] = lock object rotation
 	[rdi+0x528] = rotate trigger times 360
+	[rdi+0x530] = follow x mod
+	[rdi+0x534] = follow y mod
 	[rdi+0x53c] = follow player y speed
 	[rdi+0x540] = follow player y delay
 	[rdi+0x544] = follow player y offset
+	[rdi+0x54c] = pulse fade in
 	[rdi+0x548] = follow player y max speed
+	[rdi+0x550] = pulse hold
+	[rdi+0x554] = pulse fade out
+	[rdi+0x558] = pulse mode (int, color or hsv)
+	[rdi+0x55c] = pulse target (int, channel or group)
 	[rdi+0x560] = hsv data (3 floats)
-	[rdi+0x570] = copy channel id
+	[rdi+0x570] = channel id
 	[rdi+0x574] = copy opacity
+	[rdi+0x575] = pulse main only
+	[rdi+0x576] = pulse detail only
+	[rdi+0x577] = pulse exclusive
 	[rdi+0x578] = flag for toggle on
+	[rdi+0x57c] = touch trigger toggle on
+	[rdi+0x579] = touch trigger hold mode
+	[rdi+0x580] = touch trigger dual mode
+	[rdi+0x584] = animation id
+	[rdi+0x588] = spawn delay (float)
 	[rdi+0x598] = target count
 	[rdi+0x5a0] = compare type
+	[rdi+0x5a4] = count multi activate
 	[rdi+0x5a5] = collision trigger on exit
 	[rdi+0x5a8] = block b id
 	[rdi+0x5b0] = item id
@@ -74,14 +120,25 @@ TeleportPortalObject:
 	[rdi+0x4f8] = teleport portal destination object
 	[rdi+0x504] = teleport portal Y
 GJBaseGameLayer: 0x170
+	[rdi+0x170] = vtable stuff
+	[rdi+0x178] = OBB2D instance
 	[rdi+0x180] = GJEffectManager instance
+	[rdi+0x188] = CCLayer that objects are drawn to
+	[rdi+0x190 to rdi+0x378] = batch nodes, see research_batchnodes.cpp
+
 	[rdi+0x380] = PlayerObject 1
 	[rdi+0x388] = PlayerObject 2
 	[rdi+0x390] = LevelSettingsObject instance
+	[rdi+0x398] = CCDictionary for deprecated function (unused)
 	[rdi+0x3a0] = CCArray of GameObject instances
-	[rdi+0x3a8] = CCArray of sections (?)
+	[rdi+0x3a8] = CCArray of sections
+	[rdi+0x3b0] = CCArray of something
+
 	[rdi+0x489] = dual mode
 	[rdi+0x48c] = enter/exit effect type
+
+	[rdi+0x4b0] = CCCircleWaveDelegate vtable
+	[rdi+0x4b8] = CurrencyRewardDelegate vtable
 
 
 PlayLayer (GJBaseGameLayer): 0x4d0
@@ -121,6 +178,7 @@ PlayerObject (GameObject):
 	[rdi+0x630] = is about to set checkpoint
 	[rdi+0x640] = time since last jump (MAYBE)
 	[rdi+0x674] = deceleration rate
+	[rdi+0x688] = has just hit ring
 	[rdi+0x6a8] = CCAnimatedSprite instance
 	[rdi+0x6b0] = another CCAnimatedSprite instance
 	[rdi+0x6d0] = CCParticleSystem instance
@@ -129,6 +187,9 @@ PlayerObject (GameObject):
 	[rdi+0x732] = has hit portal
 	[rdi+0x745] = hold flag
 	[rdi+0x746] = has hold in queue flag
+	[rdi+0x747] = also hold flag??
+	[rdi+0x748] = has hold in queue as well???
+	[rdi+0x749] = i give up, "can hit custom ring"
 	[rdi+0x758] = robot can jump
 	[rdi+0x760] = y acceleration
 	[rdi+0x768] = is on slope (MAYBE)
@@ -152,7 +213,7 @@ PlayerObject (GameObject):
 	[rdi+0x77c] = vehicle size (1.0 for normal 0.6 for small)
 	[rdi+0x7a0] = player is sliding
 	[rdi+0x7a1] = player is rising
-	[rdi+0x7b0] = CCArray of touched rings
+	[rdi+0x7b0] = CCArray of untouched rings
 
 	[rdi+0x7b8] = portal circle object
 
@@ -171,9 +232,10 @@ CheckpointObject (CCNode):
 EditButtonBar:
 	[rdi+0x130] = array of CCMenuItemSpriteExtra instances, object buttons
 EditorUI:
+	[rdi+0x260] = array of objects
+	[rdi+0x2f8] = edit object menu item sprite
 	[rdi+0x3e0] = some sort of boolean
 	[rdi+0x358] = array of EditButtonBar objects
-	[rdi+0x260] = array of objects
 
 GameStatsManager:
 	[rdi+0x218] = CCDictionary of unlocked items
@@ -186,6 +248,7 @@ LevelSettingsObject:
 GJGameLevel:
 	[rdi+0x138] = std string of level name
     [rdi+0xf8] = levelid
+    [rdi+0x148] = level string std::string
     [rdi+0x150] = std string of level author name
     [rdi+0x1b0] = difficulty
 
@@ -197,4 +260,3 @@ ShareCommentLayer (FLAlertLayer):
 	[rdi+0x26c] = unknown
 	[rdi+0x268] = char limit
 	[rdi+0x270] = comment type
-	[rdi+0x220] = main layer
