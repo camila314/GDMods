@@ -9,9 +9,11 @@ ModContainer* m;
 //#include "pog.h"
 
 bool hSpawnInit(SetupSpawnPopup* self, EffectGameObject* ob, CCArray* arr) {
-        self->initWithColor(ccc4(0,0,0,150));
-        CCLayer*& mainLayer = self->_mainLayer();
-        mainLayer = CCLayer::create();
+        self->initWithColor(ccc4(255,255,255,150));
+        //CCLayer*& mainLayer = self->_mainLayer();
+        //mainLayer = CCLayer::create();
+        self->m_color = ccc3(255,255,255);
+        self->_mainLayer() = CCLayer::create();
     //ORIG(hSpawnInit, 0x139950)(self, ob, arr);
 
     /*if (self->initWithColor(ccc4(0,0,0,150))) {

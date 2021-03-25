@@ -56,7 +56,6 @@ GameObject(ButtonSprite): 0x4f0
 	[rdi+0x379] = spawn triggered
 	[rdi+0x391] = object is unloaded (MAYBE)
 	[rdi+0x3bc] = unknown for now
-	[rdi+0x3bc] = color id
 	[rdi+0x3c4] = Object ID
 	[rdi+0x458] = pointer to an array of Group IDS
 	[rdi+0x460] = How Many Group IDS

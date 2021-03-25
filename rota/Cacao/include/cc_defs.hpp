@@ -5,6 +5,7 @@
 #define _GLIBCXX_USE_CXX11_ABI 0
 #include <iostream>
 #include <string>
+#include <map>
 #include <GDML/GDML.hpp>
 #include <CCMenuItemSpriteExtra.h>
 #include <cocos2dx/cocos2d.h>
@@ -98,7 +99,9 @@ public:
     CLASS_PARAM(int, type, 0x370);
     CLASS_PARAM(int, id, 0x3c4);
     CLASS_PARAM(bool, touchTriggered, 0x378);
+    CLASS_PARAM(bool, spawnTriggered, 0x379);
     CLASS_PARAM(int, uuid, 0x36c);
+    CLASS_PARAM(int, colorID, 0x3bc);
 };
 
 class SpawnTriggerAction : public cocos2d::CCNode { // omg
@@ -113,12 +116,18 @@ class SpawnTriggerAction : public cocos2d::CCNode { // omg
 class EffectGameObject : public GameObject {
 public:
     CLASS_PARAM(bool, touchHoldMode, 0x579);
+    CLASS_PARAM(float, spawnDelay, 0x588);
 
 };
 
 class LabelGameObject : public GameObject {
  public:
   static LabelGameObject* create(char const* frame);
+};
+
+class GameToolbox : public cocos2d::CCNode {
+ public:
+    static std::map<std::string, std::string> stringSetupToMap(std::string st, char const* seperator);
 };
 
 class PlayerObject : public GameObject { 
@@ -227,7 +236,7 @@ public:
     int show(void);
     CLASS_PARAM(cocos2d::CCLayer*, mainLayer, 0x220);
     CLASS_PARAM(cocos2d::CCMenu*, mainMenu, 0x1f8);
- protected:
+
     cocos2d::CCMenu* m_buttonMenu; // 0x1f8
     int m_controlConnected; // 0x200
     void* m_alertProtocol; // 0x208
@@ -273,6 +282,12 @@ public:
 class LevelBrowserLayer : public GDObj {
 public:
     static cocos2d::CCScene* scene(GJSearchObject* search);
+};
+
+class GJRotationControl : public cocos2d::CCLayer, public GDObj {
+public:
+    CLASS_PARAM(float, rotation, 0x18c);
+    
 };
 
 class EditorPauseLayer : public GDObj {
@@ -329,6 +344,7 @@ public:
 class CCMenuItemToggler : public cocos2d::CCNodeRGBA, public GDObj {
 public:
     static CCMenuItemToggler* create(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*));
+    void toggle(bool t);
     void setSizeMult(float);
 };
 
@@ -340,6 +356,7 @@ public:
     void setMaxLabelWidth(float max);
     std::string getString();
     char const* getString_s(); // modification, spooky
+    void setString(std::string update);
 };
 
 class GJEffectManager : public cocos2d::CCNode, public GDObj {

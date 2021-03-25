@@ -176,6 +176,9 @@ defit __ZN16LevelEditorLayer23createObjectsFromStringESsb, 0x94730
 
 defit __ZN17CCMenuItemToggler11setSizeMultEf, 0x38a40
 defit __ZN17CCMenuItemToggler6createEPN7cocos2d6CCNodeES2_PNS0_8CCObjectEMS3_FvS4_E, 0x38400
+defit __ZN17CCMenuItemToggler6toggleEb, 0x38950
+
+defit __ZN11GameToolbox16stringSetupToMapESsPKc, 0x28d4c0
 
 defit __ZN17LevelBrowserLayer5sceneEP14GJSearchObject, 0x2511d0
 
@@ -221,7 +224,7 @@ defit __ZN15CCTextInputNode6createEffPKcS1_iS1_, 0x5cfb0
 defit __ZN15CCTextInputNode15setAllowedCharsESs, 0x5d360
 defit __ZN15CCTextInputNode16setMaxLabelScaleEf, 0x5da30
 defit __ZN15CCTextInputNode16setMaxLabelWidthEf, 0x5da50
-
+defit __ZN15CCTextInputNode9setStringESs, 0x5d3e0
 defit __ZN15CCTextInputNode9getStringEv, 0x5d6f0
 
 ; my own modification
