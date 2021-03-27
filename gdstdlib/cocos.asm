@@ -465,6 +465,7 @@ defit __ZN8EditorUI14redoLastActionEv, 0xb8e0
 defit __ZN8EditorUI14undoLastActionEv, 0xb830
 defit __ZN8EditorUI18getSelectedObjectsEv, 0x23f30
 defit __ZN8EditorUI12getCreateBtnEii, 0x1f6c0
+defit __ZN8EditorUI13updateButtonsEv, 0x1a300
 
 defit __ZN13EditButtonBar13loadFromItemsEPN7cocos2d7CCArrayEiib, 0x351010
 

@@ -152,6 +152,7 @@ PlayLayer (GJBaseGameLayer): 0x4d0
 	[rdi+0x5b8] = AudioEffectsLayer instance
 	[rdi+0x5c8] = GJGroundLayer instance
 	[rdi+0x5d0] = another GJGroundLayer instance
+	[rdi+0x5f8] = level length (float)
 	[rdi+0x660] = CCNode instance
 	[rdi+0x700] = collisions disabled
 	[rdi+0x708] = latest vehicle object
