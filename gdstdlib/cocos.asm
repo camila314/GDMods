@@ -115,6 +115,8 @@ defit __ZN11GameManager9reloadAllEbbb, 0x1d08a0
 defit __ZN11GameManagerD0Ev, 0x1d0ff0
 defit __ZN11GameManagerD1Ev, 0x1d0fe0
 
+defit __ZN7cocos2d8CCObject7releaseEv, 0x250ea0
+
 defit __ZN11GameToolbox18createToggleButtonESsMN7cocos2d8CCObjectEFvPS1_EbPNS0_6CCMenuENS0_7CCPointEPNS0_6CCNodeES9_fffS7_PKcbiPNS0_7CCArrayE, 0x28bdd0
 
 defit __ZN12ButtonSprite6createEPKciifb, 0x4fa40
@@ -171,8 +173,9 @@ defit __ZN16GJAccountManager11sharedStateEv, 0x85070
 defit __ZN16LevelEditorLayer14redoLastActionEv, 0x97750
 defit __ZN16LevelEditorLayer14undoLastActionEv, 0x97770
 defit __ZN16LevelEditorLayer16removeAllObjectsEv, 0x93d80
-
+defit __ZN16LevelEditorLayer12handleActionEbPN7cocos2d7CCArrayE, 0x97020
 defit __ZN16LevelEditorLayer23createObjectsFromStringESsb, 0x94730
+defit __ZN16LevelEditorLayer12createObjectEiN7cocos2d7CCPointEb, 0x957c0
 
 defit __ZN17CCMenuItemToggler11setSizeMultEf, 0x38a40
 defit __ZN17CCMenuItemToggler6createEPN7cocos2d6CCNodeES2_PNS0_8CCObjectEMS3_FvS4_E, 0x38400
@@ -268,6 +271,7 @@ defit __ZN7cocos2d17CCTouchDispatcher18incrementForcePrioEi, 0x280f60
 
 defit __ZN7cocos2d6CCMenu6createEv, 0x438720
 
+defit __ZN7cocos2d6CCNode6createEv, 0x1230a0
 defit __ZN7cocos2d6CCNode10_setZOrderEi, 0x122990
 defit __ZN7cocos2d6CCNode10getVertexZEv, 0x1229e0
 defit __ZN7cocos2d6CCNode10setVertexZEf, 0x1229f0
@@ -466,6 +470,8 @@ defit __ZN8EditorUI14undoLastActionEv, 0xb830
 defit __ZN8EditorUI18getSelectedObjectsEv, 0x23f30
 defit __ZN8EditorUI12getCreateBtnEii, 0x1f6c0
 defit __ZN8EditorUI13updateButtonsEv, 0x1a300
+defit __ZN8EditorUI11deselectAllEv, 0x1f300
+defit __ZN8EditorUI11onDuplicateEPN7cocos2d8CCObjectE, 0x18ba0
 
 defit __ZN13EditButtonBar13loadFromItemsEPN7cocos2d7CCArrayEiib, 0x351010
 
@@ -530,6 +536,36 @@ defit __ZN7cocos2d15CCRenderTexture6createEiiNS_22CCTexture2DPixelFormatE, 0x35c
 defit __ZN7cocos2d15CCRenderTexture5beginEv, 0x35ce10
 defit __ZN7cocos2d15CCRenderTexture3endEv, 0x35d2c0
 defit __ZN7cocos2d15CCRenderTexture10newCCImageEb, 0x35d7d0
+
+defit __ZN15EndPortalObject12updateColorsEN7cocos2d10_ccColor3BE, 0x1dacb0
+defit __Z10xCompSpeedPKvS0_, 0x6b030
+defit __Z12xCompRealPosPKvS0_, 0x6b050
+defit __ZN10GameObject16objectFromStringESsb, 0x33b720
+defit __ZN11GameManager8loadFontEi, 0x1cc550
+defit __ZN9PlayLayer9addObjectEP10GameObject, 0x70e50
+defit __ZN10GameObject18calculateSpawnXPosEv, 0x336970
+defit __ZN19LevelSettingsObject16objectFromStringESs, 0x945a0
+defit __ZN10GameObject11setStartPosEN7cocos2d7CCPointE, 0x2fa520
+defit __ZN15EndPortalObject6createEv, 0x1da8f0
+defit __ZN10GameObject12setupCoinArtEv, 0x337dd0
+defit __ZN15GJBaseGameLayer12addToSectionEP10GameObject, 0xb7b70
+defit __ZN15GJEffectManager12updateColorsEN7cocos2d10_ccColor3BES1_, 0x180a40
+defit __ZN7cocos2d14CCTextureCache18sharedTextureCacheEv, 0x356e00
+defit __ZN7cocos2d14CCTextureCache8addImageEPKcb, 0x358120
+defit __ZN7cocos2d8CCTintTo6createEfhhh, 0x1f82a0
+defit __ZN7cocos2d8CCSprite6createEPKc, 0x132a80
+defit __ZN14CreateMenuItem6createEPN7cocos2d6CCNodeES2_PNS0_8CCObjectEMS3_FvS4_E, 0x1c580
+defit __ZN8EditorUI13disableButtonEP14CreateMenuItem, 0x1c0f0
+defit __ZN8EditorUI12enableButtonEP14CreateMenuItem, 0x1bff0
+defit __ZN16LevelEditorLayer12removeObjectEP10GameObjectb, 0x96890
+defit __ZN16LevelEditorLayer19addObjectFromStringESs, 0x94640
+defit __ZN16LevelEditorLayer18getNextFreeGroupIDEPN7cocos2d7CCArrayE, 0x9a1b0
+defit __ZN7cocos2d8CCSprite21createWithSpriteFrameEPNS_13CCSpriteFrameE, 0x132cb0
+defit __ZN7cocos2d10CCDrawNode11drawSegmentERKNS_7CCPointES3_fRKNS_10_ccColor4FE, 0x3792d0
+defit __ZN7cocos2d10CCDrawNode5clearEv, 0x379e80
+defit __ZN7cocos2d10CCDrawNode6createEv, 0x378d00
+defit __ZNK7cocos2d7CCArray14containsObjectEPNS_8CCObjectE, 0x41a3e0
+defit __ZN7cocos2d7CCArray12removeObjectEPNS_8CCObjectEb, 0x41a490
 
 defit _sexyRender, 0x274b50
 

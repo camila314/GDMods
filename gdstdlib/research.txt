@@ -3,35 +3,43 @@ CCLayerColor = 0x1f0
 
 ;Virtuals
 CCDirector:
-	[rdi+0xa0] = getTouchDispatcher()
+	[rax+0xa0] = getTouchDispatcher()
 CCNode:
-	[rdi+0x130] = setContentSize(const CCSize&)
-	[rdi+0x1c0] = addChild(cocos2d::CCNode*, int)
-	[rdi+0xb8] = setPosition(cocos2d::CCPoint)
-	[rdi+0xc0] = getPosition()
-	[rdi+0xa0] = setScale(float)
+	[rax+0x130] = setContentSize(const CCSize&)
+	[rax+0x1c0] = addChild(cocos2d::CCNode*, int)
+	[rax+0xb8] = setPosition(cocos2d::CCPoint)
+	[rax+0xc0] = getPosition()
+	[rax+0xa0] = setScale(float)
+	[rax+0x148] = setVisible(bool)
+	[rax+0x158] = setRotation(float)
+GJBaseGameLayer:
+	[rax+0x480] = addToSection(GameObject*)
 
 FLAlertLayer:
-	[rdi+0x3c0] = registerWithTouchDispatcher(int)
-	[rdi+0x4e0] = show()
+	[rax+0x3c0] = registerWithTouchDispatcher(int)
+	[rax+0x4e0] = show()
 GameObject:
-	[rdi+0x4e0] = triggerObject()
-	[rdi+0x4f8] = getObjectRect()
-	[rdi+0x580] = triggerActivated()
-	[rdi+0x5e8] = getType()
-	[rdi+0x5a8] = getOrientedBox()
+	[rax+0x4c0] = customSetup()
+	[rax+0x4e0] = triggerObject()
+	[rax+0x4f8] = getObjectRect()
+	[rax+0x520] = setStartPos(CCPoint)
+	[rax+0x528] = getStartPos()
+	[rax+0x580] = triggerActivated()
+	[rax+0x5e8] = getType()
+	[rax+0x5a8] = getOrientedBox()
+	[rax+0x560] = setRScale(float)
 CCLayer:
-	[rdi+0x408] = setKeypadEnabled(bool)
-	[rdi+0x3c0] = setTouchEnabled(bool)
+	[rax+0x408] = setKeypadEnabled(bool)
+	[rax+0x3c0] = setTouchEnabled(bool)
 CCLayerColor:
-	[rdi+0x458] = setOpacity(unsigned char)
+	[rax+0x458] = setOpacity(unsigned char)
 CCScale9Sprite:
-	[rdi+0x130] = setContentSize(CCSize)
-	[rdi+0x368] = setOpacity
-	[rdi+0x398] = setColor
+	[rax+0x130] = setContentSize(CCSize)
+	[rax+0x368] = setOpacity
+	[rax+0x398] = setColor
 ; variables
 
-CCNode:
+CCNode: ? - 0x120
 	[rdi+0x24] = rotation
 	[rdi+0x28] = rotation but its visual
 GameManager:
@@ -46,19 +54,58 @@ FLAlertLayer: 0x250
 
 CCMenuItemSpriteExtra:
 	[rdi+0x178] = button is selectable
-GameObject(ButtonSprite): 0x4f0
+CCSpritePlus: 0x238 - 0x250
+	[rdi+0x238] = followers list
+	[rdi+0x240] = following sprite
+	[rdi+0x248] = 
+	[rdi+0x249] = 
+	[rdi+0x24a] = 
+	;64-bit pad to 0x250
+
+DialogObject(CCObject): 
+	[rdi+0x28] = text std::string
+
+GameObject(CCSpritePlus): 0x250 - 0x4f0
+	[rdi+0x250] = float (UNKNOWN) animation related
+	[rdi+0x254] = float (UNKNOWN) animation related
+	[rdi+0x258] = float (UNKNOWN) animation related
+	[rdi+0x25c] = float (UNKNOWN) animation related
+	[rdi+0x268] = is animated circle
+	[rdi+0x269] = randomize start of animation
+	[rdi+0x26c] = animation speed
 	[rdi+0x279] = in editor mode
 	[rdi+0x2b8] = uses oriented box (MAYBE)
+	[rdi+0x338] = linked group
+	[rdi+0x340] = custom rotation speed
+	[rdi+0x344] = disable rotation
 	[rdi+0x35c] = hitbox
 	[rdi+0x36c] = unique identifier
 	[rdi+0x370] = object type
 	[rdi+0x378] = touch triggered
 	[rdi+0x379] = spawn triggered
 	[rdi+0x391] = object is unloaded (MAYBE)
-	[rdi+0x3bc] = unknown for now
+	[rdi+0x394] = rotation
+	[rdi+0x3a0] = flipped horizontal
+	[rdi+0x3a1] = flipped vertical
+	[rdi+0x3b8] = disable glow
+	[rdi+0x3bc] = color id
+	[rdi+0x3c0] = object size
 	[rdi+0x3c4] = Object ID
+	[rdi+0x3cf] = dont enter
+	[rdi+0x3d0] = dont fade
+	[rdi+0x3d4] = UNKNOWN
+	[rdi+0x3e8] = secret coin id
+	[rdi+0x410] = GJSpriteColor instance
+	[rdi+0x428] = Z layer
+	[rdi+0x42c] = Z order
+	[rdi+0x438] = portal checked
+	[rdi+0x450] = is group parent
 	[rdi+0x458] = pointer to an array of Group IDS
 	[rdi+0x460] = How Many Group IDS
+	[rdi+0x484] = editor layer 1
+	[rdi+0x488] = editor layer 2
+	[rdi+0x4c0] = High Detail
+	[rdi+0x4ec] = multi activate
 
 GJEffectManager:
 	[rdi+0x120] = game base layer
@@ -145,6 +192,7 @@ PlayLayer (GJBaseGameLayer): 0x4d0
 	[rdi+0x4e0] = camera smoothness (MAYBE)
 	[rdi+0x4fc] = ground restriction height
 	[rdi+0x500] = ceiling restriction height
+	[rdi+0x530] = end portal object
 	[rdi+0x538] = some sort of CCArray. Unknown
 	[rdi+0x550] = array of queued surfaces
 	[rdi+0x568] = array of queued hazards
@@ -153,6 +201,7 @@ PlayLayer (GJBaseGameLayer): 0x4d0
 	[rdi+0x5c8] = GJGroundLayer instance
 	[rdi+0x5d0] = another GJGroundLayer instance
 	[rdi+0x5f8] = level length (float)
+	[rdi+0x5fc] = true level length
 	[rdi+0x660] = CCNode instance
 	[rdi+0x700] = collisions disabled
 	[rdi+0x708] = latest vehicle object
@@ -166,9 +215,11 @@ PlayLayer (GJBaseGameLayer): 0x4d0
 	[rdi+0x754] = attempt number
 	[rdi+0x760] = time
 
-PlayerObject (GameObject):
-	[rdi+0x5f8] = time since last hit slope (MAYBE)
+PlayerObject (GameObject): 0x4f0 - 0xb30
+
+	[rdi+0x5a8 to rdi+0x5f0] = 9 CCSprites
 	[rdi+0x5f8] = CCMotionStreak instance
+	[rdi+0x600] = HardStreak instance
 	[rdi+0x608] = player speed
 	[rdi+0x610] = jump power
 	[rdi+0x618] = gravity (0.958199)
@@ -179,11 +230,9 @@ PlayerObject (GameObject):
 	[rdi+0x640] = time since last jump (MAYBE)
 	[rdi+0x674] = deceleration rate
 	[rdi+0x688] = has just hit ring
-	[rdi+0x6a8] = CCAnimatedSprite instance
-	[rdi+0x6b0] = another CCAnimatedSprite instance
-	[rdi+0x6d0] = CCParticleSystem instance
-
-	[rdi+0x700] = also CCParticleSystem instance
+	[rdi+0x6a8] = GJRobotSprite
+	[rdi+0x6b0] = GJSpiderSprite
+	[rdi+0x6c0 to rdi+0x708] = 9 CCParticleSystemQuad instances
 	[rdi+0x732] = has hit portal
 	[rdi+0x745] = hold flag
 	[rdi+0x746] = has hold in queue flag
@@ -217,7 +266,9 @@ PlayerObject (GameObject):
 
 	[rdi+0x7b8] = portal circle object
 
-	[rdi+0x7c2] = player glow color
+	[rdi+0x7c2] = player color 1
+	[rdi+0x7c5] = player color 2
+
 	[rdi+0x7c8] = CCPoint of player
 		[rdi+0x7c8] = x position
 		[rdi+0x7cc] = y position
@@ -241,6 +292,8 @@ GameStatsManager:
 	[rdi+0x218] = CCDictionary of unlocked items
 
 LevelSettingsObject:
+	[rdi+0x120] = GJEffectManager instance
+	[rdi+0x144] = font type
 	[rdi+0x149] = whether upside down
 	[rdi+0x131] = whether dual
 	[rdi+0x150] = GJGameLevel instance
@@ -251,6 +304,8 @@ GJGameLevel:
     [rdi+0x148] = level string std::string
     [rdi+0x150] = std string of level author name
     [rdi+0x1b0] = difficulty
+    [rdi+0x1c5] = low detail mode
+    [rdi+0x324] = official level
 
 AccountManager:
 	[rdi+0x128] = password
