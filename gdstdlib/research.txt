@@ -109,6 +109,7 @@ GameObject(CCSpritePlus): 0x250 - 0x4f0
 
 GJEffectManager:
 	[rdi+0x120] = game base layer
+	[rdi+0x178] = CCArray of collision triggers
 	[rdi+0x1c18] = list of spawn actions
 
 SpawnTriggerAction:
@@ -186,7 +187,18 @@ GJBaseGameLayer: 0x170
 	[rdi+0x4b0] = CCCircleWaveDelegate vtable
 	[rdi+0x4b8] = CurrencyRewardDelegate vtable
 
-
+CCTextInputNode (CCLayer): 0x170 - 0x1e8
+	[rdi+0x170] = vtable
+	[rdi+0x178] = also vtable
+	[rdi+0x188] = placeholder text std::string
+	[rdi+0x194] = enabled
+	[rdi+0x198] = allowed chars std::string
+	[rdi+0x1a0] = max label width (float)
+	[rdi+0x1a4] = max label scale (float)
+	[rdi+0x1a8] = label placeholder scale (float)
+	[rdi+0x1ac] = label placeholder color 3b
+	[rdi+0x1c0] = CCTextFieldTTF instance
+	[rdi+0x1c8] = text input delegate
 PlayLayer (GJBaseGameLayer): 0x4d0
 	[rdi+0x4dd] = camera should be smooth
 	[rdi+0x4e0] = camera smoothness (MAYBE)

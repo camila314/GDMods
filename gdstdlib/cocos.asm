@@ -124,12 +124,11 @@ defit __ZN12ButtonSprite6createEPKc, 0x4fa10
 
 defit __ZN12CCSpritePart25createWithSpriteFrameNameEPKc, 0x132dc0
 
-defit __ZN12FLAlertLayer12ccTouchBeganEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x2734d0
-defit __ZN12FLAlertLayer12ccTouchEndedEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x2735d0
-defit __ZN12FLAlertLayer12ccTouchMovedEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x273550
+defit __ZN7cocos2d7CCLayer12ccTouchBeganEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x2734d0
+defit __ZN7cocos2d7CCLayer12ccTouchEndedEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x2735d0
+defit __ZN7cocos2d7CCLayer12ccTouchMovedEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x273550
 defit __ZN12FLAlertLayer14keyBackClickedEv, 0x273160
-defit __ZN12FLAlertLayer16ccTouchCancelledEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x273650
-defit __ZN12FLAlertLayer27registerWithTouchDispatcherEv, 0x272b40
+defit __ZNN7cocos2d7CCLayer16ccTouchCancelledEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x273650
 defit __ZN12FLAlertLayer4showEv, 0x25f120
 defit __ZN12FLAlertLayer6createEPvPKcRKSsS2_S2_f, 0x25e0e0
 defit __ZN12FLAlertLayer7keyDownEN7cocos2d12enumKeyCodesE, 0x273280
@@ -243,6 +242,7 @@ __ZN15CCTextInputNode11getString_sEv:
 
 defit __ZN7cocos2d12CCDictionary11valueForKeyEl, 0x190cf0
 defit __ZN7cocos2d12CCDictionary12objectForKeyERKSs, 0x190870
+defit __ZN7cocos2d12CCDictionary12objectForKeyEi, 0x190bb0
 defit __ZN7cocos2d12CCDictionary9setObjectEPNS_8CCObjectEl, 0x0191790
 defit __ZN7cocos2d12CCDictionary9setObjectEPNS_8CCObjectERKSs, 0x190dc0
 defit __ZN7cocos2d12CCDictionary7allKeysEv, 0x190450
@@ -375,7 +375,7 @@ defit __ZN7cocos2d6CCNodeC1Ev, 0x122550
 defit __ZN7cocos2d6CCNodeC2Ev, 0x122550
 defit __ZN7cocos2d6CCNodeD0Ev, 0x1228e0
 defit __ZN7cocos2d6CCNodeD1Ev, 0x1228d0
-defit __ZN7cocos2d6CCNodeD2Ev, 0x1228d0 ; gcc cringe
+defit __ZN7cocos2d6CCNodeD2Ev, 0x1228d0 ; clang cringe
 
 defit __ZN7cocos2d6CCRect14intersectsRectERKS0_, 0x137800
 defit __ZN7cocos2d6CCRect7getMaxXEv, 0x137710
@@ -566,11 +566,47 @@ defit __ZN7cocos2d10CCDrawNode5clearEv, 0x379e80
 defit __ZN7cocos2d10CCDrawNode6createEv, 0x378d00
 defit __ZNK7cocos2d7CCArray14containsObjectEPNS_8CCObjectE, 0x41a3e0
 defit __ZN7cocos2d7CCArray12removeObjectEPNS_8CCObjectEb, 0x41a490
+defit __ZN14GJSearchObject6createE10SearchType, 0x2df120
+defit __ZN7cocos2d10CCDirector12replaceSceneEPNS_7CCSceneE, 0x24a6d0
+defit __ZN7cocos2d6CCMenu33alignItemsHorizontallyWithPaddingEf, 0x4393e0
+defit __ZN7cocos2d13CCLabelBMFont15limitLabelWidthEfff, 0x34a6e0
+defit __ZN6Slider6createEPN7cocos2d6CCNodeEMNS0_8CCObjectEFvPS3_EPKcS8_S8_S8_f, 0x18dd80
+defit __ZN6Slider6createEPN7cocos2d6CCNodeEMNS0_8CCObjectEFvPS3_Ef, 0x18dc40
+defit __ZN6Slider16setBarVisibilityEb, 0x18e280
+defit __ZN6Slider8getValueEv, 0x18e0c0
+defit __ZN7cocos2d7CCLayerC1Ev, 0x2725b0
+defit __ZN7cocos2d6CCSizeC2ERKS0_, 0x137400
+defit __ZN7cocos2d6CCSizeC1ERKS0_, 0x137400 ; stupid clang
+defit __ZN15CCTextInputNode24setLabelPlaceholderColorEN7cocos2d10_ccColor3BE, 0x5da90
+defit __ZN6Slider8setValueEf, 0x18e170
+defit __ZN7cocos2d7CCLayerC2Ev, 0x2725b0 ; stupid clang
+defit __ZN12FLAlertLayer27registerWithTouchDispatcherEv, 0x25f2e0
+defit __ZN7cocos2d7CCLayer27registerWithTouchDispatcherEv, 0x272b40
+
+defit __ZN12FLAlertLayer12ccTouchBeganEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x25ee40
+defit __ZN12FLAlertLayer12ccTouchMovedEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x25f0a0
+defit __ZN12FLAlertLayer12ccTouchEndedEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x25ef60
+defit __ZN12FLAlertLayer16ccTouchCancelledEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x25f020
+
+defit __ZThn288_N7cocos2d7CCLayer12ccTouchBeganEPNS_7CCTouchEPNS_7CCEventE, 0x273510
+defit __ZThn288_N7cocos2d7CCLayer12ccTouchMovedEPNS_7CCTouchEPNS_7CCEventE, 0x273590
+defit __ZThn288_N7cocos2d7CCLayer12ccTouchEndedEPNS_7CCTouchEPNS_7CCEventE, 0x273610
+defit __ZThn288_N7cocos2d7CCLayer16ccTouchCancelledEPNS_7CCTouchEPNS_7CCEventE, 0x273690
+
+defit __ZThn304_N7cocos2d7CCLayer14keyBackClickedEv, 0x2731b0
+defit __ZThn312_N7cocos2d7CCLayer7keyDownENS_12enumKeyCodesE, 0x2732c0
+defit __ZN7cocos2d7CCLayerD2Ev, 0x272900 ; stupid clang
+defit __ZN7cocos2d7CCLayer4initEv, 0x2729a0
+defit __ZNK7cocos2d6CCRect13containsPointERKNS_7CCPointE, 0x1377b0
+defit __ZN7cocos2d10CCDrawNode11drawPolygonEPNS_7CCPointEjRKNS_10_ccColor4FEfS5_, 0x3797f0
+defit __ZN15FMODAudioEngine12sharedEngineEv, 0x20ef80
+
 
 defit _sexyRender, 0x274b50
 
 global __ZTIN7cocos2d6CCNodeE
 global __ZTI12FLAlertLayer
+global __ZTIN7cocos2d7CCLayerE
 global __Z14setupTypeinfosv
 __Z14setupTypeinfosv:
 	push rbp
@@ -583,5 +619,6 @@ __Z14setupTypeinfosv:
 	ret
 
 section .bss
-__ZTIN7cocos2d6CCNodeE: resq 1
+__ZTIN7cocos2d6CCNodeE: resq 5
+__ZTIN7cocos2d7CCLayerE: resq 5
 __ZTI12FLAlertLayer: resq 5

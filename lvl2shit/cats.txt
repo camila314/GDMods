@@ -1,0 +1,2 @@
+All of category 2,3,4,7,8,9,10,11
+todo: cat 1, set 9

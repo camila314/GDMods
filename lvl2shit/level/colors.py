@@ -1,0 +1,1 @@
+{"red":"1","green":"2","blue":"3","player_color":"4","blending":"5","opacity":"7","unknown_8":"8","copied_color_id":"9","hsv_values":"10","unknown_red":"11","unknown_green":"12","unknown_blue":"13","unknown_15":"15","copy_opacity":"17","unknown_18":"18"}
