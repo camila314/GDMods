@@ -134,9 +134,9 @@ defit __ZN12FLAlertLayer6createEPvPKcRKSsS2_S2_f, 0x25e0e0
 defit __ZN12FLAlertLayer7keyDownEN7cocos2d12enumKeyCodesE, 0x273280
 defit __ZN12FLAlertLayer7onEnterEv, 0x273300
 defit __ZN12FLAlertLayerC1Ev, 0x274270
-defit __ZN12FLAlertLayerC2Ev, 0x274270 ; gcc :(
+defit __ZN12FLAlertLayerC2Ev, 0x274270 ; stupid clang
 defit __ZN12FLAlertLayerD1Ev, 0x2727b0
-defit __ZN12FLAlertLayerD2Ev, 0x2727b0 ; gcc :(
+defit __ZN12FLAlertLayerD2Ev, 0x2727b0 ; stupid clang
 defit __ZN12FLAlertLayerD0Ev, 0x274410
 
 defit __ZN12PlayerObject14setSecondColorERKN7cocos2d10_ccColor3BE, 0x219610
@@ -246,6 +246,7 @@ defit __ZN7cocos2d12CCDictionary12objectForKeyEi, 0x190bb0
 defit __ZN7cocos2d12CCDictionary9setObjectEPNS_8CCObjectEl, 0x0191790
 defit __ZN7cocos2d12CCDictionary9setObjectEPNS_8CCObjectERKSs, 0x190dc0
 defit __ZN7cocos2d12CCDictionary7allKeysEv, 0x190450
+defit __ZN15GJDropDownLayer4drawEv, 0x352910
 
 defit __ZN7cocos2d12CCLayerColor11updateColorEv, 0x274ae0
 defit __ZN7cocos2d12CCLayerColor12getBlendFuncEv, 0x274480
@@ -254,6 +255,7 @@ defit __ZN7cocos2d12CCLayerColor12setBlendFuncENS_12_ccBlendFuncE, 0x2744a0
 defit __ZN7cocos2d12CCLayerColor10setOpacityEh, 0x274db0
 defit __ZN7cocos2d12CCLayerColor13initWithColorERKNS_10_ccColor4BE, 0x2749a0
 defit __ZN7cocos2d12CCLayerColor13initWithColorERKNS_10_ccColor4BEff, 0x274850
+
 defit __ZN7cocos2d12CCLayerColor14setContentSizeERKNS_6CCSizeE, 0x2749f0
 defit __ZN7cocos2d12CCLayerColor4drawEv, 0x123840
 defit __ZN7cocos2d12CCLayerColor4initEv, 0x274800
@@ -375,7 +377,7 @@ defit __ZN7cocos2d6CCNodeC1Ev, 0x122550
 defit __ZN7cocos2d6CCNodeC2Ev, 0x122550
 defit __ZN7cocos2d6CCNodeD0Ev, 0x1228e0
 defit __ZN7cocos2d6CCNodeD1Ev, 0x1228d0
-defit __ZN7cocos2d6CCNodeD2Ev, 0x1228d0 ; clang cringe
+defit __ZN7cocos2d6CCNodeD2Ev, 0x1228d0 ; stupid clang
 
 defit __ZN7cocos2d6CCRect14intersectsRectERKS0_, 0x137800
 defit __ZN7cocos2d6CCRect7getMaxXEv, 0x137710
@@ -582,6 +584,7 @@ defit __ZN6Slider8setValueEf, 0x18e170
 defit __ZN7cocos2d7CCLayerC2Ev, 0x2725b0 ; stupid clang
 defit __ZN12FLAlertLayer27registerWithTouchDispatcherEv, 0x25f2e0
 defit __ZN7cocos2d7CCLayer27registerWithTouchDispatcherEv, 0x272b40
+defit __ZN15GJDropDownLayer27registerWithTouchDispatcherEv, 0x3525f0
 
 defit __ZN12FLAlertLayer12ccTouchBeganEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x25ee40
 defit __ZN12FLAlertLayer12ccTouchMovedEPN7cocos2d7CCTouchEPNS0_7CCEventE, 0x25f0a0
@@ -600,13 +603,31 @@ defit __ZN7cocos2d7CCLayer4initEv, 0x2729a0
 defit __ZNK7cocos2d6CCRect13containsPointERKNS_7CCPointE, 0x1377b0
 defit __ZN7cocos2d10CCDrawNode11drawPolygonEPNS_7CCPointEjRKNS_10_ccColor4FEfS5_, 0x3797f0
 defit __ZN15FMODAudioEngine12sharedEngineEv, 0x20ef80
-
+defit __ZN15GJDropDownLayer4initEPKcf, 0x352100
+defit __ZN7cocos2d12CCLayerColorC1Ev, 0x2738d0
+defit __ZN7cocos2d12CCLayerColorC2Ev, 0x2738d0 ; stupid clang
+defit __ZN7cocos2d12CCLayerColorD2Ev, 0x274410 ; stupid clang
+defit __ZN15GJDropDownLayer11customSetupEv, 0x352570
+defit __ZN15GJDropDownLayer10enterLayerEv, 0x3525c0
+defit __ZN15GJDropDownLayer9exitLayerEPN7cocos2d8CCObjectE, 0x352670
+defit __ZN15GJDropDownLayer9showLayerEb, 0x3526c0
+defit __ZN15GJDropDownLayer9hideLayerEb, 0x3527b0
+defit __ZN15GJDropDownLayer12layerVisibleEv, 0x3528b0
+defit __ZN15GJDropDownLayer11layerHiddenEv, 0x3528d0
+defit __ZN15GJDropDownLayer17enterAnimFinishedEv, 0x3528a0
+defit __ZN15GJDropDownLayer9disableUIEv, 0x352580
+defit __ZN15GJDropDownLayer8enableUIEv, 0x3525a0
+defit __ZN15GJDropDownLayerD2Ev, 0x351d00 ; stupid clang
+defit __ZN15GJDropDownLayerD1Ev, 0x351d00
+defit __ZN15GJDropDownLayerD0Ev, 0x351ea0
+defit __ZN15GJDropDownLayer6createEPKc, 0x352530
 
 defit _sexyRender, 0x274b50
 
 global __ZTIN7cocos2d6CCNodeE
 global __ZTI12FLAlertLayer
 global __ZTIN7cocos2d7CCLayerE
+global __ZTIN7cocos2d12CCLayerColorE
 global __Z14setupTypeinfosv
 __Z14setupTypeinfosv:
 	push rbp
@@ -622,3 +643,4 @@ section .bss
 __ZTIN7cocos2d6CCNodeE: resq 5
 __ZTIN7cocos2d7CCLayerE: resq 5
 __ZTI12FLAlertLayer: resq 5
+__ZTIN7cocos2d12CCLayerColorE: resq 5
