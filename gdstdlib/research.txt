@@ -7,6 +7,7 @@ CCDirector:
 CCNode:
 	[rax+0x130] = setContentSize(const CCSize&)
 	[rax+0x1c0] = addChild(cocos2d::CCNode*, int)
+	[rax+0x80] = setScaleX(float)
 	[rax+0xb8] = setPosition(cocos2d::CCPoint)
 	[rax+0xc0] = getPosition()
 	[rax+0xa0] = setScale(float)
@@ -22,6 +23,7 @@ GameObject:
 	[rax+0x4c0] = customSetup()
 	[rax+0x4e0] = triggerObject()
 	[rax+0x4f8] = getObjectRect()
+	[rax+0x518] = getRealPosition()
 	[rax+0x520] = setStartPos(CCPoint)
 	[rax+0x528] = getStartPos()
 	[rax+0x580] = triggerActivated()
@@ -47,6 +49,7 @@ GameManager:
 	[rdi+0x188] = LevelEditorLayer
 	[rdi+0x1c0] = username
 	[rdi+0x1f4] = scene number
+	[rdi+0x2a1] = ldm
 
 FLAlertLayer: 0x250
 
@@ -74,10 +77,13 @@ GameObject(CCSpritePlus): 0x250 - 0x4f0
 	[rdi+0x269] = randomize start of animation
 	[rdi+0x26c] = animation speed
 	[rdi+0x279] = in editor mode
+	[rdi+0x2b0] = OBB2D instance
 	[rdi+0x2b8] = uses oriented box (MAYBE)
 	[rdi+0x338] = linked group
 	[rdi+0x340] = custom rotation speed
 	[rdi+0x344] = disable rotation
+	[rdi+0x350] = CCSprite of sorts
+
 	[rdi+0x35c] = hitbox
 	[rdi+0x36c] = unique identifier
 	[rdi+0x370] = object type
@@ -95,6 +101,7 @@ GameObject(CCSpritePlus): 0x250 - 0x4f0
 	[rdi+0x3d0] = dont fade
 	[rdi+0x3d4] = UNKNOWN
 	[rdi+0x3e8] = secret coin id
+	[rdi+0x3f8] = slope is going uphill
 	[rdi+0x410] = GJSpriteColor instance
 	[rdi+0x428] = Z layer
 	[rdi+0x42c] = Z order
@@ -187,6 +194,10 @@ GJBaseGameLayer: 0x170
 	[rdi+0x4b0] = CCCircleWaveDelegate vtable
 	[rdi+0x4b8] = CurrencyRewardDelegate vtable
 
+CCCIrcleWave:
+	[rdi+0x134] = color
+	[rdi+0x150] = delegate
+
 CCTextInputNode (CCLayer): 0x170 - 0x1e8
 	[rdi+0x170] = vtable
 	[rdi+0x178] = also vtable
@@ -228,13 +239,19 @@ PlayLayer (GJBaseGameLayer): 0x4d0
 	[rdi+0x760] = time
 
 PlayerObject (GameObject): 0x4f0 - 0xb30
-
+	[rdi+0x518 and rdi+0x520] = some ccdictionaries, unknown purpose
+	[rdi+0x560] = object uuid being collided with
+	[rdi+0x569] = is on slope (but inversed. false = on slope?????)
+	[rdi+0x570] = gameobject instance of collided object (but only for slopes) (this is really fucking stupid)
+	[rdi+0x584] = uuid of collided object (but only for slopes)
+	[rdi+0x588] = going downhill on slope
 	[rdi+0x5a8 to rdi+0x5f0] = 9 CCSprites
 	[rdi+0x5f8] = CCMotionStreak instance
 	[rdi+0x600] = HardStreak instance
 	[rdi+0x608] = player speed
 	[rdi+0x610] = jump power
 	[rdi+0x618] = gravity (0.958199)
+	[rdi+0x629] = unnamed, but its modified in resetObjet and determines circle waves
 	[rdi+0x62b] = no clue but could be "has jumped"
 	[rdi+0x62c] = is in play layer
 	[rdi+0x62f] = sliding particles go on the bottom
@@ -245,6 +262,7 @@ PlayerObject (GameObject): 0x4f0 - 0xb30
 	[rdi+0x6a8] = GJRobotSprite
 	[rdi+0x6b0] = GJSpiderSprite
 	[rdi+0x6c0 to rdi+0x708] = 9 CCParticleSystemQuad instances
+	[rdi+0x724] = slope rotation
 	[rdi+0x732] = has hit portal
 	[rdi+0x745] = hold flag
 	[rdi+0x746] = has hold in queue flag
@@ -269,14 +287,16 @@ PlayerObject (GameObject): 0x4f0 - 0xb30
 
 	[rdi+0x778] = is on ground
 	[rdi+0x779] = is dashing
-	[rdi+0x780] = multiplier player speed
-	[rdi+0x78c] = portal circle location
 	[rdi+0x77c] = vehicle size (1.0 for normal 0.6 for small)
+	[rdi+0x780] = multiplier player speed
+	[rdi+0x78c] = last touched portal location
+	[rdi+0x798] = something layer
 	[rdi+0x7a0] = player is sliding
 	[rdi+0x7a1] = player is rising
+	[rdi+0x7a4] = ccpoint of when last hit ground
 	[rdi+0x7b0] = CCArray of untouched rings
 
-	[rdi+0x7b8] = portal circle object
+	[rdi+0x7b8] = last touched portal object
 
 	[rdi+0x7c2] = player color 1
 	[rdi+0x7c5] = player color 2
@@ -327,3 +347,6 @@ ShareCommentLayer (FLAlertLayer):
 	[rdi+0x26c] = unknown
 	[rdi+0x268] = char limit
 	[rdi+0x270] = comment type
+
+CCAnimatedSprite:
+	[rdi+0x248] = animation manager

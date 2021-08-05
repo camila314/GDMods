@@ -383,7 +383,7 @@ defit __ZN7cocos2d6CCRect14intersectsRectERKS0_, 0x137800
 defit __ZN7cocos2d6CCRect7getMaxXEv, 0x137710
 defit __ZN7cocos2d6CCRect7getMaxYEv, 0x137760
 defit __ZN7cocos2d6CCRect7getMinXEv, 0x137750
-defit __ZN7cocos2d6CCRect7getMinYEv, 0x1377a0
+defit __ZNK7cocos2d6CCRect7getMinYEv, 0x1377a0
 defit __ZN7cocos2d6CCRectaSERKS0_, 0x137670
 defit __ZN7cocos2d6CCRectC1Effff, 0x137020
 defit __ZN7cocos2d6CCRectC1ERKS0_, 0x137630
@@ -622,6 +622,13 @@ defit __ZN15GJDropDownLayerD1Ev, 0x351d00
 defit __ZN15GJDropDownLayerD0Ev, 0x351ea0
 defit __ZN15GJDropDownLayer6createEPKc, 0x352530
 
+defit __ZNK7cocos2d6CCRect7getMinXEv, 0x137750
+defit __ZNK7cocos2d6CCRect7getMaxXEv, 0x137710
+defit __ZNK7cocos2d6CCRect7getMaxYEv, 0x137760
+
+defit __ZN10GameObject13getObjectRectEv, 0x3352b0
+defit __ZN5OBB2D15getBoundingRectEv, 0x35b2b0
+
 defit _sexyRender, 0x274b50
 
 global __ZTIN7cocos2d6CCNodeE
@@ -629,6 +636,7 @@ global __ZTI12FLAlertLayer
 global __ZTIN7cocos2d7CCLayerE
 global __ZTIN7cocos2d12CCLayerColorE
 global __Z14setupTypeinfosv
+defit __ZN10GameObject13getSaveStringEv, 0x33d3d0
 __Z14setupTypeinfosv:
 	push rbp
 	mov rbp, rsp

@@ -1,0 +1,215 @@
+[04Jun2021 00:00:14.972] [Render thread/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[04Jun2021 00:00:15.782] [Render thread/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[04Jun2021 00:00:15.788] [Render thread/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[04Jun2021 00:00:15.797] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Disable Forge light pipeline
+[04Jun2021 00:00:15.798] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] Set ForgeConfig.CLIENT.forgeLightPipelineEnabled=false
+[04Jun2021 00:01:25.702] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[04Jun2021 00:01:25.706] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04Jun2021 00:01:25.709] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04Jun2021 00:01:25.711] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[04Jun2021 00:01:25.714] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04Jun2021 00:01:25.722] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.16.5-36.1.0-universal.jar, findercompass-1.16.2.1.jar, torohealth-1.16.4-forge-4.jar, Autofish-0.9.2-forge-mc1.16.4.jar, cloth-config-4.11.26-forge.jar, cavefinder-1.0.jar
+[04Jun2021 00:01:26.774] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
+[04Jun2021 00:01:27.794] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
+[04Jun2021 00:01:28.958] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[04Jun2021 00:01:28.960] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04Jun2021 00:01:28.962] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04Jun2021 00:01:28.965] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[04Jun2021 00:01:28.967] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04Jun2021 00:01:28.968] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.16.5-36.1.0-universal.jar, findercompass-1.16.2.1.jar, torohealth-1.16.4-forge-4.jar, Autofish-0.9.2-forge-mc1.16.4.jar, cloth-config-4.11.26-forge.jar, cavefinder-1.0.jar
+[04Jun2021 00:01:29.809] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
+[04Jun2021 00:01:30.280] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
+[04Jun2021 00:01:31.872] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[04Jun2021 00:01:31.942] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.5
+[04Jun2021 00:01:31.943] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[04Jun2021 00:01:33.799] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[04Jun2021 00:01:38.382] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:38.384] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:38.384] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:38.384] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:38.384] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:38.384] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:38.384] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:38.384] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:38.385] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:38.385] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:39.585] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:39.585] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04Jun2021 00:01:39.933] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 47%
+[04Jun2021 00:01:41.806] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 7985 ms
+[04Jun2021 00:01:41.808] [Server thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Working Man's Mineables: parsed blockstate Block{minecraft:gold_ore} for colors [245, 245, 0, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:41.809] [Server thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Working Man's Mineables: parsed blockstate Block{minecraft:iron_ore} for colors [245, 245, 0, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:41.810] [Server thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Working Man's Mineables: parsed blockstate Block{minecraft:coal_ore} for colors [51, 26, 0, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:41.810] [Server thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Shiny Stones: parsed blockstate Block{minecraft:lapis_ore} for colors [55, 70, 220, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:41.811] [Server thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Shiny Stones: parsed blockstate Block{minecraft:redstone_ore}[lit=false] for colors [255, 125, 155, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:41.812] [Server thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Shiny Stones: parsed blockstate Block{minecraft:diamond_ore} for colors [51, 255, 204, 15, 1, 1, 16, 0]
+[04Jun2021 00:01:41.813] [Server thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Shiny Stones: parsed blockstate Block{minecraft:emerald_ore} for colors [26, 255, 26, 7, 1, 4, 31, 0]
+[04Jun2021 00:01:41.815] [Server thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Nether Delights: parsed blockstate Block{minecraft:nether_gold_ore} for colors [245, 245, 0, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:41.816] [Server thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Nether Delights: parsed blockstate Block{minecraft:nether_quartz_ore} for colors [55, 70, 220, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:41.816] [Server thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Nether Delights: parsed blockstate Block{minecraft:ancient_debris} for colors [51, 255, 204, 15, 1, 1, 16, 0]
+[04Jun2021 00:01:42.804] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
+[04Jun2021 00:01:44.390] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[04Jun2021 00:01:44.640] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@6bfa7856
+[04Jun2021 00:01:44.797] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: camden314x[local:E:df282eaa] logged in with entity id 75 at (-108.02577429668841, 64.0, -53.785820251868756)
+[04Jun2021 00:01:44.939] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: camden314x joined the game
+[04Jun2021 00:01:45.268] [Server thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Server sending Finder Compass Handshake to player TextComponent{text='', siblings=[TextComponent{text='camden314x', siblings=[], style=Style{ color=null, bold=null, italic=null, underlined=null, strikethrough=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null, font=minecraft:default}}], style=Style{ color=null, bold=null, italic=null, underlined=null, strikethrough=null, obfuscated=null, clickEvent=ClickEvent{action=SUGGEST_COMMAND, value='/tell camden314x '}, hoverEvent=HoverEvent{action=<action show_entity>, value='net.minecraft.util.text.event.HoverEvent$EntityHover@4eb1122f'}, insertion=camden314x, font=minecraft:default}}
+[04Jun2021 00:01:45.687] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2360ms or 47 ticks behind
+[04Jun2021 00:01:45.843] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[04Jun2021 00:01:45.974] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[testing stuff]'/minecraft:overworld
+[04Jun2021 00:01:46.844] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: client received Finder Compass HandshakePacket, from username: server
+[04Jun2021 00:01:46.844] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: deferring config override task with json of length 2092
+[04Jun2021 00:01:46.850] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 246 advancements
+[04Jun2021 00:01:46.852] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: executing deferred config override, FinderCompassClientTicker.instance is: atomicstryker.findercompass.client.FinderCompassClientTicker@69f6b129
+[04Jun2021 00:01:46.854] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: inputting Finder Compass config from serverside: {
+  "needles": [
+    {
+      "name": "Working Man\u0027s Mineables",
+      "needles": {
+        "{\"block\":\"minecraft:gold_ore\"}": [
+          245,
+          245,
+          0,
+          15,
+          1,
+          1,
+          100,
+          0
+        ],
+        "{\"block\":\"minecraft:iron_ore\"}": [
+          245,
+          245,
+          0,
+          15,
+          1,
+          1,
+          100,
+          0
+        ],
+        "{\"block\":\"minecraft:coal_ore\"}": [
+          51,
+          26,
+          0,
+          15,
+          1,
+          1,
+          100,
+          0
+        ]
+      },
+      "featureNeedle": "Village"
+    },
+    {
+      "name": "Shiny Stones",
+      "needles": {
+        "{\"block\":\"minecraft:lapis_ore\"}": [
+          55,
+          70,
+          220,
+          15,
+          1,
+          1,
+          100,
+          0
+        ],
+        "{\"lit\":\"false\",\"block\":\"minecraft:redstone_ore\"}": [
+          255,
+          125,
+          155,
+          15,
+          1,
+          1,
+          100,
+          0
+        ],
+        "{\"block\":\"minecraft:diamond_ore\"}": [
+          51,
+          255,
+          204,
+          15,
+          1,
+          1,
+          16,
+          0
+        ],
+        "{\"block\":\"minecraft:emerald_ore\"}": [
+          26,
+          255,
+          26,
+          7,
+          1,
+          4,
+          31,
+          0
+        ]
+      },
+      "featureNeedle": "Stronghold"
+    },
+    {
+      "name": "Nether Delights",
+      "needles": {
+        "{\"block\":\"minecraft:nether_gold_ore\"}": [
+          245,
+          245,
+          0,
+          15,
+          1,
+          1,
+          100,
+          0
+        ],
+        "{\"block\":\"minecraft:nether_quartz_ore\"}": [
+          55,
+          70,
+          220,
+          15,
+          1,
+          1,
+          100,
+          0
+        ],
+        "{\"block\":\"minecraft:ancient_debris\"}": [
+          51,
+          255,
+          204,
+          15,
+          1,
+          1,
+          16,
+          0
+        ]
+      },
+      "featureNeedle": "Fortress"
+    }
+  ]
+}
+[04Jun2021 00:01:46.854] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Working Man's Mineables: parsed blockstate Block{minecraft:gold_ore} for colors [245, 245, 0, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:46.855] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Working Man's Mineables: parsed blockstate Block{minecraft:iron_ore} for colors [245, 245, 0, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:46.855] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Working Man's Mineables: parsed blockstate Block{minecraft:coal_ore} for colors [51, 26, 0, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:46.855] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Shiny Stones: parsed blockstate Block{minecraft:lapis_ore} for colors [55, 70, 220, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:46.856] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Shiny Stones: parsed blockstate Block{minecraft:redstone_ore}[lit=false] for colors [255, 125, 155, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:46.859] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Shiny Stones: parsed blockstate Block{minecraft:diamond_ore} for colors [51, 255, 204, 15, 1, 1, 16, 0]
+[04Jun2021 00:01:46.859] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Shiny Stones: parsed blockstate Block{minecraft:emerald_ore} for colors [26, 255, 26, 7, 1, 4, 31, 0]
+[04Jun2021 00:01:46.859] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Nether Delights: parsed blockstate Block{minecraft:nether_gold_ore} for colors [245, 245, 0, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:46.860] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Nether Delights: parsed blockstate Block{minecraft:nether_quartz_ore} for colors [55, 70, 220, 15, 1, 1, 100, 0]
+[04Jun2021 00:01:46.860] [Render thread/INFO] [atomicstryker.findercompass.common.FinderCompassMod/]: Nether Delights: parsed blockstate Block{minecraft:ancient_debris} for colors [51, 255, 204, 15, 1, 1, 16, 0]
+[04Jun2021 00:01:46.870] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Finder Compass server config loaded; 3 custom Setting-Sets loaded
+[04Jun2021 00:01:48.711] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[testing stuff]'/minecraft:the_nether
+[04Jun2021 00:01:48.751] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[testing stuff]'/minecraft:the_end
+[04Jun2021 00:01:49.337] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <camden314x> Swag mod light level 0
+[04Jun2021 00:01:50.278] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] <camden314x> Swag mod light level 0
+[04Jun2021 00:02:54.821] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[04Jun2021 00:02:55.346] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: camden314x lost connection: Disconnected
+[04Jun2021 00:02:55.347] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: camden314x left the game
+[04Jun2021 00:02:55.387] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[04Jun2021 00:02:55.635] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[04Jun2021 00:02:55.640] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[04Jun2021 00:02:55.640] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[04Jun2021 00:02:55.641] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[testing stuff]'/minecraft:overworld
+[04Jun2021 00:02:57.416] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (testing stuff): All chunks are saved
+[04Jun2021 00:02:57.416] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[testing stuff]'/minecraft:the_nether
+[04Jun2021 00:02:57.417] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04Jun2021 00:02:57.417] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[testing stuff]'/minecraft:the_end
+[04Jun2021 00:02:57.420] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[04Jun2021 00:02:57.457] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (testing stuff): All chunks are saved
+[04Jun2021 00:02:57.461] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04Jun2021 00:02:57.462] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved

@@ -1,0 +1,746 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"statement",
+				"StatementBody"
+			],
+			[
+				"console",
+				"I-SQLIntegrityConstraintViolationException"
+			],
+			[
+				"lic",
+				"licenseplate"
+			],
+			[
+				"bezier",
+				"bezierSpacing"
+			],
+			[
+				"bezierSpacing",
+				"nextBezierSpacing"
+			],
+			[
+				"m_bezier",
+				"m_bezierDrawer"
+			],
+			[
+				"k",
+				"kControlPointRadius"
+			],
+			[
+				"m_current",
+				"m_currentTouch"
+			],
+			[
+				"m_curre",
+				"m_currentTouch"
+			],
+			[
+				"m_duration",
+				"m_durationSlider"
+			],
+			[
+				"CC",
+				"CCNode"
+			],
+			[
+				"m_follow",
+				"m_followingSprite"
+			],
+			[
+				"CCMenuItem",
+				"CCMenuItemSpriteExtra"
+			],
+			[
+				"create",
+				"createWithSpriteFrameName"
+			],
+			[
+				"split",
+				"split-string\tsplitString"
+			],
+			[
+				"stat",
+				"staticmethod"
+			],
+			[
+				"add",
+				"add_executable\tbuiltin"
+			],
+			[
+				"un",
+				"unimplemented\tunimplemented!(…)"
+			],
+			[
+				"idain_Fn",
+				"idain_Fn_flq_i"
+			],
+			[
+				"spri",
+				"split-string\tsplitString"
+			],
+			[
+				"inc",
+				"I-ios\tinc"
+			],
+			[
+				"main",
+				"mainthread\tObjCThreads"
+			],
+			[
+				"in",
+				"includes\tfunc"
+			],
+			[
+				"v",
+				"I-valarray\tinc"
+			],
+			[
+				"fin",
+				"fill_n\tfunc"
+			],
+			[
+				"find",
+				"find_if\tfunc"
+			],
+			[
+				"oper",
+				"operator=\tfunc"
+			],
+			[
+				"CHK",
+				"CHK_MAKE"
+			],
+			[
+				"previous",
+				"previous_no_ignore"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"x86",
+				"Set Syntax: Assembly x86 (NASM)"
+			],
+			[
+				"list all",
+				"Rust: List All Messages"
+			],
+			[
+				"messages",
+				"Rust: List All Messages"
+			],
+			[
+				"spwn",
+				"Set Syntax: SPWN"
+			],
+			[
+				"messa",
+				"Rust: List All Messages"
+			],
+			[
+				"rust check",
+				"Rust: Toggle Syntax Checking"
+			],
+			[
+				"rust ",
+				"Rust: List All Messages"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"Monokai Pro: select theme"
+			],
+			[
+				"monokai",
+				"Monokai Pro: select theme"
+			],
+			[
+				"PYTHON",
+				"Set Syntax: Python"
+			],
+			[
+				"remove package",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"copy",
+				"SublimeHighlight: copy to clipboard as RTF"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"hopper",
+				"Set Syntax: Hopper Pseudocode"
+			],
+			[
+				"word c",
+				"LaTeXWordCount: Word Count"
+			],
+			[
+				"mycy",
+				"Set Syntax: MyCython"
+			],
+			[
+				"definition",
+				"Set Syntax: Sublime Text Syntax Definition (YAML)"
+			],
+			[
+				"My",
+				"Set Syntax: MyCython"
+			],
+			[
+				"sublime text",
+				"Set Syntax: Sublime Text Syntax Definition (YAML)"
+			],
+			[
+				"flake",
+				"User: Disable Python Flake8 Lint for this file"
+			],
+			[
+				"lsp",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"markdo",
+				"MarkdownLivePreview: Open Preview"
+			],
+			[
+				"word",
+				"LaTeXWordCount: Word Count"
+			],
+			[
+				"terminal",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"snippet",
+				"Snippet: std::vector"
+			],
+			[
+				"snippets",
+				"Snippet: std::vector"
+			],
+			[
+				"build",
+				"Build With: C++ Single File - Run"
+			],
+			[
+				"toggle",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"wo",
+				"LaTeXWordCount: Word Count"
+			],
+			[
+				"toggle high",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"disable",
+				"Color Highlight: Disable Color Highlighting"
+			],
+			[
+				"enable",
+				"Color Highlight: Enable Color Highlighting"
+			],
+			[
+				"color high",
+				"Color Highlight: Disable Color Highlighting"
+			],
+			[
+				"toggle lint",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"toggle ",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"git",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"github",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"markdown",
+				"MarkdownLivePreview: Open Preview"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"latex",
+				"LaTeXWordCount: Word Count"
+			],
+			[
+				"toggle syn",
+				"Rust: Toggle Syntax Checking"
+			],
+			[
+				"rust syntax",
+				"Rust: Toggle Syntax Checking"
+			],
+			[
+				"rust",
+				"Rust: Toggle Syntax Checking"
+			],
+			[
+				"channelre",
+				"ChannelRepositoryTools: Test Default Channel"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Licence Snippet: MIT Licence [Header] [Full Text]"
+			],
+			[
+				"new raw",
+				"PackageDev: New Raw Snippet"
+			],
+			[
+				"color scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"check",
+				"Rust: Toggle Syntax Checking"
+			],
+			[
+				"ansi",
+				"Set Syntax: ANSI"
+			],
+			[
+				"set syntax:rust",
+				"Set Syntax: Rust Enhanced"
+			],
+			[
+				"script",
+				"Build With: RustEnhanced - Script"
+			],
+			[
+				"configu",
+				"Rust: Configure Cargo Build"
+			],
+			[
+				"set syntax: spawn",
+				"Set Syntax: Spawn"
+			],
+			[
+				"sort",
+				"Python Imports Sorter: sort imports"
+			],
+			[
+				"pyt",
+				"Python Imports Sorter: sort imports"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-07-05-153810_camden314.crash",
+		"/Users/jakrillis/projects/gdmods/gdstdlib/makefile",
+		"/Users/jakrillis/projects/gdmods/gdstdlib/cocos.asm",
+		"/Users/jakrillis/projects/3dmodel2gd/level/level.py",
+		"/Users/jakrillis/projects/gdmods/hitbox/Cacao/include/CacKit",
+		"/Users/jakrillis/t.py",
+		"/Users/jakrillis/projects/cacao/to_copy/main.cpp",
+		"/Users/jakrillis/projects/verydumb/ripoffhyper.h",
+		"/Users/jakrillis/projects/ios/hook/main.mm",
+		"/Users/jakrillis/t.spwn",
+		"/Users/jakrillis/projects/ios/.gitignore",
+		"/Users/jakrillis/projects/SPWN-language/spwn-lang/src/lib.rs",
+		"/Users/jakrillis/projects/SPWN-language/spwn-lang/src/compiler_types.rs",
+		"/Users/jakrillis/projects/SPWN-language/spwn-lang/src/builtin.rs",
+		"/Users/jakrillis/projects/phantom/store/send.py",
+		"/Users/jakrillis/projects/gdmods/gdstdlib/research.txt",
+		"/Users/jakrillis/projects/SPWN-language/spwn-lang/src/fmt.rs",
+		"/Users/jakrillis/Downloads/forge-1.16.5-36.1.0-mdk/src/main/java/com/example/examplemod/ExampleMod.java",
+		"/Users/jakrillis/projects/minecraft/cavefinder/src/main/java/com/example/examplemod/ExampleMod.java",
+		"/Users/jakrillis/t.m",
+		"/Users/jakrillis/t.cpp",
+		"/Users/jakrillis/projects/verydumb/test.cac",
+		"/Users/jakrillis/projects/3dmodel2gd/level/__init__.py",
+		"/Users/jakrillis/projects/3dmodel2gd/whtathefuck.py",
+		"/Users/jakrillis/projects/external_launcher/t.cpp",
+		"/Users/jakrillis/projects/mh3/main.cpp",
+		"/Users/jakrillis/projects/external_launcher/MacDylib.cpp",
+		"/Users/jakrillis/projects/cacao/README.md",
+		"/Users/jakrillis/projects/cacao/README",
+		"/Users/jakrillis/projects/phantom/SpacingController.cpp",
+		"/Users/jakrillis/projects/phantom/main.cpp",
+		"/Users/jakrillis/look idk.html",
+		"/Users/jakrillis/projects/gdmods/osxbot/combine.m",
+		"/Users/jakrillis/projects/Lvl2SPWN/gmanager.py",
+		"/Users/jakrillis/projects/phantom/README.md",
+		"/Users/jakrillis/projects/phantom/LICENSE",
+		"/Users/jakrillis/projects/phantom/.gitignore",
+		"/Users/jakrillis/vta.py",
+		"/Users/jakrillis/projects/phantom/Cacao/include/Cacao.hpp",
+		"/Users/jakrillis/projects/phantom/Cacao/include/cocos2dx/support/CCPointExtension.h",
+		"/Users/jakrillis/projects/phantom/SpacingGui.h",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/touch_dispatcher/CCTouch.h",
+		"/Users/jakrillis/projects/gdmods/phantom/Makefile",
+		"/Users/jakrillis/projects/gdmods/phantom/main.cpp",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/draw_nodes/CCDrawingPrimitives.h",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/draw_nodes/CCDrawNode.h",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/include/ccTypes.h",
+		"/Users/jakrillis/projects/gdmods/phantom/_tmp.cxx",
+		"/Users/jakrillis/projects/gdmods/phantom/ControlPoint.cpp",
+		"/Users/jakrillis/projects/gdmods/phantom/BezierEditor.cpp",
+		"/Users/jakrillis/projects/gdmods/phantom/BezierCanvas.cpp",
+		"/Users/jakrillis/projects/gdmods/phantom/DurationTextDelegate.cpp",
+		"/Users/jakrillis/projects/gdmods/phantom/SpacingLayer.cpp",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/cocoa/CCGeometry.h",
+		"/Users/jakrillis/projects/gdmods/phantom/GrossBezierStuff.cpp",
+		"/Users/jakrillis/projects/gdmods/phantom/GrossBezierStuff.h",
+		"/Users/jakrillis/PARADIGM",
+		"/Users/jakrillis/projects/gdmods/phantom/main.s",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/support/CCPointExtension.h",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/touch_dispatcher/CCTouchDelegateProtocol.h",
+		"/Users/jakrillis/projects/gdmods/phantom/makefile",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/layers_scenes_transitions_nodes/CCLayer.h",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-23-002500_camden314.crash",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cc_defs.hpp",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-23-001005_camden314.crash",
+		"/Users/jakrillis/t.c",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-23-123447_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-23-124210_camden314.crash",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/cocoa/CCArray.h",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/support/data_support/ccCArray.h",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-23-132041_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-23-132820_camden314.crash",
+		"/Users/jakrillis/projects/gdmods/lvl2shit/remove.py",
+		"/Users/jakrillis/projects/gdmods/lvl2shit/level/__init__.py",
+		"/Users/jakrillis/projects/customObject/speed.cpp",
+		"/Users/jakrillis/projects/gdmods/refresh/main.cpp",
+		"/Users/jakrillis/GeometryDash/cracked_backup/GDCracked/Contents/Resources/GJ_GameSheet03-uhd.plist",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cc_macros.hpp",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-21-024502_camden314.crash",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/Cacao.hpp",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/Cacao.cpp",
+		"/Users/jakrillis/projects/gdmods/phantom/SpacingGui.h",
+		"/Users/jakrillis/.bash_profile",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-21-032855_camden314.crash",
+		"/Users/jakrillis/tmp/ccprog/main.cpp",
+		"/Users/jakrillis/projects/gdmods/gdstdlib/asminclude.asm",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/custom/Sprites/CCMenuItemSpriteExtra/CCMenuItemSpriteExtra.h",
+		"/Users/jakrillis/school/activity7.py",
+		"/Users/jakrillis/projects/gdmods/phantom/ConnectorNode.h",
+		"/Users/jakrillis/projects/gdmods/phantom/ConnectorNode.cpp",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-15-131753_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-15-131428_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-15-131058_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-15-125220_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/osXditor_2021-04-13-223316_camden314.crash",
+		"/Users/jakrillis/projects/gdmods/selgroup/main.cpp",
+		"/Users/jakrillis/school/criticalthink5.py",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-12-144417_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-12-145004_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-12-144552_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-12-023021_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-12-022107_camden314.crash",
+		"/Users/jakrillis/GeometryDash/SymTab/symtab.py",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-12-003042_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-11-233624_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-11-233429_camden314.crash",
+		"/Users/jakrillis/projects/gdmods/phantom/PhantomBlock.sublime-project",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/cocoa/CCObject.h",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/base_nodes/CCNode.h",
+		"/Users/jakrillis/Downloads/sec4.7_Odyssey_study_guide_BB.pdf",
+		"/Users/jakrillis/projects/ios/hook/makefile",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/sprite_nodes/CCSprite.h",
+		"/Users/jakrillis/projects/gdmods/phantom/Cacao/include/cocos2dx/label_nodes/CCLabelBMFont.h",
+		"/Users/jakrillis/t.rs",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-09-032151_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-09-032020_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-09-031514_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-09-031311_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-08-220505_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-08-230117_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-08-220616_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-08-215809_camden314.crash",
+		"/Users/jakrillis/Library/Logs/DiagnosticReports/Geometry Dash_2021-04-08-215927_camden314.crash",
+		"/Users/jakrillis/gddec/finished works/MoreVideoOptionsLayer/init.cpp",
+		"/Users/jakrillis/projects/mh3/Cacao/include/cocos2dx/custom/Sprites/CCMenuItemSpriteExtra/CCMenuItemSpriteExtra.h",
+		"/Users/jakrillis/projects/mh3/MegaHack3",
+		"/Users/jakrillis/projects/multithread/Cacao/include/cc_defs.hpp",
+		"/Users/jakrillis/projects/multithread/override_orig.h"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.clangautocomplete":
+	{
+		"height": 120.0
+	},
+	"output.exec":
+	{
+		"height": 229.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Cacao",
+	"project": "*.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"CCDrawNode",
+				"Cacao/include/cocos2dx/draw_nodes/CCDrawNode.h"
+			],
+			[
+				"CCDraw",
+				"Cacao/include/cocos2dx/draw_nodes/CCDrawingPrimitives.h"
+			],
+			[
+				"CCTouch",
+				"Cacao/include/cocos2dx/touch_dispatcher/CCTouch.h"
+			],
+			[
+				"CCPoint",
+				"Cacao/include/cocos2dx/support/CCPointExtension.h"
+			],
+			[
+				"CCGeometry",
+				"Cacao/include/cocos2dx/cocoa/CCGeometry.h"
+			],
+			[
+				"CCGeomet",
+				"Cacao/include/cocos2dx/cocoa/CCGeometry.h"
+			],
+			[
+				"CCTouchDis",
+				"Cacao/include/cocos2dx/touch_dispatcher/CCTouchDelegateProtocol.h"
+			],
+			[
+				"CCLayer",
+				"Cacao/include/cocos2dx/layers_scenes_transitions_nodes/CCLayer.h"
+			],
+			[
+				"CCDrawPrimitives",
+				"Cacao/include/cocos2dx/draw_nodes/CCDrawingPrimitives.h"
+			],
+			[
+				"ccArray",
+				"Cacao/include/cocos2dx/support/data_support/ccCArray.h"
+			],
+			[
+				"CCArray",
+				"Cacao/include/cocos2dx/cocoa/CCArray.h"
+			],
+			[
+				"CCMenuItemSprite",
+				"Cacao/include/cocos2dx/custom/Sprites/CCMenuItemSpriteExtra/CCMenuItemSpriteExtra.h"
+			],
+			[
+				"ccobject",
+				"Cacao/include/cocos2dx/cocoa/CCObject.h"
+			],
+			[
+				"CCNode.h",
+				"Cacao/include/cocos2dx/base_nodes/CCNode.h"
+			],
+			[
+				"cctypes",
+				"Cacao/include/cocos2dx/include/ccTypes.h"
+			],
+			[
+				"CCLabelBMFont",
+				"Cacao/include/cocos2dx/label_nodes/CCLabelBMFont.h"
+			],
+			[
+				"CCSprite",
+				"Cacao/include/cocos2dx/sprite_nodes/CCSprite.h"
+			],
+			[
+				"CCNode.",
+				"Cacao/include/cocos2dx/base_nodes/CCNode.h"
+			],
+			[
+				"CCMenuI",
+				"Cacao/include/cocos2dx/custom/Sprites/CCMenuItemSpriteExtra/CCMenuItemSpriteExtra.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 306.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
