@@ -11,6 +11,7 @@ typedef struct {
 
 extern "C" {
 	void writeToVideo(void* data[], int width, int height, char const* path, int length);
+	void writeToPng(void* data, int width, int height, char const* path);
 }
 
 using namespace cocos2d;
@@ -25,11 +26,22 @@ std::vector<VideoData>* vec;
 class MyPauseLayer : PauseLayer {
 public:
 	void onClick(CCObject* o) {
-		void* arr[vec->size()] = {0};
-		for (int i=0; i<vec->size(); i++) {
-			arr[i] = (*vec)[i].data;
-		}
-		writeToVideo(arr, (*vec)[0].width, (*vec)[0].height, "/Users/jakrillis/projects/gdmods/img/pngs/swag.mov", vec->size());
+		PlayLayer* pl = GameManager::sharedState()->_playLayer();
+		if (!pl)
+			return;
+
+		CCArray* obs = pl->getChildren();
+		CCSize wSize = CCDirector::sharedDirector()->getWinSize();
+		auto rtx = CCRenderTexture::create(wSize.width, wSize.height, kTexture2DPixelFormat_RGBA8888);
+
+		rtx->begin();
+		//reinterpret_cast<CCNode*>(obs->objectAtIndex(0))->visit(); // anti transparency 
+		reinterpret_cast<CCNode*>(obs->objectAtIndex(3))->visit();
+		rtx->end();
+
+		auto im = rtx->newCCImage(true);
+
+		writeToPng(im->getData(), im->getWidth(), im->getHeight(), "/Users/jakrillis/projects/gdmods/img/pngs/swag.png");
 		vec->clear();
 	}
 	static void initHook(MyPauseLayer* self, bool i) {
@@ -44,7 +56,7 @@ public:
 		menu->addChild(mitem);
 
 		CCPoint bloc = self->convertToNodeSpace(btnLoc);
-		printf("bloc is %d", bloc);
+		//printf("bloc is %d", bloc);
 		menu->setPosition(bloc);
 
 		self->addChild(menu);
@@ -63,7 +75,7 @@ static void updateHook(PlayLayer* self, float delta) {
 		auto rtx = CCRenderTexture::create(wSize.width, wSize.height, kTexture2DPixelFormat_RGBA8888);
 
 		rtx->begin();
-		reinterpret_cast<CCNode*>(obs->objectAtIndex(0))->visit(); // anti transparency 
+		//reinterpret_cast<CCNode*>(obs->objectAtIndex(0))->visit(); // anti transparency 
 		reinterpret_cast<CCNode*>(obs->objectAtIndex(3))->visit();
 		rtx->end();
 
@@ -80,7 +92,7 @@ void inject() {
 	vec = new std::vector<VideoData>();
 
 	m = new ModContainer("Render lol");
-	updateOrig = m->registerHook(getBase()+0x77900, updateHook);
+	//updateOrig = m->registerHook(getBase()+0x77900, updateHook);
 	initOrig = m->registerHook(getBase()+0x2a59c0, MyPauseLayer::initHook);
 	m->registerHook(getBase()+0x2446d0, fpsLock);
 	m->enable();

@@ -6,6 +6,26 @@
 -(CVPixelBufferRef) pixelBufferFromCGImage: (CGImageRef) image imageSize: (CGSize)size;
 @end
 
+BOOL CGImageWriteToFile(CGImageRef image, NSString *path) {
+    CFURLRef url = (__bridge CFURLRef)[NSURL fileURLWithPath:path];
+    CGImageDestinationRef destination = CGImageDestinationCreateWithURL(url, kUTTypePNG, 1, NULL);
+    if (!destination) {
+        NSLog(@"Failed to create CGImageDestination for %@", path);
+        return NO;
+    }
+
+    CGImageDestinationAddImage(destination, image, nil);
+
+    if (!CGImageDestinationFinalize(destination)) {
+        NSLog(@"Failed to write image to %@", path);
+        CFRelease(destination);
+        return NO;
+    }
+
+    CFRelease(destination);
+    return YES;
+}
+
 CGImageRef exportPng(void* data, int width, int height) {
 	size_t bufferLength = width * height * 4;
 	CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, data, bufferLength, NULL);
@@ -29,6 +49,11 @@ CGImageRef exportPng(void* data, int width, int height) {
 	                                renderingIntent);
 	return iref;
 }
+
+void writeToPng(void* data[], int width, int height, char const* path) {
+    CGImageWriteToFile(exportPng(data, width, height), [NSString stringWithUTF8String:path]);
+}
+
 
 void writeToVideo(void* data[], int width, int height, char const* path, int length) {
 	NSMutableArray* arr = [@[] mutableCopy];
@@ -60,7 +85,7 @@ void writeToVideo(void* data[], int width, int height, char const* path, int len
     NSParameterAssert(videoWriter);
 
     NSDictionary *videoSettings = [NSDictionary dictionaryWithObjectsAndKeys:
-                                  AVVideoCodecTypeAppleProRes4444, AVVideoCodecKey,
+                                  0, AVVideoCodecKey,
                                    [NSNumber numberWithInt:size.width], AVVideoWidthKey,
                                    [NSNumber numberWithInt:size.height], AVVideoHeightKey,
                                   nil];

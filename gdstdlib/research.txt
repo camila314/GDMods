@@ -1,3 +1,13 @@
+; information
+
+;; Searching for reads of a bool: (8a..3412)|(80..34120000..) where the offset is ordered 1234
+;; Searching for writes to a bool: c6..34120000 where offset is ordered 1234
+
+;; Searching for reads of a ptr: ..8b..34120000
+;; Searching for writes of a ptr: ..(c7|89)..34120000
+;; Searching for vtable from typeinfo: 90 78 56 34 12 00 00 00 5c 38 04 where offset is ordered 1234567890
+;314
+
 ;Sizes
 CCLayerColor = 0x1f0
 
@@ -7,12 +17,16 @@ CCDirector:
 CCNode:
 	[rax+0x130] = setContentSize(const CCSize&)
 	[rax+0x1c0] = addChild(cocos2d::CCNode*, int)
+	[rax+0x1f0] = getParent()
 	[rax+0x80] = setScaleX(float)
 	[rax+0xb8] = setPosition(cocos2d::CCPoint)
 	[rax+0xc0] = getPosition()
 	[rax+0xa0] = setScale(float)
 	[rax+0x148] = setVisible(bool)
 	[rax+0x158] = setRotation(float)
+	[rax+0x1f0] = getParent()
+	[rax+0x200] = removeFromParentAndCleanup()
+	[rdi+0x240] = reorderChild(cocos2d::CCNode*, int)
 GJBaseGameLayer:
 	[rax+0x480] = addToSection(GameObject*)
 
@@ -73,36 +87,99 @@ GameObject(CCSpritePlus): 0x250 - 0x4f0
 	[rdi+0x254] = float (UNKNOWN) animation related
 	[rdi+0x258] = float (UNKNOWN) animation related
 	[rdi+0x25c] = float (UNKNOWN) animation related
+	[rdi+0x260]	= unknown bool
+	[rdi+0x264] = animaion speed
 	[rdi+0x268] = is animated circle
 	[rdi+0x269] = randomize start of animation
 	[rdi+0x26c] = animation speed
+	[rdi+0x270] = black child (what)
+	[rdi+0x271] = show selection color
+	[rdi+0x274] = black child opacity (what)
+	[rdi+0x278] = unknown bool
 	[rdi+0x279] = in editor mode
+	[rdi+0x27a] = toggled off
+	[rdi+0x27b] = color on top
+	[rdi+0x27c] = unknown int
+	[rdi+0x280] = unknown int
+	[rdi+0x284] = unknown float (always 324)
+	[rdi+0x288] = moved units
+	[rdi+0x290] = rotated units
+	[rdi+0x294] = is trigger (?)
+	[rdi+0x295] = flipped x
+	[rdi+0x296] = flipped y
+	[rdi+0x298] = original hitbox offest
+	[rdi+0x2a0] = as i know of, unused (no reads found)
+	[rdi+0x2a4] = adjusted hitbox offset
 	[rdi+0x2b0] = OBB2D instance
-	[rdi+0x2b8] = uses oriented box (MAYBE)
+	[rdi+0x2b8] = uses oriented box
+	[rdi+0x2c0] = glow sprite
+	[rdi+0x2c8] = in play layer
+	[rdi+0x2d0] = some ccaction instance
+	[rdi+0x2d8] = dont run action (maybe?)
+	[rdi+0x2d9] = run action on object
+	[rdi+0x2da] = powered on
+	[rdi+0x2dc] = object size
+	[rdi+0x2e4] = modifier block (d, j, h, s)
+	[rdi+0x2e5] = active
+	[rdi+0x2e6] = animation finished
+	[rdi+0x2e8] = particle system
+	[rdi+0x2f0] = effect plist string
+	[rdi+0x2f8] = particle added
+	[rdi+0x2f9] = has particles
+	[rdi+0x2fa] = is custom ring 
+	[rdi+0x2fc] = portal position
+	[rdi+0x304] = pulses with music
+	[rdi+0x308] = texture rect
+	[rdi+0x318] = texture rect is dirty (uwu)
+	[rdi+0x31c] = texture rect center
+	[rdi+0x320] = second object rect
+	[rdi+0x330] = object rect dirty
+	[rdi+0x331] = oriented rect dirty
+	[rdi+0x332] = activated
+	[rdi+0x333] = activated by p2
+	[rdi+0x334] = has detail color
+	[rdi+0x335] = is pulsing stick
 	[rdi+0x338] = linked group
+	[rdi+0x33c] = is rotating object (maybe)
 	[rdi+0x340] = custom rotation speed
 	[rdi+0x344] = disable rotation
-	[rdi+0x350] = CCSprite of sorts
-
-	[rdi+0x35c] = hitbox
+	[rdi+0x345] = unknown bool
+	[rdi+0x346] = unknown bool
+	[rdi+0x347] = should blend main
+	[rdi+0x348] = should blend detail
+	[rdi+0x348] = unknown ccpoint
+	[rdi+0x350] = 2nd animted sprite
+	[rdi+0x358] = unknown bool related to visibility
+	[rdi+0x35c] = hitbox scale
+	[rdi+0x360] = on side
+	[rdi+0x364] = unknown CCSize
 	[rdi+0x36c] = unique identifier
 	[rdi+0x370] = object type
+	[rdi+0x374] = section
 	[rdi+0x378] = touch triggered
 	[rdi+0x379] = spawn triggered
+	[rdi+0x37c] = starting position
+	[rdi+0x388] = texture name (std string) *
 	[rdi+0x391] = object is unloaded (MAYBE)
 	[rdi+0x394] = rotation
 	[rdi+0x3a0] = flipped horizontal
 	[rdi+0x3a1] = flipped vertical
+	[rdi+0x3a4] = starting x position
+	[rdi+0x3b4] = batch node layer id
 	[rdi+0x3b8] = disable glow
 	[rdi+0x3bc] = color id
-	[rdi+0x3c0] = object size
+	[rdi+0x3c0] = object size 0
 	[rdi+0x3c4] = Object ID
 	[rdi+0x3cf] = dont enter
 	[rdi+0x3d0] = dont fade
-	[rdi+0x3d4] = UNKNOWN
+	[rdi+0x3d4] = default z order (MAYBE)
+	[rdi+0x3d8] = use gamesheet02 (MAYBE)
+	[rdi+0x3d9] = unknown bool
 	[rdi+0x3e8] = secret coin id
 	[rdi+0x3f8] = slope is going uphill
-	[rdi+0x410] = GJSpriteColor instance
+	[rdi+0x410] = main GJSpriteColor
+	[rdi+0x418] = detail GJSPriteColor
+	[rdi+0x424] = default Z layer
 	[rdi+0x428] = Z layer
 	[rdi+0x42c] = Z order
 	[rdi+0x438] = portal checked
@@ -111,6 +188,7 @@ GameObject(CCSpritePlus): 0x250 - 0x4f0
 	[rdi+0x460] = How Many Group IDS
 	[rdi+0x484] = editor layer 1
 	[rdi+0x488] = editor layer 2
+	[rdi+0x4b9] = is trigger
 	[rdi+0x4c0] = High Detail
 	[rdi+0x4ec] = multi activate
 
@@ -186,7 +264,9 @@ GJBaseGameLayer: 0x170
 	[rdi+0x398] = CCDictionary for deprecated function (unused)
 	[rdi+0x3a0] = CCArray of GameObject instances
 	[rdi+0x3a8] = CCArray of sections
-	[rdi+0x3b0] = CCArray of something
+	[rdi+0x3b0] = CCArray of collision blocks
+	[rdi+0x3c0] = CCArray of queued triggerable GameObjects
+	[rdi+0x3c8] = CCArray of all triggerable GameObjects
 
 	[rdi+0x489] = dual mode
 	[rdi+0x48c] = enter/exit effect type
@@ -237,20 +317,23 @@ PlayLayer (GJBaseGameLayer): 0x4d0
 	[rdi+0x739] = practice mode boolean
 	[rdi+0x754] = attempt number
 	[rdi+0x760] = time
+	[rdi+0x76a] = level complete
 
 PlayerObject (GameObject): 0x4f0 - 0xb30
 	[rdi+0x518 and rdi+0x520] = some ccdictionaries, unknown purpose
+	[rdi+0x540] = as i know of, unused (no writes found)
 	[rdi+0x560] = object uuid being collided with
 	[rdi+0x569] = is on slope (but inversed. false = on slope?????)
 	[rdi+0x570] = gameobject instance of collided object (but only for slopes) (this is really fucking stupid)
 	[rdi+0x584] = uuid of collided object (but only for slopes)
-	[rdi+0x588] = going downhill on slope
+	[rdi+0x588] = going downhill on `
 	[rdi+0x5a8 to rdi+0x5f0] = 9 CCSprites
 	[rdi+0x5f8] = CCMotionStreak instance
 	[rdi+0x600] = HardStreak instance
 	[rdi+0x608] = player speed
 	[rdi+0x610] = jump power
 	[rdi+0x618] = gravity (0.958199)
+	[rdi+0x628] = as i know of, unused (no reads found)
 	[rdi+0x629] = unnamed, but its modified in resetObjet and determines circle waves
 	[rdi+0x62b] = no clue but could be "has jumped"
 	[rdi+0x62c] = is in play layer
@@ -271,10 +354,9 @@ PlayerObject (GameObject): 0x4f0 - 0xb30
 	[rdi+0x749] = i give up, "can hit custom ring"
 	[rdi+0x758] = robot can jump
 	[rdi+0x760] = y acceleration
-	[rdi+0x768] = is on slope (MAYBE)
-	[rdi+0x769] = is on slope v2 (MAYBE)
-	[rdi+0x76c] = slope rotation (double)
-	[rdi+0x76f] = is cube
+	[rdi+0x768] = is on slope
+	[rdi+0x769] = was on slope
+	[rdi+0x76c] = slope y velocity
 	[rdi+0x770] = is ship
 	[rdi+0x771] = is ufo
 	[rdi+0x772] = is ball

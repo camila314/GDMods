@@ -12,7 +12,7 @@ namespace Cacao {
         auto winSize = cocos2d::CCDirector::sharedDirector()->getWinSize();
         float xp = winSize.width * (x/100.);
         float yp = winSize.height * (y/100.);
-        return {.x = xp , .y = yp};
+        return ccp(xp,yp);
     }
     cocos2d::CCSprite* spriteFromPng(unsigned char* img, int img_len) {
         auto image = new cocos2d::CCImage();

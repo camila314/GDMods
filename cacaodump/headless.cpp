@@ -15,19 +15,14 @@ ModContainer* m;
 void inject() {
     m = new ModContainer("Swag");
 
-    m->registerHook(getBase()+0x6fb90, +[](){
-        return;
-    });
-
-    m->registerHook(getBase()+0x6e2b0,  +[](){
-        return;
-    });
-
     m->registerHook(getBase()+0x220a30, +[](PlayerObject* self, bool arg1){ // PlayerObject::hitGround
         self->_yAccel() = 0.0;
         self->_isSliding() = true;
         self->_onGround() = true;
     });
+
+    NOPFUNC(0x6fb90) // PlayLayer::updateVisibility
+    NOPFUNC(0x6e2b0); // PlayLayer::updateCamera
     NOPFUNC(0x225930); // PlayerObject::playDeathEffect
     NOPFUNC(0x21c570); // PlayerObject::runRotateAction
     NOPFUNC(0x123ee0); // PlayerObject::fadeOutStreak2

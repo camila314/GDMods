@@ -71,9 +71,9 @@ class MEditorUI : EditorUI {
         auto dir = CCDirector::sharedDirector();
         float top = dir->getScreenTop()-60.0;
         float rgt = dir->getScreenRight()-24.0;
-        CCPoint base = {.x=rgt, .y=top};
+        CCPoint base = ccp(rgt,top);
 
-        CCPoint offset = {.x=btn_increment*-3, .y=0};
+        CCPoint offset = ccp(btn_increment*-3, 0);
         menu->setPosition(base + offset);
 
         font = CCLabelBMFont::create("Object ID: 0", "chatFont.fnt");

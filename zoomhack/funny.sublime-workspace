@@ -1,0 +1,1401 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ccTouchEnded",
+				"ccTouchEnded(cocos2d::CCTouch* t, cocos2d::CCEvent* e"
+			],
+			[
+				"CCT",
+				"CCTouch*, cocos2d::CCEvent*)"
+			],
+			[
+				"b_mControlKe",
+				"b_mControlKeyPressed;}"
+			],
+			[
+				"CMAKE_",
+				"CMAKE_CXX_FLAGS"
+			],
+			[
+				"url",
+				"urlWithString"
+			],
+			[
+				"__att",
+				"__attribute__((constructor"
+			],
+			[
+				"CACAO_",
+				"CACAO_IOS_BUNDLE"
+			],
+			[
+				"CMAKE_CXX_",
+				"CMAKE_CXX_FLAGS"
+			],
+			[
+				"return_",
+				"return_value2"
+			],
+			[
+				"to_value",
+				"to_value(contexts, globals, info.clone(), true)?;"
+			],
+			[
+				"initial",
+				"initial_storage"
+			],
+			[
+				"store_",
+				"store_const_value"
+			],
+			[
+				"Local",
+				"LocalIntern<String>"
+			],
+			[
+				"batter",
+				"batteryLevel"
+			],
+			[
+				"dispatch_get_global_queue",
+				"dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT"
+			],
+			[
+				"threa",
+				"mainthread"
+			],
+			[
+				"CoreFoundation",
+				"CoreFoundation/CoreFoundation.h>"
+			],
+			[
+				"to_ex",
+				"to_expression()"
+			],
+			[
+				"GJB",
+				"GJBaseGameLayer* self"
+			],
+			[
+				"shoul",
+				"shouldExitHackedLevel"
+			],
+			[
+				"getConten",
+				"getContentSize().height/2"
+			],
+			[
+				"PlayerO",
+				"PlayerObject* p, GJBaseGameLayer* l"
+			],
+			[
+				"onCollisio",
+				"onCollision(const char*"
+			],
+			[
+				"m_uPixels",
+				"m_uPixelsHigh"
+			],
+			[
+				"addSingle",
+				"addSingleSpriteFrame"
+			],
+			[
+				"parent",
+				"parentForZLayer"
+			],
+			[
+				"kCCDic",
+				"kCCDictStr"
+			],
+			[
+				"kCCDi",
+				"kCCDictInt"
+			],
+			[
+				"removeAll",
+				"removeAllObjects"
+			],
+			[
+				"setPosition",
+				"setPosition(i->getPosition());"
+			],
+			[
+				"removeFromParent",
+				"removeFromParentAndCleanup"
+			],
+			[
+				"removeMeAn",
+				"removeMeAndCleanup"
+			],
+			[
+				"CCParti",
+				"CCParticleSystemQuad"
+			],
+			[
+				"kDebugPrint",
+				"kDebugPrintText"
+			],
+			[
+				"collect",
+				"collect::<Vec<_>>"
+			],
+			[
+				"GJBase",
+				"GJBaseGameLayer"
+			],
+			[
+				"Obj",
+				"ObjectManager"
+			],
+			[
+				"Object",
+				"ObjectManager"
+			],
+			[
+				"kGameObjectTypeNormal",
+				"kGameObjectTypeNormalGravityPortal"
+			],
+			[
+				"kGameObjectTypeRegularS",
+				"kGameObjectTypeRegularSizePortal"
+			],
+			[
+				"kGameObjectTypeMiniS",
+				"kGameObjectTypeMiniSizePortal"
+			],
+			[
+				"m_nObject",
+				"m_nObjectID"
+			],
+			[
+				"ObjectManager",
+				"ObjectManager::hooks::"
+			],
+			[
+				"GJ_GameS",
+				"GJ_GameSheet02-uhd.png"
+			],
+			[
+				"sharedSprite",
+				"sharedSpriteFrameCache()->"
+			],
+			[
+				"setDisplay",
+				"setDisplayFrame"
+			],
+			[
+				"17",
+				"1751"
+			],
+			[
+				"m_up",
+				"m_upsideDown"
+			],
+			[
+				"prtn",
+				"printf"
+			],
+			[
+				"CCCircle",
+				"CCCircleWaveDelegate"
+			],
+			[
+				"ccColo",
+				"ccColor3B"
+			],
+			[
+				"m_portal",
+				"m_portalCircle"
+			],
+			[
+				"type_i",
+				"type_id_t"
+			],
+			[
+				"CacBase",
+				"CacBaseTester"
+			],
+			[
+				"CacB",
+				"CacBaseTest"
+			],
+			[
+				"COLLISION",
+				"COLLISION_BLOCK_B_ID"
+			],
+			[
+				"MULTI_",
+				"COUNT_MULTI_ACTIVATE"
+			],
+			[
+				"TOUCH",
+				"TOUCH_DUAL_MODE"
+			],
+			[
+				"SHAKE",
+				"SHAKE_INTERVAL"
+			],
+			[
+				"FOLLOW",
+				"FOLLOW_PLAYER_Y_OFFSET"
+			],
+			[
+				"FOLLOW_PLA",
+				"FOLLOW_PLAYER_Y_MAX_SPEED"
+			],
+			[
+				"FOLLOW_",
+				"FOLLOW_PLAYER_Y_DELAY"
+			],
+			[
+				"PULSE",
+				"PULSE_DETAIL_ONLY"
+			],
+			[
+				"PULSE_FADE",
+				"PULSE_FADE_OUT"
+			],
+			[
+				"PULSE_",
+				"PULSE_FADE_IN"
+			],
+			[
+				"MOVE",
+				"MOVE_LOCK_TO_PLAYER_Y"
+			],
+			[
+				"MOVE_TRIGGER_",
+				"MOVE_TRIGGER_9_UNITS"
+			],
+			[
+				"ROTATION",
+				"ROTATION_TIMES_360"
+			],
+			[
+				"ROTAT",
+				"ROTATION_DEGREES"
+			],
+			[
+				"RO",
+				"ROTATION_LOCK"
+			],
+			[
+				"COPIED_COL",
+				"COPIED_COLOR_HSV_VALUES"
+			],
+			[
+				"COPY",
+				"COPIED_COLOR_OPACITY"
+			],
+			[
+				"PLAYER",
+				"PLAYER_COLOR_2"
+			],
+			[
+				"ROTA",
+				"ROTATION_LOCK"
+			],
+			[
+				"PUSING_ANIM",
+				"PULSING_ANIMATION_RANDOMIZE"
+			],
+			[
+				"remove",
+				"remove                            - [#int#]remove(<#const char *#>)"
+			],
+			[
+				"gl",
+				"lol_gl_parsing_this"
+			],
+			[
+				"TRIGGER_HA",
+				"TRIGGER_SHAKE"
+			],
+			[
+				"TRIGGER_FOLLO",
+				"TRIGGER_FOLLOW_Y"
+			],
+			[
+				"ZLA",
+				"ZLayerType"
+			],
+			[
+				"_",
+				"_ObjAddPackform"
+			],
+			[
+				"parse_",
+				"parse_objadd        - [#bool#]parse_objadd(<#std::string packet#>, <#ObjAddPacket &ret#>)"
+			],
+			[
+				"differen",
+				"selection_differences"
+			],
+			[
+				"set_intersectio",
+				"set_intersection                  - [#_OutputIterator#]set_intersection(<#_InputIterator1 __first1#>, <#_InputIterator1 __last1#>, <#_InputIterator2 __first2#>, <#_InputIterator2 __last2#>, <#_OutputIterator __result#>)"
+			],
+			[
+				"update",
+				"update_members"
+			],
+			[
+				"se",
+				"send"
+			],
+			[
+				"inclu",
+				"include_directories"
+			],
+			[
+				"bezier",
+				"bezierSpacing"
+			],
+			[
+				"bezierSpacing",
+				"nextBezierSpacing"
+			],
+			[
+				"m_bezier",
+				"m_bezierDrawer"
+			],
+			[
+				"k",
+				"kControlPointRadius"
+			],
+			[
+				"m_current",
+				"m_currentTouch"
+			],
+			[
+				"m_curre",
+				"m_currentTouch"
+			],
+			[
+				"m_duration",
+				"m_durationSlider"
+			],
+			[
+				"CC",
+				"CCNode"
+			],
+			[
+				"m_follow",
+				"m_followingSprite"
+			],
+			[
+				"CCMenuItem",
+				"CCMenuItemSpriteExtra"
+			],
+			[
+				"create",
+				"createWithSpriteFrameName"
+			],
+			[
+				"split",
+				"split-string\tsplitString"
+			],
+			[
+				"stat",
+				"staticmethod"
+			],
+			[
+				"add",
+				"add_executable\tbuiltin"
+			],
+			[
+				"un",
+				"unimplemented\tunimplemented!(…)"
+			],
+			[
+				"idain_Fn",
+				"idain_Fn_flq_i"
+			],
+			[
+				"spri",
+				"split-string\tsplitString"
+			],
+			[
+				"inc",
+				"I-ios\tinc"
+			],
+			[
+				"main",
+				"mainthread\tObjCThreads"
+			],
+			[
+				"in",
+				"includes\tfunc"
+			],
+			[
+				"v",
+				"I-valarray\tinc"
+			],
+			[
+				"fin",
+				"fill_n\tfunc"
+			],
+			[
+				"find",
+				"find_if\tfunc"
+			],
+			[
+				"oper",
+				"operator=\tfunc"
+			],
+			[
+				"CHK",
+				"CHK_MAKE"
+			],
+			[
+				"previous",
+				"previous_no_ignore"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "funny (OSX)",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"funny (OSX)",
+					""
+				],
+				[
+					"funny (OSX)",
+					"clean"
+				],
+				[
+					"funny (OSX)",
+					"rebuild_cache"
+				],
+				[
+					"funny (OSX)",
+					"funny"
+				],
+				[
+					"funny (OSX)",
+					"Cacao"
+				],
+				[
+					"funny (OSX)",
+					"Core"
+				],
+				[
+					"funny (OSX)",
+					"main.o"
+				],
+				[
+					"funny (OSX)",
+					"main.i"
+				],
+				[
+					"funny (OSX)",
+					"main.s"
+				]
+			],
+			[
+				"funny (OSX)",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Build With: itest (OSX) - install"
+			],
+			[
+				"word",
+				"LaTeXWordCount: Word Count"
+			],
+			[
+				"x86",
+				"Set Syntax: Assembly x86 (NASM)"
+			],
+			[
+				"insta",
+				"Build With: itest (OSX) - install"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"test",
+				"Build With: test (OSX)"
+			],
+			[
+				"bash",
+				"Set Syntax: Bash"
+			],
+			[
+				"list all",
+				"Rust: List All Messages"
+			],
+			[
+				"list",
+				"Rust: List All Messages"
+			],
+			[
+				"message",
+				"Rust: List All Messages"
+			],
+			[
+				"list all mess",
+				"Rust: List All Messages"
+			],
+			[
+				"list all messages",
+				"Rust: List All Messages"
+			],
+			[
+				"messag",
+				"Rust: List All Messages"
+			],
+			[
+				"inject",
+				"Build With: cross (OSX) - Inject"
+			],
+			[
+				"inej",
+				"Build With: cross (OSX) - Inject"
+			],
+			[
+				"injec",
+				"Build With: cross (OSX) - Inject"
+			],
+			[
+				"at&t",
+				"Set Syntax: GAS/AT&T x86/x64"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"color highlight",
+				"Color Highlight: Disable Color Highlighting"
+			],
+			[
+				"colorsublime",
+				"Colorsublime: Uninstall Theme"
+			],
+			[
+				"color",
+				"Color Highlight: Reset"
+			],
+			[
+				"hopp",
+				"Set Syntax: Hopper Pseudocode"
+			],
+			[
+				"hopper",
+				"Set Syntax: Hopper Pseudocode"
+			],
+			[
+				"flake8",
+				"User: Disable Python Flake8 Lint for this file"
+			],
+			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"comment",
+				"Colored Comments: Settings"
+			],
+			[
+				"toggle",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"rich",
+				"Discord Rich Presence: Connect to Discord"
+			],
+			[
+				"word c",
+				"LaTeXWordCount: Word Count"
+			],
+			[
+				"mycy",
+				"Set Syntax: MyCython"
+			],
+			[
+				"definition",
+				"Set Syntax: Sublime Text Syntax Definition (YAML)"
+			],
+			[
+				"My",
+				"Set Syntax: MyCython"
+			],
+			[
+				"sublime text",
+				"Set Syntax: Sublime Text Syntax Definition (YAML)"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"flake",
+				"User: Disable Python Flake8 Lint for this file"
+			],
+			[
+				"lsp",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"spwn",
+				"Set Syntax: SPWN"
+			],
+			[
+				"markdo",
+				"MarkdownLivePreview: Open Preview"
+			],
+			[
+				"terminal",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"snippet",
+				"Snippet: std::vector"
+			],
+			[
+				"snippets",
+				"Snippet: std::vector"
+			],
+			[
+				"build",
+				"Build With: C++ Single File - Run"
+			],
+			[
+				"wo",
+				"LaTeXWordCount: Word Count"
+			],
+			[
+				"toggle high",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"enable",
+				"Color Highlight: Enable Color Highlighting"
+			],
+			[
+				"color high",
+				"Color Highlight: Disable Color Highlighting"
+			],
+			[
+				"toggle lint",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"toggle ",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"git",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"github",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"markdown",
+				"MarkdownLivePreview: Open Preview"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"latex",
+				"LaTeXWordCount: Word Count"
+			],
+			[
+				"messa",
+				"Rust: List All Messages"
+			],
+			[
+				"toggle syn",
+				"Rust: Toggle Syntax Checking"
+			],
+			[
+				"rust syntax",
+				"Rust: Toggle Syntax Checking"
+			],
+			[
+				"rust",
+				"Rust: Toggle Syntax Checking"
+			],
+			[
+				"channelre",
+				"ChannelRepositoryTools: Test Default Channel"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Licence Snippet: MIT Licence [Header] [Full Text]"
+			],
+			[
+				"new raw",
+				"PackageDev: New Raw Snippet"
+			],
+			[
+				"color scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"check",
+				"Rust: Toggle Syntax Checking"
+			],
+			[
+				"ansi",
+				"Set Syntax: ANSI"
+			],
+			[
+				"set syntax:rust",
+				"Set Syntax: Rust Enhanced"
+			],
+			[
+				"",
+				"Build With: RustEnhanced - Script"
+			],
+			[
+				"script",
+				"Build With: RustEnhanced - Script"
+			],
+			[
+				"configu",
+				"Rust: Configure Cargo Build"
+			],
+			[
+				"set syntax: spawn",
+				"Set Syntax: Spawn"
+			],
+			[
+				"sort",
+				"Python Imports Sorter: sort imports"
+			],
+			[
+				"pyt",
+				"Python Imports Sorter: sort imports"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jakrillis/projects/funny",
+		"/Users/jakrillis/projects/funny/Cacao",
+		"/Users/jakrillis/projects/funny/Cacao/base",
+		"/Users/jakrillis/projects/funny/Cacao/helpers"
+	],
+	"file_history":
+	[
+		"/Users/jakrillis/projects/pyedit/src/main.cpp",
+		"/Users/jakrillis/projects/funny/Cacao/cocos/cocos2dx/touch_dispatcher/CCTouch.h",
+		"/Users/jakrillis/projects/funny/CMakeLists.txt",
+		"/Users/jakrillis/projects/funny/Cacao/cocos/cocos2dx/layers_scenes_transitions_nodes/CCLayer.h",
+		"/Users/jakrillis/projects/funny/Cacao/cocos/cocos2dx/cocoa/CCObject.h",
+		"/Users/jakrillis/projects/funny/Cacao/cocos/cocos2dx/cocoa/CCDictionary.h",
+		"/Users/jakrillis/projects/funny/Cacao/base/InterfaceBase.hpp",
+		"/Users/jakrillis/projects/funny/Cacao/gen/data/Cocos2d.mm",
+		"/Users/jakrillis/projects/funny/Cacao/cocos/cocos2dx/robtop/keyboard_dispatcher/CCKeyboardDispatcher.h",
+		"/Users/jakrillis/projects/funny/Cacao/cocos/cocos2dx/cocoa/CCGeometry.h",
+		"/Users/jakrillis/projects/funny/Cacao/gen/data/GeometryDash.mm",
+		"/Users/jakrillis/projects/funny/main.cpp",
+		"/Users/jakrillis/projects/funny/Cacao/cocos/cocos2dx/base_nodes/CCNode.h",
+		"/Users/jakrillis/projects/funny/Cacao/helpers/Cacao.cpp",
+		"/Users/jakrillis/projects/ios/itest/Cacao/Source.cpp",
+		"/Users/jakrillis/projects/ios/itest/Cacao/cmake/CacaoRoot.cmake",
+		"/Users/jakrillis/projects/ios/itest/CMakeLists.txt",
+		"/Users/jakrillis/projects/ios/itest/Cacao/gen/data/GeometryDash.mm",
+		"/Users/jakrillis/projects/ios/itest/main.mm",
+		"/Users/jakrillis/projects/ios/itest/Cacao/CMakeLists.txt",
+		"/Users/jakrillis/projects/ios/itest/Cacao/cmake/CacaoiOS.cmake",
+		"/Users/jakrillis/projects/ios/itest/Cacao/gen/data/Cocos2d.mm",
+		"/Users/jakrillis/projects/gdmods/gdstdlib/research.txt",
+		"/Users/jakrillis/vta.py",
+		"/Users/jakrillis/projects/ios/itest/Cacao/hook/lilac-core/src/impl/lilac_hook_impl.cpp",
+		"/Users/jakrillis/projects/ios/itest/Cacao/hook/lilac-core/src/impl/lilac_hook_impl.hpp",
+		"/Users/jakrillis/projects/ios/itest/Cacao/hook/lilac-core/src/impl/lilac_hook_ios.cpp",
+		"/Users/jakrillis/projects/ios/itest/Cacao/hook/Core.cpp",
+		"/Users/jakrillis/projects/ios/itest/Cacao/hook/Core.hpp",
+		"/Users/jakrillis/t.py",
+		"/Users/jakrillis/projects/ios/itest/notify.m",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/cdefs.h",
+		"/Users/jakrillis/projects/ios/itest/test.m",
+		"/Users/jakrillis/projects/ios/itest/control",
+		"/Users/jakrillis/.Trash/d2/GeometryDash.mm",
+		"/Users/jakrillis/.Trash/d2/Cocos2d.mm",
+		"/Users/jakrillis/projects/ios/itest/Cacao/base/FunctionBase.hpp",
+		"/Users/jakrillis/projects/ios/ioscac/.gitmodules",
+		"/Users/jakrillis/projects/ios/ioscac/.git/config",
+		"/Users/jakrillis/projects/ios/CacaoSDK/.gitmodules",
+		"/Users/jakrillis/projects/ios/CacaoSDK/.git/config",
+		"/Users/jakrillis/Downloads/text-67604AE4D349-1.txt",
+		"/Users/jakrillis/projects/ios/ioscac/Template/control",
+		"/Users/jakrillis/projects/ios/ftest/main.cpp",
+		"/Users/jakrillis/projects/ios/ftest/control",
+		"/Users/jakrillis/projects/ios/ftest/Cacao/pkg/iOS.py",
+		"/Users/jakrillis/projects/ios/test/build/packages/out/DEBIAN/control",
+		"/Users/jakrillis/projects/ios/test/build/ios_package/tmp/DEBIAN/control",
+		"/Users/jakrillis/projects/ios/gdmodtest/packages/Library/MobileSubstrate/DynamicLibraries/GdModTest.plist",
+		"/Users/jakrillis/projects/ios/gdmodtest/packages/DEBIAN/control",
+		"/Users/jakrillis/projects/ios/test/build/packages/DEBIAN/md5sums",
+		"/Users/jakrillis/projects/ios/ioscac/create",
+		"/Users/jakrillis/projects/ios/test/Cacao/cocos/cocos2dx/platform/CCApplicationProtocol.h",
+		"/Users/jakrillis/projects/ios/test/Cacao/Interface.hpp",
+		"/Users/jakrillis/projects/ios/test/main.cpp",
+		"/Users/jakrillis/projects/ios/test/Cacao/CMakeLists.txt",
+		"/Users/jakrillis/projects/ios/test/Cacao/gen/Header.py",
+		"/Users/jakrillis/projects/ios/test/Cacao/gen/Interface.py",
+		"/Users/jakrillis/projects/ios/test/Cacao/gen/data/GeometryDash.mm",
+		"/Users/jakrillis/projects/ios/test/Cacao/gen/data/Cocos2d.mm",
+		"/Users/jakrillis/projects/ios/test/Cacao/hook/lilac-core/src/CMakeLists.txt",
+		"/Users/jakrillis/projects/ios/test/Cacao/base/PlatformBase.hpp",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libc++.tbd",
+		"/Users/jakrillis/projects/cacao/template/Cacao/cmakelists.txt",
+		"/Users/jakrillis/projects/ios/test/Cacao/cmake/CacaoRoot.cmake",
+		"/Users/jakrillis/projects/ios/test/Cacao/cmake/CacaoiOS.cmake",
+		"/Users/jakrillis/projects/ios/test/CMakeLists.txt",
+		"/Users/jakrillis/projects/ios/test/Cacao/cocos/cocos2dx/robtop/glfw/glfw3.h",
+		"/Users/jakrillis/projects/ios/test/Cacao/base/InterfaceBase.hpp",
+		"/Users/jakrillis/projects/ios/ioscac/Source/Cacao/cmake/CacaoiOS.cmake",
+		"/Users/jakrillis/projects/ios/test/Cacao/base/HeaderBase.hpp",
+		"/Users/jakrillis/projects/ios/test/Cacao/cmake/CacaoMac.cmake",
+		"/Users/jakrillis/projects/ios/test/Cacao/cmake/CacaoWin32.cmake",
+		"/Users/jakrillis/t.c",
+		"/Users/jakrillis/projects/ios/test/Cacao/hook/lilac-core/src/impl/lilac_hook_impl.hpp",
+		"/Users/jakrillis/projects/ios/ioscac/Source/Cacao/hook/lilac-core/src/impl/lilac_hook_ios.cpp",
+		"/Users/jakrillis/projects/ios/ioscac/Source/Cacao/cocos/cocos-headers/cocos2dx/platform/mac/CCApplication.h",
+		"/Users/jakrillis/projects/ios/ioscac/Source/Cacao/cocos/cocos-headers/cocos2dx/platform/ios/CCApplication.h",
+		"/Users/jakrillis/projects/ios/ioscac/Source/Cacao/cocos/cocos2dx/platform/ios/CCApplication.h",
+		"/Users/jakrillis/projects/cacao/template/Cacao/Include/cocos2dx/platform/mac/CCApplication.h",
+		"/Users/jakrillis/projects/ios/test/Cacao/cmake/CacaoAndroid.cmake",
+		"/Users/jakrillis/projects/ios/test/Cacao/cmake/CacaoMacOS.cmake",
+		"/Users/jakrillis/projects/ios/test/Cacao/hook/lilac-core/src/impl/lilac_hook_macos.cpp",
+		"/Users/jakrillis/projects/ios/ioscac/Source/Cacao/hook/lilac-core/src/impl/lilac_hook_ios.hpp",
+		"/Users/jakrillis/projects/ios/ioscac/.git/modules/Source/Cacao/include/cocos-headers/config",
+		"/Users/jakrillis/projects/ios/test/Cacao/cocos/cocos-headers/cocos2dx/robtop/glfw/glfw3.h",
+		"/Users/jakrillis/projects/cacao/template/Cacao/Include/cocos2dx/platform/ios/CCApplication.h",
+		"/Users/jakrillis/projects/cacao/template/Cacao/Include/cocos2dx/platform/CCApplicationProtocol.h",
+		"/Users/jakrillis/projects/cacao/template/Cacao/Include/cocos2dx/platform/ios/CCApplication.mm",
+		"/Users/jakrillis/projects/ios/ioscac/template/cmakelists.txt",
+		"/Users/jakrillis/projects/ios/iostemp/iostemp",
+		"/Users/jakrillis/projects/ios/notheos/CMakeLists.txt",
+		"/Users/jakrillis/projects/SPWN-language/test/test.spwn",
+		"/Users/jakrillis/projects/SPWN-language/parser/src/fmt.rs",
+		"/Users/jakrillis/projects/SPWN-language/compiler/src/context.rs",
+		"/Users/jakrillis/projects/SPWN-language/parser/src/ast.rs",
+		"/Users/jakrillis/projects/SPWN-language/compiler/src/value_storage.rs",
+		"/Users/jakrillis/projects/SPWN-language/compiler/src/globals.rs",
+		"/Users/jakrillis/projects/SPWN-language/compiler/src/compiler.rs",
+		"/Users/jakrillis/projects/SPWN-language/compiler/src/value.rs",
+		"/Users/jakrillis/projects/SPWN-language/parser/src/parser.rs",
+		"/Users/jakrillis/projects/SPWN-language/compiler/src/compiler_types.rs",
+		"/Users/jakrillis/projects/SPWN-language/compiler/src/builtins.rs",
+		"/Users/jakrillis/projects/acidtrip/main.cpp",
+		"/Users/jakrillis/projects/SPWN-language/libraries/std/vector.spwn",
+		"/Users/jakrillis/projects/SPWN-language/libraries/std/zip.spwn",
+		"/Users/jakrillis/projects/SPWN-language/libraries/std/binary_counter.spwn",
+		"/Users/jakrillis/projects/SPWN-language/libraries/std/string.spwn",
+		"/Users/jakrillis/projects/SPWN-language/libraries/std/obj_set.spwn",
+		"/Users/jakrillis/projects/SPWN-language/libraries/std/array.spwn",
+		"/Users/jakrillis/projects/battery/bat.m",
+		"/Users/jakrillis/projects/SPWN-language/cargo.toml",
+		"/Users/jakrillis/projects/SPWN-language/compiler/cargo.toml",
+		"/Users/jakrillis/projects/homebrew-spwn/Formula/spwn.rb",
+		"/usr/local/Homebrew/Library/Taps/camila314/homebrew-spwn/Formula/spwn.rb",
+		"/Users/jakrillis/Downloads/SPWN-language-0.7-beta/target/release/sha",
+		"/Users/jakrillis/t.cpp",
+		"/Users/jakrillis/t.m",
+		"/Users/jakrillis/projects/modular/GameObjectController.h",
+		"/Users/jakrillis/projects/modular/Cacao/include/cocos2dx/support/data_support/ccCArray.h",
+		"/Users/jakrillis/projects/modular/Cacao/include/cocos2dx/cocoa/CCDictionary.h",
+		"/Users/jakrillis/projects/modular/ObjectManager.cpp",
+		"/Users/jakrillis/projects/modular/Cacao/include/cocos2dx/cocoa/CCObject.h",
+		"/Users/jakrillis/projects/modular/Cacao/CacKitGen/asmgen.py",
+		"/Users/jakrillis/projects/modular/Cacao/CacKitGen/kitgen.py",
+		"/Users/jakrillis/projects/modular/Cacao/CacKitGen/headergen.py",
+		"/Users/jakrillis/projects/modular/Cacao/Src/Helpers.cpp",
+		"/Users/jakrillis/projects/modular/Cacao/Include/Helpers.hpp"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"clamp",
+			"distance",
+			"cocos2d::",
+			"getObject",
+			"getShift",
+			"class cocos2d::CCLayer",
+			"class CCLayer",
+			"CCLayer",
+			"CCLayer {",
+			"ccTouch"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 158.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "funny (OSX)",
+	"project": "funny.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"geometry",
+				"funny/Cacao/cocos/cocos2dx/cocoa/CCGeometry.h"
+			],
+			[
+				"touch",
+				"funny/Cacao/cocos/cocos2dx/touch_dispatcher/CCTouch.h"
+			],
+			[
+				"node",
+				"funny/Cacao/cocos/cocos2dx/base_nodes/CCNode.h"
+			],
+			[
+				"object",
+				"funny/Cacao/cocos/cocos2dx/cocoa/CCObject.h"
+			],
+			[
+				"dictionar",
+				"funny/Cacao/cocos/cocos2dx/cocoa/CCDictionary.h"
+			],
+			[
+				"layer",
+				"funny/Cacao/cocos/cocos2dx/layers_scenes_transitions_nodes/CCLayer.h"
+			],
+			[
+				"application",
+				"Cacao/cocos/cocos2dx/platform/CCApplicationProtocol.h"
+			],
+			[
+				"Applicatio",
+				"Cacao/cocos/cocos2dx/platform/CCApplicationProtocol.h"
+			],
+			[
+				"gameobject",
+				"gd.h/sprite_nodes/GameObject.h"
+			],
+			[
+				"keyboarddispat",
+				"Cacao/Include/cocos2dx/keyboard_dispatcher/CCKeyboardDelegate.h"
+			],
+			[
+				"CCK",
+				"Cacao/Include/cocos2dx/keyboard_dispatcher/CCKeyboardDispatcher.h"
+			],
+			[
+				"gameobj",
+				"gd.h/sprite_nodes/GameObject.h"
+			],
+			[
+				"texture2d",
+				"Cacao/include/cocos2dx/textures/CCTexture2D.h"
+			],
+			[
+				"ccobject",
+				"Cacao/include/cocos2dx/cocoa/CCObject.h"
+			],
+			[
+				"ccobject.h",
+				"Cacao/include/cocos2dx/cocoa/CCObject.h"
+			],
+			[
+				"array",
+				"Cacao/include/cocos2dx/cocoa/CCArray.h"
+			],
+			[
+				"spriteframecache",
+				"Cacao/include/cocos2dx/sprite_nodes/CCSpriteFrameCache.h"
+			],
+			[
+				"spriteframe",
+				"Cacao/include/cocos2dx/sprite_nodes/CCSpriteFrame.h"
+			],
+			[
+				"texture.h",
+				"cocos-headers/cocos2dx/textures/CCTexture2D.h"
+			],
+			[
+				"Image.",
+				"Cacao/include/cocos2dx/platform/CCImage.h"
+			],
+			[
+				"dicctionary",
+				"Cacao/include/cocos2dx/cocoa/CCDictionary.h"
+			],
+			[
+				"gam",
+				"gd.h/sprite_nodes/GameObject.h"
+			],
+			[
+				"Action",
+				"cocos-headers/cocos2dx/actions/CCActionEase.h"
+			],
+			[
+				"CCAction",
+				"cocos-headers/cocos2dx/actions/CCAction.h"
+			],
+			[
+				"CCActionInterval",
+				"cocos-headers/cocos2dx/actions/CCActionInterval.h"
+			],
+			[
+				"GJBase",
+				"gd.h/layers_scenes_transitions_nodes/GJBaseGameLayer.h"
+			],
+			[
+				"CCActionInstant",
+				"cocos-headers/cocos2dx/actions/CCActionInstant.h"
+			],
+			[
+				"CCActionObject",
+				"Cacao/include/cocos2dext/CocoStudio/Action/CCActionObject.h"
+			],
+			[
+				"CCactionInter",
+				"cocos-headers/cocos2dx/actions/CCActionInterval.h"
+			],
+			[
+				"ccgeome",
+				"cocos-headers/cocos2dx/cocoa/CCGeometry.h"
+			],
+			[
+				"CCCircle",
+				"gd.h/actions/CCCircleWave.h"
+			],
+			[
+				"CCActionInter",
+				"cocos-headers/cocos2dx/actions/CCActionInterval.h"
+			],
+			[
+				"ccTypse",
+				"Cacao/include/cocos2dx/include/ccTypes.h"
+			],
+			[
+				"CCSprite",
+				"Cacao/include/cocos2dx/sprite_nodes/CCSprite.h"
+			],
+			[
+				"GameObject",
+				"gd.h/sprite_nodes/GameObject.h"
+			],
+			[
+				"CCSpritePlus",
+				"gd.h/sprite_nodes/CCSpritePlus.h"
+			],
+			[
+				"CCGeometry",
+				"Cacao/include/cocos2dx/cocoa/CCGeometry.h"
+			],
+			[
+				"cinnamon",
+				"Cacao/Auto/cinnamon.mm"
+			],
+			[
+				"cinn",
+				"Cacao/Auto/cinnamon.mm"
+			],
+			[
+				"Playlayer",
+				"gd.h/layers_scenes_transitions_nodes/PlayLayer.h"
+			],
+			[
+				"cinnn",
+				"Cacao/Auto/cinnamon.mm"
+			],
+			[
+				"GJGameLevel",
+				"gd.h/level_nodes/GJGameLevel.h"
+			],
+			[
+				"playerobject",
+				"gd.h/sprite_nodes/PlayerObject.h"
+			],
+			[
+				"EffectGa",
+				"gd.h/sprite_nodes/EffectGameObject.h"
+			],
+			[
+				"PlayerObj",
+				"gd.h/sprite_nodes/PlayerObject.h"
+			],
+			[
+				"PlayerObjet",
+				"gd.h/sprite_nodes/PlayerObject.h"
+			],
+			[
+				"gjbase",
+				"gd.h/layers_scenes_transitions_nodes/GJBaseGameLayer.h"
+			],
+			[
+				"GJBa",
+				"gd.h/layers_scenes_transitions_nodes/GJBaseGameLayer.h"
+			],
+			[
+				"CCNode",
+				"Cacao/include/cocos2dx/base_nodes/CCNode.h"
+			],
+			[
+				"CCOmponentContainer",
+				"cocos-headers/cocos2dx/support/component/CCComponentContainer.h"
+			],
+			[
+				"CCComponent",
+				"Cacao/include/cocos2dx/support/component/CCComponentContainer.h"
+			],
+			[
+				"CCComponentContainer",
+				"Cacao/include/cocos2dx/support/component/CCComponentContainer.h"
+			],
+			[
+				"GJBae",
+				"gd.h/layers_scenes_transitions_nodes/GJBaseGameLayer.h"
+			],
+			[
+				"CCSpriteBatchNode",
+				"cocos-headers/cocos2dx/sprite_nodes/CCSpriteBatchNode.h"
+			],
+			[
+				"CCSpriteFrameCache",
+				"Cacao/include/cocos2dx/sprite_nodes/CCSpriteFrameCache.h"
+			],
+			[
+				"Game",
+				"gd.h/sprite_nodes/GameObject.h"
+			],
+			[
+				"GameO",
+				"gd.h/sprite_nodes/GameObject.h"
+			],
+			[
+				"Menula",
+				"crosstemplate/gd.h/layers_scenes_transitions_nodes/MenuLayer.h"
+			],
+			[
+				"CCDrawNode",
+				"Cacao/include/cocos2dx/draw_nodes/CCDrawNode.h"
+			],
+			[
+				"CCDraw",
+				"Cacao/include/cocos2dx/draw_nodes/CCDrawingPrimitives.h"
+			],
+			[
+				"CCTouch",
+				"Cacao/include/cocos2dx/touch_dispatcher/CCTouch.h"
+			],
+			[
+				"CCPoint",
+				"Cacao/include/cocos2dx/support/CCPointExtension.h"
+			],
+			[
+				"CCGeomet",
+				"Cacao/include/cocos2dx/cocoa/CCGeometry.h"
+			],
+			[
+				"CCTouchDis",
+				"Cacao/include/cocos2dx/touch_dispatcher/CCTouchDelegateProtocol.h"
+			],
+			[
+				"CCLayer",
+				"Cacao/include/cocos2dx/layers_scenes_transitions_nodes/CCLayer.h"
+			],
+			[
+				"CCDrawPrimitives",
+				"Cacao/include/cocos2dx/draw_nodes/CCDrawingPrimitives.h"
+			],
+			[
+				"ccArray",
+				"Cacao/include/cocos2dx/support/data_support/ccCArray.h"
+			],
+			[
+				"CCArray",
+				"Cacao/include/cocos2dx/cocoa/CCArray.h"
+			],
+			[
+				"CCMenuItemSprite",
+				"Cacao/include/cocos2dx/custom/Sprites/CCMenuItemSpriteExtra/CCMenuItemSpriteExtra.h"
+			],
+			[
+				"CCNode.h",
+				"Cacao/include/cocos2dx/base_nodes/CCNode.h"
+			],
+			[
+				"cctypes",
+				"Cacao/include/cocos2dx/include/ccTypes.h"
+			],
+			[
+				"CCLabelBMFont",
+				"Cacao/include/cocos2dx/label_nodes/CCLabelBMFont.h"
+			],
+			[
+				"CCNode.",
+				"Cacao/include/cocos2dx/base_nodes/CCNode.h"
+			],
+			[
+				"CCMenuI",
+				"Cacao/include/cocos2dx/custom/Sprites/CCMenuItemSpriteExtra/CCMenuItemSpriteExtra.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 356.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
